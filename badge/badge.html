@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="component">
+      <h1 class="component--title heading heading--lg flex-ct-ct">Badge</h1>
+
+      <h1 class="component--title heading heading--md flex-ct-ct">
+        Badge on Icons
+      </h1>
+      <div class="component--output--wrapper">
+        <div class="component--output flex-ct-ct">
+          <div class="bdg">
+            <i class="fas fa-shopping-cart large"></i>
+            <span class="bdg--icon lag">7</span>
+          </div>
+        </div>
+        <pre class="code--container flex-ct-ct">
+            <i class="far fa-copy btn btn--icons btn--round"></i>
+            <span class="code--msg">Copied!</span>
+            <code class='code--text html'></code>
+        </pre>
+      </div>
+
+      <h1 class="component--title heading heading--md flex-ct-ct">
+        Badge on Avatar
+      </h1>
+      <div class="component--output--wrapper">
+        <div class="component--output flex-ct-ct">
+          <div class="bdg">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+              alt="Avatar"
+              class="avatar avatar--sm"
+            />
+            <span class="bdg--profile sm"></span>
+          </div>
+        </div>
+        <pre class="code--container flex-ct-ct">
+            <i class="far fa-copy btn btn--icons btn--round"></i>
+            <span class="code--msg">Copied!</span>
+            <code class='code--text html'></code>
+        </pre>
+      </div>
+    </section>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
