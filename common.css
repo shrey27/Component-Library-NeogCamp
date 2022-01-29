@@ -1,7 +1,5 @@
 @import 'avatar/avatar.css';
-@import 'button/button.css';
 @import 'badge/badge.css';
-@import 'alert/alert.css';
 
 :root {
   /* Font-size */
@@ -40,6 +38,11 @@
   --button-icons-highlighted: #ecce7a;
   --button-float: #3e8ed0;
   --button-float-highlighted: #2b77b4;
+
+  /* Badge colors */
+  --badge-online:#047857;
+  --badge-offline:#B91C1C;
+  --badge-away:#FBBF24;
 }
 
 * {
@@ -53,9 +56,6 @@
 i {
   cursor: pointer;
 }
-/* code {
-  white-space: pre-wrap;
-} */
 
 .large {
   font-size: var(--lg);
@@ -66,6 +66,7 @@ i {
 .small {
   font-size: var(--sm);
 }
+
 /* Flex center */
 .flex-ed-ct {
   display: flex;
