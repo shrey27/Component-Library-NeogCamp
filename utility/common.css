@@ -1,0 +1,148 @@
+/* Utility classes */
+@import 'typography.css';
+@import 'colors.css';
+
+/* Component classes */
+@import '../components/avatar/avatar.css';
+@import '../components/button/button.css';
+@import '../components/badge/badge.css';
+@import '../components/alert/alert.css';
+@import '../components/card/card.css';
+@import '../components/image/image.css';
+@import '../components/input/input.css';
+
+/* Style for CSS elements */
+* {
+  font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+i {
+  cursor: pointer;
+  margin: 0 0.5em;
+}
+img {
+  margin: 0.5em;
+}
+a {
+  text-decoration-line: none;
+  color: var(--black);
+}
+p {
+  text-align: start;
+  width: 100%;
+  padding: 0.5em 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+/* Flex center */
+.flex-ed-ct {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-ct-ed {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.flex-ct-ct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-st-ct {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-ct-st {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flex-st-st {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.flex-ct-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-vertical {
+  flex-direction: column;
+}
+
+/* Component */
+.component {
+  display: flex;
+  flex-direction: column;
+}
+.component--title {
+  text-align: center;
+}
+.component--output--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+.component--output {
+  padding: 0.75em;
+  margin: 0.5em;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgba(129, 113, 113, 0.02);
+}
+.component--output--ns {
+  padding: 0.75em;
+  margin: 0.5em;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.code--container {
+  padding: 1em;
+  background-color: var(--code);
+  color: var(--button-float);
+  border-radius: 10px;
+  font-size: 0.9em;
+  width: min-content;
+  position: relative;
+}
+.code--msg {
+  position: absolute;
+  top: 1.5em;
+  right: 2em;
+  color: var(--white);
+  background-color: var(--button-float);
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin: 0 0 0 0.5em;
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .component--title {
+    text-align: start;
+  }
+  p {
+    width: 90%;
+  }
+}
