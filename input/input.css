@@ -1,0 +1,30 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.input--container {
+  width: 20em;
+}
+.lbl {
+  font-size: 1em;
+  color: var(--heading);
+  margin: 0 0.5em;
+}
+.ipt {
+  outline: none;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  width: 100%;
+  margin: 0.5em 0;
+}
+.ipt:focus {
+  border: 2px solid var(--button-float-highlighted);
+}
+.ipt--man:focus {
+  border: 2px solid var(--button-error);
+}
+.ipt--error {
+  margin: 0 0.5em;
+  color: var(--button-error);
+}
