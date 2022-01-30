@@ -1,0 +1,72 @@
+/* Font-size */
+.xs {
+  font-size: 8px;
+  line-height: 16px;
+}
+.sm {
+  font-size: 16px;
+  line-height: 24px;
+}
+.md {
+  font-size: 24px;
+  line-height: 32px;
+}
+.lg {
+  font-size: 32px;
+  line-height: 40px;
+}
+.xl {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+/* Bold Type */
+.lt {
+  font-weight: 300;
+}
+.reg {
+  font-weight: 400;
+}
+.sb {
+  font-weight: 600;
+}
+.bd {
+  font-weight: 700;
+}
+.bl {
+  font-weight: 800;
+}
+
+/* Spacing */
+.n-s {
+  padding: 0;
+}
+.xs-s {
+  padding: 8px;
+}
+.sm-s {
+  padding: 16px;
+}
+.md-s {
+  padding: 24px;
+}
+.lg-s {
+  padding: 32px;
+}
+.xl-s {
+  padding: 48px;
+}
+.xxl-s {
+  padding: 64px;
+}
+
+/* Align */
+.srt {
+  text-align: start;
+}
+.end {
+  text-align: end;
+}
+.cen {
+  text-align: center;
+}

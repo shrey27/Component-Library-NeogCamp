@@ -3,5 +3,9 @@
 Ready to use styled components library made using html, css and vanilla JS.
 
 ### Components Added:
-- Avatar
-- Badge
+
+-Avatar
+-Button
+-Alert
+-Badge
+

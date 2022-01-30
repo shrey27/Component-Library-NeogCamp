@@ -1,0 +1,147 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.btn {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  color: var(--heading);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  justify-content: center;
+  padding: 0.5em 1em;
+  text-align: center;
+  white-space: nowrap;
+  outline: none;
+  margin: 0.25em;
+}
+.btn:hover {
+  border: 1px solid var(--heading);
+}
+.btn:active {
+  border-color: #485fc7;
+}
+
+/* Shape */
+.btn--round {
+  padding: 0.75em;
+  border-radius: 50%;
+}
+.btn--curve {
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+}
+
+/* Color */
+.btn--white {
+  border: transparent;
+  color: var(--black);
+  background-color: var(--white);
+}
+.btn--white:hover {
+  border: transparent;
+  background-color: var(--button-light-highlighted);
+}
+
+.btn--light {
+  border: transparent;
+  color: var(--black);
+  background-color: var(--button-light);
+}
+.btn--light:hover {
+  border: transparent;
+  background-color: var(--button-light-highlighted);
+}
+
+.btn--dark {
+  border: transparent;
+  color: var(--white);
+  background-color: var(--heading);
+}
+.btn--dark:hover {
+  border: transparent;
+  background-color: var(--button-dark-highighted);
+}
+
+.btn--black {
+  border: transparent;
+  color: var(--white);
+  background-color: var(--black);
+}
+.btn--black:hover {
+  border: transparent;
+}
+
+.btn--primary {
+  border: transparent;
+  background-color: var(--button-primary);
+  color: var(--white);
+}
+.btn--primary:hover {
+  border: transparent;
+  background-color: var(--button-primary-highlighted);
+}
+
+.btn--link {
+  border: transparent;
+  background-color: var(--button-link);
+  color: var(--white);
+}
+.btn--link:hover {
+  border: transparent;
+  background-color: var(--button-link-highlighted);
+}
+
+.btn--success {
+  border: transparent;
+  background-color: var(--button-success);
+  color: var(--white);
+}
+.btn--success:hover {
+  border: transparent;
+  background-color: var(--button-success-highlighted);
+}
+
+.btn--error {
+  border: transparent;
+  background-color: var(--button-error);
+  color: var(--white);
+}
+.btn--error:hover {
+  border: transparent;
+  background-color: var(--button-error-highlighted);
+}
+
+.btn--icons {
+  border: transparent;
+  background-color: var(--button-icons);
+  color: var(--button-icons-text);
+}
+.btn--icons:hover {
+  border: transparent;
+  background-color: var(--button-icons-highlighted);
+}
+
+.btn--float {
+  border: transparent;
+  background-color: var(--button-float);
+  color: var(--white);
+}
+.btn--float:hover {
+  border: transparent;
+  background-color: var(--button-float-highlighted);
+}
+
+/* Size */
+.btn--sm {
+  font-size: 8px;
+}
+.btn--md {
+  font-size: 24px;
+}
+.btn--lg {
+  font-size: 32px;
+}
+.btn--wide {
+  width: 100%;
+}
