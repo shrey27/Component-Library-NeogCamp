@@ -1,5 +1,4 @@
-## Component-Library-NeogCamp
-
+# Component-Library-NeogCamp
 Ready to use styled components library made using html, css and vanilla JS.
 
 ### Components Added:
@@ -8,4 +7,5 @@ Ready to use styled components library made using html, css and vanilla JS.
 -Button
 -Alert
 -Badge
+-Card
 
