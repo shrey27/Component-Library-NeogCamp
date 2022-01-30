@@ -1,0 +1,41 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.alert {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em;
+  font-size: 1.25em;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 1em 0;
+  width: 100%;
+}
+.alert > * {
+  margin: 0 1em;
+}
+.alert[alertPosition='fixed'] {
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+}
+.alert--error {
+  background-color: var(--button-error);
+  color: var(--white);
+}
+.alert--success {
+  background-color: var(--button-success);
+  color: var(--button-icons-text);
+}
+.alert--warning {
+  background-color: var(--button-icons);
+  color: var(--button-icons-text);
+}
+.alert--primary {
+  background-color: var(--button-float);
+  color: var(--white);
+}
+.align-st{
+  text-align: start;
+  overflow-wrap: break-word;
+}
