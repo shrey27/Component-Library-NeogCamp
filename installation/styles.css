@@ -1,0 +1,125 @@
+@import '../utility/common.css';
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'aside'
+    'main';
+  position: relative;
+  align-items: start;
+}
+.box__image {
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+}
+.box__image__sm {
+  width: 2em;
+  height: 2em;
+  background-color: white;
+}
+.box__header {
+  grid-area: header;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--border);
+}
+.box__aside {
+  grid-area: aside;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  background-color: var(--white);
+  overflow: hidden scroll;
+  display: none;
+}
+.box__aside.show {
+  display: block;
+}
+.box__aside__options{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.box-sm {
+  padding: 0 1rem;
+  width: fit-content;
+}
+.box-sm-contact {
+  padding: 0 1rem;
+  width: fit-content;
+  display: none;
+}
+.box-span {
+  display: inline-flex;
+  flex-direction: column;
+}
+.box__main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* List Styling */
+.list--container {
+  margin: 0 auto 1em;
+}
+.list__title {
+  color: var(--code);
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 0.25em;
+  margin: 0 auto 1em;
+}
+.list {
+  list-style: none;
+}
+.list li {
+  padding: 0.5em 0;
+  text-align: center;
+}
+.list li a {
+  color: var(--text-dark);
+  font-size: 1em;
+  font-weight: 600;
+}
+.list li a:hover,
+.list li a:focus {
+  color: var(--button-float);
+}
+.slider {
+  display: inline-block;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  .box {
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      'header header header'
+      'aside main main';
+  }
+  .box__header {
+    padding: 1rem;
+  }
+  .box-sm-contact {
+    display: inline-block;
+  }
+  .box__aside {
+    display: block;
+  }
+  .box__aside__options {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .slider {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}

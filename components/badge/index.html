@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="badge.css" />
+  </head>
+  <body>
+    <div class="box">
+      <header class="box__header flex-ct-sb">
+        <div class="box-sm flex-ct-ct">
+          <a href="../../index.html">
+            <img class="box__image" src="../../assets/rocket.jpg" />
+          </a>
+          <span class="box-span">
+            <span class="lg sb n-s heading">Apollo-UI</span>
+            <span class="sm sb subheading">beta-version</span>
+          </span>
+        </div>
+        <div class="box-sm-contact flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </div>
+        <div class="box-sm-contact flex-ct-ct slider">
+          <i class="fas fa-bars btn btn--float btn--round"></i>
+        </div>
+      </header>
+
+      <aside class="box__aside">
+        <section class="box__aside__options">
+          <div class="list--container">
+            <span class="list__title"
+              ><a href="/installation">Installation</a></span
+            >
+          </div>
+          <div class="list--container">
+            <span class="list__title">Utilities</span>
+            <ul class="list">
+              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../typography">Typography</a></li>
+            </ul>
+          </div>
+          <div class="list--container">
+            <span class="list__title">Components</span>
+            <ul class="list">
+              <li><a href="../avatar">Avatar</a></li>
+              <li><a href="../alert">Alert</a></li>
+              <li><a href="../badge">Badge</a></li>
+              <li><a href="../button">Button</a></li>
+              <li><a href="../card">Card</a></li>
+              <li><a href="../image">Image</a></li>
+              <li><a href="../input">Input</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </section>
+      </aside>
+
+      <main class="box__main">
+        <section class="component">
+          <h1 class="heading xl sb">Badge on Avatar</h1>
+          <p class="heading md reg">
+            A badge is used to send information as notification. It could be a
+            text message or number or a status update.
+          </p>
+          <br /><br />
+          <hr />
+          <br /><br />
+          <!-- Badges on Icons -->
+          <h1 class="heading lg sb">Badge on Icons</h1>
+          <p class="heading md lt">
+            Pick any icon from CDN and add 'icon-badge' data attribute to it.
+            Value prvided to the attribute is passed to the notification badge.
+          </p>
+          <div class="component--output--wrapper">
+            <div class="component--output flex-ct-ct">
+              <i icon-badge="7" class="fas fa-shopping-cart xl"></i>
+              <i icon-badge="89" class="far fa-envelope lg"></i>
+            </div>
+            <pre class="code--container flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+                <code class='code--text html'>
+&lt;i icon-badge="7" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
+&lt;i icon-badge="89" class="far fa-envelope lg"&gt;&lt;/i&gt;
+                </code>
+            </pre>
+          </div>
+          <br /><br />
+          <!-- Profile Badges -->
+          <h1 class="heading lg sb">Badge on Profile</h1>
+          <p class="heading md lt">
+            Wrap an image in a container with class as 'bdg'. Along with image
+            tag pass an inline tag like span with class name as 'bdg--profile'.
+            To control size pass 'sml', 'med' or 'lrg' for small, medium and
+            large respectively.
+          </p>
+          <div class="component--output--wrapper">
+            <div class="component--output flex-ct-ct">
+              <div class="bdg">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                  alt="Avatar"
+                  class="avatar avatar--sm"
+                />
+                <span class="bdg--profile sml"></span>
+              </div>
+              <div class="bdg">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                  alt="Avatar"
+                  class="avatar avatar--md"
+                />
+                <span class="bdg--profile bdg--offline med"></span>
+              </div>
+              <div class="bdg">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                  alt="Avatar"
+                  class="avatar avatar--lg"
+                />
+                <span class="bdg--profile bdg--away lrg"></span>
+              </div>
+            </div>
+            <pre class="code--container flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+                <code class='code--text html'>
+&lt;div class="bdg"&gt;
+  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+  &lt;span class="bdg--profile sml"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="bdg"&gt;
+  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+  &lt;span class="bdg--profile med"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="bdg"&gt;
+  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+  &lt;span class="bdg--profile lrg"&gt;&lt;/span&gt;
+&lt;/div&gt;
+                </code>
+            </pre>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../../utility/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <header class="box__header flex-ct-sb">
+        <div class="box-sm flex-ct-ct">
+          <a href="../index.html">
+            <img class="box__image" src="../assets/rocket.jpg" />
+          </a>
+          <span class="box-span">
+            <span class="lg sb n-s heading">Apollo-UI</span>
+            <span class="sm sb subheading">beta-version</span>
+          </span>
+        </div>
+        <div class="box-sm-contact flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </div>
+        <div class="box-sm-contact flex-ct-ct slider">
+          <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
+        </div>
+      </header>
+
+      <aside class="box__aside">
+        <section class="box__aside__options">
+          <div class="list--container">
+            <span class="list__title"
+              ><a href="/installation">Installation</a></span
+            >
+          </div>
+          <div class="list--container">
+            <span class="list__title">Utilities</span>
+            <ul class="list">
+              <li><a href="../color/">Color Palette</a></li>
+              <li><a href="/typography/">Typography</a></li>
+            </ul>
+          </div>
+          <div class="list--container">
+            <span class="list__title">Components</span>
+            <ul class="list">
+              <li><a href="../components/avatar">Avatar</a></li>
+              <li><a href="../components/alert">Alert</a></li>
+              <li><a href="../components/badge">Badge</a></li>
+              <li><a href="../components/button">Button</a></li>
+              <li><a href="../components/card">Card</a></li>
+              <li><a href="../components/image">Image</a></li>
+              <li><a href="../components/input">Input</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </section>
+      </aside>
+
+      <main class="box__main">
+        <section class="component">
+          <h1 class="heading lg sb">Typography</h1>
+          <br />
+          <p class="heading md reg">
+            Typography is a fundamental need of web development. I have defined
+            the <strong>font-size</strong>, <strong>font-family</strong>,
+            <strong>font-weight</strong> and <strong>spacing</strong> for the
+            design system employed throughout the component library.
+          </p>
+          <br /><br />
+          <hr />
+          <br /><br />
+
+          <h1 class="heading md sb">Font-Family</h1>
+          <p class="heading md lt">
+            Font Famliy used in the documentation library for font-size is
+            mentioned in the table below.
+          </p>
+          <table class="table">
+            <tr>
+              <th>Class</th>
+              <th>Name</th>
+            </tr>
+            <tr>
+              <td>Famliy</td>
+              <td class="srt">BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen,
+                Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica,
+                Arial, sans-serif;</td>
+            </tr>
+          </table>
+          <br /><br />
+
+          <h1 class="heading md sb">Font-Size</h1>
+          <p class="heading md lt">
+            Font classes used in the documentation library for font-size are
+            mentioned in the table below.
+          </p>
+          <table class="table">
+            <tr>
+              <th>Class</th>
+              <th>Size</th>
+              <th>Line-Height</th>
+            </tr>
+            <tr>
+              <td>xs</td>
+              <td>8px</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>sm</td>
+              <td>16px</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>md</td>
+              <td>24px</td>
+              <td>32px</td>
+            </tr>
+            <tr>
+              <td>lg</td>
+              <td>32px</td>
+              <td>40px</td>
+            </tr>
+            <tr>
+              <td>xl</td>
+              <td>48px</td>
+              <td>64px</td>
+            </tr>
+          </table>
+          <br /><br />
+          <div class="component--output--wrapper">
+            <div class="component--output flex-st-ct flex-vertical">
+              <span class="xl heading">XL-text Font-Size: 48px</span>
+              <span class="lg heading">LG-text Font-Size: 32px</span>
+              <span class="md heading">MD-text Font-Size: 24px</span>
+              <span class="sm heading">SM-text Font-Size: 16px</span>
+              <span class="xs heading">XS-text Font-Size: 8px</span>
+            </div>
+            <pre class="code--container flex-ct-ct">
+              <i class="far fa-copy btn btn--icons btn--round"></i>
+              <span class="code--msg">Copied!</span>
+              <code class="code--text html">
+&lt;span class="xl heading"&gt;XL-text Font-Size: 48px&lt;/span&gt;
+&lt;span class="lg heading"&gt;LG-text Font-Size: 32px&lt;/span&gt;
+&lt;span class="md heading"&gt;MD-text Font-Size: 24px&lt;/span&gt;
+&lt;span class="sm heading"&gt;SM-text Font-Size: 16px&lt;/span&gt;
+&lt;span class="xs heading"&gt;XS-text Font-Size: 8px&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+          <br /><br />
+
+          <h1 class="heading md sb">Font-Weight</h1>
+          <p class="heading md lt">
+            Font classes used in the documentation library for font weight are
+            mentioned in the table below.
+          </p>
+          <table class="table">
+            <tr>
+              <th>Class</th>
+              <th>Weight</th>
+            </tr>
+            <tr>
+              <td>lt</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>reg</td>
+              <td>400</td>
+            </tr>
+            <tr>
+              <td>sb</td>
+              <td>600</td>
+            </tr>
+            <tr>
+              <td>bd</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td>bl</td>
+              <td>800</td>
+            </tr>
+          </table>
+          <br /><br />
+          <div class="component--output--wrapper">
+            <div class="component--output flex-st-ct flex-vertical">
+              <span class="md lt heading">LT-text Font-Weight: 300</span>
+              <span class="md reg heading">REG-text Font-Weight: 400</span>
+              <span class="md sb heading">SB-text Font-Weight: 600</span>
+              <span class="lg bd heading">BD-text Font-Weight: 800</span>
+              <span class="xl bl heading">BL-text Font-Weight: 900</span>
+            </div>
+            <pre class="code--container flex-ct-ct">
+              <i class="far fa-copy btn btn--icons btn--round"></i>
+              <span class="code--msg">Copied!</span>
+              <code class="code--text html">
+&lt;span class="md lt heading"&gt;LT-text Font-Weight: 300&lt;/span&gt;
+&lt;span class="md reg heading"&gt;REG-text Font-Weight: 400&lt;/span&gt;
+&lt;span class="md sb heading"&gt;SB-text Font-Weight: 600&lt;/span&gt;
+&lt;span class="md bd heading"&gt;BD-text Font-Weight: 800&lt;/span&gt;
+&lt;span class="md bl heading"&gt;BL-text Font-Weight: 900&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+          <br /><br />
+
+          <h1 class="heading md sb">Spacing</h1>
+          <p class="heading md lt">
+            Padding spaces used in the documentation library are mentioned in
+            the table below.
+          </p>
+          <table class="table">
+            <tr>
+              <th>Class</th>
+              <th>Space</th>
+            </tr>
+            <tr>
+              <td>n-s</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>xs-s</td>
+              <td>8px</td>
+            </tr>
+            <tr>
+              <td>sm-s</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>md-s</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>lg-s</td>
+              <td>32px</td>
+            </tr>
+            <tr>
+              <td>xl-s</td>
+              <td>48px</td>
+            </tr>
+            <tr>
+              <td>xxl-s</td>
+              <td>64px</td>
+            </tr>
+          </table>
+          <br /><br />
+          <div class="component--output--wrapper">
+            <div class="component--output flex-st-ct flex-vertical">
+              <div class="pd-eg-container">
+                <span class="xs-s pd-eg"></span>
+                <span class="sm-s pd-eg"></span>
+                <span class="md-s pd-eg"></span>
+                <span class="lg-s pd-eg"></span>
+                <span class="xl-s pd-eg"></span>
+                <span class="xxl-s pd-eg"></span>
+              </div>
+            </div>
+            <pre class="code--container flex-ct-ct">
+              <i class="far fa-copy btn btn--icons btn--round"></i>
+              <span class="code--msg">Copied!</span>
+              <code class="code--text html">
+&lt;span class="xs-s pd-eg"&gt;&lt;/span&gt;
+&lt;span class="sm-s pd-eg"&gt;&lt;/span&gt;
+&lt;span class="md-s pd-eg"&gt;&lt;/span&gt;
+&lt;span class="lg-s pd-eg"&gt;&lt;/span&gt;
+&lt;span class="xl-s pd-eg"&gt;&lt;/span&gt;
+&lt;span class="xxl-s pd-eg"&gt;&lt;/span&gt;
+              </code>
+            </pre>
+          </div>
+          <br /><br />
+
+          <h1 class="heading md sb">Text Align</h1>
+          <p class="heading md lt">
+            Classes used text alignment in the documentation library are mentioned in
+            the table below.
+          </p>
+          <table class="table">
+            <tr>
+              <th>Class</th>
+              <th>Align</th>
+            </tr>
+            <tr>
+              <td>srt</td>
+              <td>start</td>
+            </tr>
+            <tr>
+              <td>end</td>
+              <td>end</td>
+            </tr>
+            <tr>
+              <td>cen</td>
+              <td>center</td>
+            </tr>
+            </tr>
+          </table>
+          <br /><br />
+
+          <h1 class="heading md sb">Flex Container classes</h1>
+          <p class="heading md lt">
+            Use these flex classes to automatically align content inside a container. 
+            Refer the table for details.
+          </p>
+          <div class="flex-ct-ct">
+            <table class="table">
+              <tr>
+                <th colspan='2'>Class</th>
+                <th colspan='2'>Align-Items</th>
+                <th colspan='2'>Justify-Content</th>
+                <th>Wrap</th>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ct-ct</td>
+                <td colspan='2'>center</td>
+                <td colspan='2'>center</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ct-st</td>
+                <td colspan='2'>center</td>
+                <td colspan='2'>start</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-st-ct</td>
+                <td colspan='2'>start</td>
+                <td colspan='2'>center</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-st-st</td>
+                <td colspan='2'>start</td>
+                <td colspan='2'>start</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ed-ct</td>
+                <td colspan='2'>end</td>
+                <td colspan='2'>center</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ct-ed</td>
+                <td colspan='2'>center</td>
+                <td colspan='2'>end</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ed-ed</td>
+                <td colspan='2'>end</td>
+                <td colspan='2'>end</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-ct-sb</td>
+                <td colspan='2'>center</td>
+                <td colspan='2'>space-between</td>
+                <td>wrap</td>
+              </tr>
+              <tr>
+                <td colspan='2'>flex-sb-ct</td>
+                <td colspan='2'>space-between</td>
+                <td colspan='2'>center</td>
+                <td>wrap</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>Class</th>
+                <th>Direction</th>
+              </tr>
+              <tr>
+                <td>flex-vertical</th>
+                <td>Column</th>
+              </tr>
+            </table>
+          </div>
+          <br/><br/>
+
+        </section>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../utility/script.js"></script>
+  </body>
+</html>

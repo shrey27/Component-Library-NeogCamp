@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <header class="box__header flex-ct-sb">
+        <div class="box-sm flex-ct-ct">
+          <a href="../index.html">
+            <img class="box__image" src="../assets/rocket.jpg" />
+          </a>
+          <span class="box-span">
+            <span class="lg sb n-s heading">Apollo-UI</span>
+            <span class="sm sb subheading">beta-version</span>
+          </span>
+        </div>
+        <div class="box-sm-contact flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </div>
+        <div class="box-sm-contact flex-ct-ct slider">
+          <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
+        </div>
+      </header>
+
+      <aside class="box__aside">
+        <section class="box__aside__options">
+          <div class="list--container">
+            <span class="list__title"
+              ><a href="/installation">Installation</a></span
+            >
+          </div>
+          <div class="list--container">
+            <span class="list__title">Utilities</span>
+            <ul class="list">
+              <li><a href="../color">Color Palette</a></li>
+              <li><a href="../typography">Typography</a></li>
+            </ul>
+          </div>
+          <div class="list--container">
+            <span class="list__title">Components</span>
+            <ul class="list">
+              <li><a href="../components/avatar">Avatar</a></li>
+              <li><a href="../components/alert">Alert</a></li>
+              <li><a href="../components/badge">Badge</a></li>
+              <li><a href="../components/button">Button</a></li>
+              <li><a href="../components/card">Card</a></li>
+              <li><a href="../components/image">Image</a></li>
+              <li><a href="../components/input">Input</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </section>
+      </aside>
+
+      <main class="box__main">
+        <section class="component">
+          <h1 class="heading xl sb">Getting Started</h1>
+          <p class="heading md reg">
+            Apollo-UI is an easy to understand, modular and OOCSS structured
+            vanilla-CSS library. This is a one-stop solution to designing
+            problems. Go through the documentation to learn how to use each and
+            every component. Before launhing your project, let's get started
+            with the installation.
+          </p>
+          <br /><br />
+          <hr />
+          <br /><br />
+          <h1 class="heading lg sb">Installation Guide</h1>
+          <p class="heading md lt">
+            In order to introduce Sparrow to your project, Copy the links given
+            below and paste them in the 'head' tag of your html, above all other
+            style sheets.
+          </p>
+          <div class="component--output--wrapper">
+            <pre class="code--container flex-ct-ct">
+              <code class="code--text html">
+&lt;link rel="stylesheet" href="https://apollo-ui.netlify.app/utility/common.css"&gt;
+&lt;link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+  crossorigin="anonymous"referrerpolicy="no-referrer"/&gt;
+              </code>
+            </pre>
+          </div>
+          <br />
+          <p class="heading md lt">
+            For dynamic behaviour add the below given script tag in body of your document.
+          </p>
+          <div class="component--output--wrapper">
+            <pre class="code--container flex-ct-ct">
+              <code class="code--text html">
+&lt;script src="https://apollo-ui.netlify.app/utility/script.js"&gt;&lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../utility/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.pd-eg-container{
+    display: flex;
+    align-items: center;
+}
+.pd-eg {
+  border: 2px solid var(--black);
+  margin: 0.5em;
+}
