@@ -1,0 +1,67 @@
+@import '../common.css';
+
+.bdg-container {
+  align-self: center;
+}
+
+/* Icon Badges */
+[icon-badge] {
+  position: relative;
+}
+[icon-badge]:after {
+  content: attr(icon-badge);
+  position: absolute;
+  right: -1em;
+  top: -1em;
+  min-width: 0.5em;
+  min-height: 0.5em;
+  padding: 0.5em;
+  color: var(--white);
+  background-color: var(--badge-offline);
+  font-size: 0.25em;
+  border-radius: 50%;
+}
+
+/* Profile Badges */
+.bdg {
+  display: inline;
+  position: relative;
+  width: fit-content;
+}
+.bdg--icon {
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+  padding: 0.2em 0.45em;
+  color: var(--white);
+  background-color: var(--button-float);
+  border-radius: 50%;
+}
+.bdg--profile {
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background-color: var(--badge-online);
+  width: 1em;
+  height: 1em;
+}
+.bdg--offline {
+  background-color: var(--badge-offline);
+}
+.bdg--away {
+  background-color: var(--badge-away);
+}
+.sm {
+  position: absolute;
+  right: 0.75em;
+  bottom: 0.25em;
+}
+.md {
+  position: absolute;
+  right: 1em;
+  bottom: 0.25em;
+}
+.lg {
+  position: absolute;
+  right: 1.25em;
+  bottom: 0.25em;
+}
