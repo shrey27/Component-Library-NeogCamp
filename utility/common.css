@@ -40,6 +40,26 @@ p {
   width: 0;
   background: transparent;
 }
+
+/* Table */
+table {
+  width: 25%;
+  color: var(--code);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: auto;
+}
+th,
+td {
+  border-bottom: 2px solid var(--border);
+  text-align: center;
+  padding: 0.5em;
+  font-size: 16px;
+}
+td{
+  border: none;
+}
+
 /* Flex center */
 .flex-ed-ct {
   display: flex;

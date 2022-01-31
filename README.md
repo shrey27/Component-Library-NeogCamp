@@ -1,11 +1,12 @@
-# Component-Library-NeogCamp
-Ready to use styled components library made using html, css and vanilla JS.
+### css-components
 
-### Components Added:
+A collection of easy to use css components made using html, css and js.
 
--Avatar
--Button
+Components added:
 -Alert
+-Avatar
 -Badge
+-Button
 -Card
-
+-Image
+-Input

@@ -1,0 +1,122 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+/* Basic card */
+.card {
+  position: relative;
+  width: 20em;
+  height: auto;
+  background-color: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+
+/* Card with shadow */
+.shdw {
+  border: none;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgba(129, 113, 113, 0.02);
+}
+.card--title {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  margin: 0.5em 0.75em;
+  color: var(--heading);
+}
+.card--subtitle {
+  font-size: 1em;
+  margin: 0.5em 0;
+  margin: 0.5em 1em;
+  color: var(--subheading);
+}
+.card--content {
+  font-size: 1em;
+  color: var(--code);
+  margin: 1em;
+  padding-bottom: 0.5em;
+}
+
+/* Badge on title */
+.card--badge {
+  position: absolute;
+  top: 1em;
+  right: -0.5em;
+  z-index: 10;
+  padding: 0.5em;
+  font-size: 0.75em;
+  background-color: var(--button-link);
+  color: var(--white);
+  margin: 0;
+}
+
+/* Card with banner */
+.card--banner {
+  height: 40%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+
+/* Card that can dismiss */
+.card--dismiss {
+  position: absolute;
+  top: 0.5em;
+  right: 0.25em;
+  z-index: 10;
+  font-size: 2em;
+  color: var(--white);
+  margin: 0;
+}
+.dismiss {
+  display: none;
+}
+.open {
+  display: inline-block;
+}
+
+/* Card with text overlay on image */
+.overlay {
+  display: grid;
+}
+.overlay--banner {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+.overlay--title {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  margin: 0.5em 0.5em 1.25em;
+  color: var(--white);
+  align-self: flex-end;
+}
+.overlay--subtitle {
+  font-size: 1em;
+  margin: 0.5em 0;
+  margin: 0.5em 0.75em;
+  color: var(--white);
+  align-self: flex-end;
+}
+.overlay--back,
+.overlay--front {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.overlay--front {
+  z-index: 5;
+}
+
+/* Horizontal Card */
+.landscape {
+  display: flex;
+  width: 30em;
+}
+.landscape .card--banner {
+  height: auto;
+  width: 40%;
+  border-radius: 10px 0 0 10px;
+}
+.landscape .content {
+  border-radius: 10px 0 0 10px;
+}

@@ -1,0 +1,55 @@
+@import '/utility/common.css';
+
+/* Box Layout */
+.intro__box {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.intro__box__header {
+  grid-row: 1/2;
+}
+.intro__box-sm {
+  padding: 0 1rem;
+  width: fit-content;
+}
+.intro__box-sm-contact {
+  padding: 0 1rem;
+  width: fit-content;
+  display: none;
+}
+.intro__box-span {
+  display: inline-flex;
+  flex-direction: column;
+}
+.intro__box__image {
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+}
+.intro__box__image__sm {
+  width: 2em;
+  height: 2em;
+}
+.intro__box__main {
+  grid-row: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro__box__main p {
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .intro__box-sm-contact {
+    display: inline;
+  }
+  .intro__box__main p {
+    width: 60%;
+    text-align: center;
+  }
+}
