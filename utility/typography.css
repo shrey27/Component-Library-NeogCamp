@@ -70,3 +70,33 @@
 .cen {
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .md {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .lg {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .xl {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .sm-s {
+    padding: 8px;
+  }
+  .md-s {
+    padding: 16px;
+  }
+  .lg-s {
+    padding: 24px;
+  }
+  .xl-s {
+    padding: 32px;
+  }
+  .xxl-s {
+    padding: 48px;
+  }
+}

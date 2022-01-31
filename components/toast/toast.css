@@ -1,0 +1,46 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.toast {
+  position: fixed;
+  z-index: 100;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: var(--border);
+  color: var(--heading);
+  transform: translateX(-150%);
+  transition: transform 500ms;
+}
+.toast.open--toast {
+  transform: translateX(0);
+}
+.toast[position='top-left'] {
+  left: 2rem;
+  top: 2rem;
+}
+.toast[position='top-right'] {
+  top: 2rem;
+  right: 2rem;
+}
+.toast[position='bottom-left'] {
+  left: 2rem;
+  bottom: 2rem;
+}
+.toast[position='bottom-right'] {
+  right: 2rem;
+  bottom: 2rem;
+}
+.dark--toast {
+  background-color: var(--heading);
+  color: var(--border);
+}
+
+/* @media screen and (max-width: 768px) {
+  .toast[position='top-left'],
+  .toast[position='top-right'],
+  .toast[position='bottom-left'],
+  .toast[position='bottom-right'] {
+    left: 20%;
+    bottom: 2rem;
+  }
+} */

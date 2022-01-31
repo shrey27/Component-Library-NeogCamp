@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
-    <link rel="stylesheet" href="alert.css" />
+    <title>Toast</title>
+    <link rel="stylesheet" href="toast.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -81,6 +81,11 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
             </ul>
           </div>
         </section>
@@ -108,44 +113,48 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Alert</h1>
+          <h1 class="heading lg sb">Toast</h1><br /><br />
           <p class="heading md reg">
-            An alert displays a short, important message in a way that attracts
-            the user's attention without interrupting the user's task.
+            A toast message is short message to send some information to user.
+            It is timed and disappears in few seconds. Toast is normally fixed
+            on viewport so they don't form part of normal data flow.
           </p>
           <br /><br />
           <hr />
           <br /><br />
           <p class="heading md lt">
-            Add 'alert' and its supporting class like 'alert--error' or
-            'alert--primary' to any container element to create an alert.
-          </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <div class="alert alert--primary">
-                <span>Primary! This is an alert!</span>
-              </div>
-              <div class="alert alert--error">
-                <span>Error! This is an alert!</span>
-              </div>
-              <div class="alert alert--success">
-                <span>Success! This is an alert!</span>
-              </div>
-              <div class="alert alert--warning">
-                <span>Warning! This is an alert!</span>
-              </div>
-            </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="alert alert--primary">&lt;span&gt;Primary! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--error"&gt;&lt;span&gt;Error! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--success"&gt;&lt;span&gt;Success! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--warning"&gt;&lt;span&gt;Warning! This is an alert!&lt;/span&gt;&lt;/div&gt;
-              </code>
-            </pre>
+            Simply add <strong>toast</strong> class to a container and it
+            becomes a toast message. Pass <strong>position</strong> attribute to
+            set the position of the toast message. User can set the content as
+            per their needs.<br/>
+            Position: <strong>top-left | top-right | bottom-left | bottom-right</strong>.<br/>
+            Add <strong>dark--toast</strong> class to use toast in dark mode.
+          </p><br/><br/>
+
+          <div class="toast sm-s dark--toast" position="bottom-left">
+            <span class="content md"
+              >This is a Toast message. Good Morning..!!</span
+            >
           </div>
+
+          <div class="component--output--wrapper">
+            <div class="component--output shadow flex-ct-ct">
+              <button class="btn btn--primary btn--md show_toast_btn">
+                Show
+              </button>
+            </div>
+            <div class="code--container xs-s">
+              <pre>
+
+&lt;div class="toast sm-s " position='bottom-left'&gt;
+      &lt;span class="content md"&gt;This is a Toast message. Good Morning..!!&lt;/span&gt;
+&lt;/div&gt;
+            </pre
+              >
+            </div>
+          </div>
+          <br/><br/>
+          <br/><br/>
         </section>
       </main>
     </div>

@@ -31,6 +31,10 @@
   --badge-online: #047857;
   --badge-offline: #b91c1c;
   --badge-away: #fbbf24;
+
+  /* Rating color */
+  --rating: #ffb700;
+  --rating-hover: #ecbc43;
 }
 
 /* Headings */
