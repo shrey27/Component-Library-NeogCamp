@@ -50,11 +50,11 @@ Checkout these screenshots for more info.
 ### Installation
 ![Installation links](assets/2.jpg)
 
-### The Typography of the library
+### The Typography used in the library
 ![Check the color palette and typography used in the library](assets/3.jpg)
 
-### Components
+### Access the Components
 ![Checkout the components from the side bar](assets/4.jpg)
 
-### Copy and paste 
+### Get the sample output code snippet 
 ![To get the code snippet for the displayed output click on the copy icon of the output widget](assets/5.jpg)
