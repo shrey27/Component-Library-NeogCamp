@@ -1,0 +1,65 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.hb--box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'aside'
+    'main';
+  align-items: flex-start;
+  position: relative;
+  min-width: 90vw;
+}
+.hb--header {
+  grid-area: header;
+}
+.hb--aside {
+  grid-area: aside;
+  display: none;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+  background-color: var(--white);
+  overflow: hidden scroll;
+}
+.hb--aside.hb--open {
+  display: block;
+}
+.hb--main {
+  grid-area: main;
+}
+.hb--main.hb--open {
+  display: none;
+}
+.hb--list {
+  list-style: none;
+}
+.hb--list li{
+    margin: auto;
+}
+.slider {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .hb--box {
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      'header header'
+      'aside main';
+    min-width: 100%;
+    width: auto;
+  }
+  .slider {
+    display: none;
+  }
+  .hb--aside {
+    display: block;
+  }
+  .hb--main,
+  .hb--main.hb--open {
+    display: block;
+  }
+}

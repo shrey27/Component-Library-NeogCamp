@@ -10,6 +10,11 @@
 @import '../components/card/card.css';
 @import '../components/image/image.css';
 @import '../components/input/input.css';
+@import '../components/navbar/navbar.css';
+@import '../components/modal/modal.css';
+@import '../components/hamburger/hamburger.css';
+@import '../components/toast/toast.css';
+@import '../components/rating/rating.css';
 
 /* Style for CSS elements */
 * {
@@ -31,33 +36,19 @@ a {
   text-decoration-line: none;
   color: var(--black);
 }
-p {
-  text-align: start;
-  width: 100%;
-  padding: 0.5em 0;
-}
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-/* Table */
-table {
-  width: 25%;
-  color: var(--code);
-  border: 1px solid var(--border);
+/* Miscellaneous classes */
+.border {
+  border: 2px solid var(--black);
   border-radius: 10px;
-  margin: auto;
 }
-th,
-td {
-  border-bottom: 2px solid var(--border);
-  text-align: center;
-  padding: 0.5em;
-  font-size: 16px;
-}
-td{
-  border: none;
+.shadow {
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgba(129, 113, 113, 0.02);
 }
 
 /* Flex center */
@@ -106,48 +97,45 @@ td{
   flex-direction: column;
 }
 
-/* Component */
-.component {
-  display: flex;
-  flex-direction: column;
+/* Table */
+table {
+  width: 25%;
+  color: var(--code);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 0.5em auto;
 }
+th,
+td {
+  border-bottom: 2px solid var(--border);
+  text-align: center;
+  padding: 0.5em;
+  font-size: 16px;
+}
+td {
+  border: none;
+}
+
+/* Component */
 .component--title {
   text-align: center;
 }
 .component--output--wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 1em 0;
+  display: flex;
+  justify-content: center;
 }
 .component--output {
-  padding: 0.75em;
-  margin: 0.5em;
-  background-color: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
-    0 0 0 1px rgba(129, 113, 113, 0.02);
-}
-.component--output--ns {
-  padding: 0.75em;
-  margin: 0.5em;
-  background-color: var(--white);
-  border-radius: 10px;
-}
-.code--container {
-  padding: 1em;
-  background-color: var(--code);
-  color: var(--button-float);
-  border-radius: 10px;
-  font-size: 0.9em;
-  width: min-content;
   position: relative;
+  padding: 0.5em;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
 }
 .code--msg {
   position: absolute;
-  top: 1.5em;
-  right: 2em;
+  top: 1em;
+  right: 1em;
   color: var(--white);
   background-color: var(--button-float);
   padding: 0.5em;
@@ -156,13 +144,22 @@ td{
   margin: 0 0 0 0.5em;
   display: none;
 }
+.code--container {
+  background-color: var(--code);
+  color: var(--button-success);
+  border-radius: 10px;
+  overflow: scroll hidden;
+  width: 50%;
+  margin: auto;
+  display: none;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
   .component--title {
     text-align: start;
   }
-  p {
-    width: 90%;
+  .code--container {
+    display: inline-flex;
   }
 }

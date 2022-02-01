@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
-    <link rel="stylesheet" href="input.css" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -24,7 +24,7 @@
     <div class="box">
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
-          <a href="/introduction">
+          <a href="../../index.html">
             <img class="box__image" src="../../assets/rocket.jpg" />
           </a>
           <span class="box-span">
@@ -65,14 +65,14 @@
             >
           </div>
           <div class="list--container">
-            <span class="list__title"><a href="">Utilities</a></span>
+            <span class="list__title">Utilities</span>
             <ul class="list">
-              <li><a href="">Color Palette</a></li>
-              <li><a href="">Typography</a></li>
+              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
           <div class="list--container">
-            <span class="list__title"><a href="">Components</a></span>
+            <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
               <li><a href="../alert">Alert</a></li>
@@ -81,6 +81,11 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
             </ul>
           </div>
         </section>
@@ -108,65 +113,66 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Input</h1>
+          <h1 class="heading lg sb">Modal</h1><br /><br />
           <p class="heading md reg">
-            A class to style any type of input element and handle the error
-            messages.
+            A classic modal overlay, in which you can include any content you
+            want. It works best in desktop view and can be used for making
+            pop-ups and sign-in window.
           </p>
           <br /><br />
           <hr />
           <br /><br />
           <p class="heading md lt">
-            Add <strong>'ipt'</strong> class to style primary input fields. In case mandatory
-            fields or fields with required attributes add <strong>'ipt--man'</strong> for error
-            handling. Add dimensions to input-container to limit the width of
-            fields.
-          </p>
+            To use modal component, you need to make use of four classes,
+            <strong>modal</strong>, <strong>modal--background</strong>,
+            <strong>modal--content</strong> and <strong>modal--close</strong>.
+            Add any content you want inside <strong>modal--content</strong>,
+            also use padding classes as per your needs. Enter a value from
+            <strong>10 | 20 | 30 | 40 | 50</strong> to set width of the modal
+            visible region in '%'.
+          </p><br /><br />
+
+          <div class="modal flex-ct-ct">
+            <div class="modal--background"></div>
+            <div class="modal--content md-s" wide="20">
+              <h1 class="sm">Modal</h1>
+              <p class="sm">
+                This is a sample text to show you how modal can be used to
+                showcase a small message as a pop-up
+              </p>
+            </div>
+            <span class="modal--close">
+              <i class="fas fa-times-circle"></i>
+            </span>
+          </div>
+
           <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct flex-vertical">
-              <div class="input--container">
-                <label for="user-name">
-                  <span class="lbl">Username</span>
-                  <input
-                    type="text"
-                    placeholder="Enter Username"
-                    class="ipt"
-                    id="user-name"
-                    name="user-name"
-                  />
-                </label>
-                <label for="pswd"
-                  ><span class="lbl">Password*</span>
-                  <input
-                    type="password"
-                    placeholder="Enter Password"
-                    class="ipt ipt--man"
-                    id="pswd"
-                    name="password"
-                    required
-                  />
-                  <span class="ipt--error">This field is mandatory</span>
-                </label>
+            <div class="component--output shadow flex-ct-ct flex-vertical">
+              <div class="flex-ct-sb">
+              </div>
+              <div>
+                <button class="btn btn--primary btn--md show--modal">
+                  Show Modal
+                </button>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;label for="user-name"&gt;
-    &lt;span class="lbl"&gt;Username&lt;/span&gt;
-    &lt;input type="text" placeholder="Enter Username" class="ipt"
-           id="user-name" name="user-name" /&gt;
-&lt;/label&gt;
+            <br /><br />
+            <div class="code--container xs-s">
+              <pre>
 
-&lt;label for="pswd"&gt;
-  &lt;span class="lbl"&gt;Password*&lt;/span&gt;
-   &lt;input type="password" placeholder="Enter Password" class="ipt ipt--man"
-          id="pswd" name="password" required /&gt;
-    &lt;span class="ipt--error"&gt;This field is mandatory&lt;/span&gt;
- &lt;/label&gt;
-              </code>
-            </pre>
+&lt;div class="modal flex-ct-ct"&gt;
+  &lt;div class="modal--background"&gt;&lt;/div&gt;
+  &lt;div class="modal--content md-s" wide="20"&gt;
+      &lt;h1 class="sm"&gt;Modal&lt;/h1&gt;
+      &lt;p class="sm"&gt; This is a sample text to show you how modal can be used to
+            showcase a small message as a pop-up
+      &lt;/p&gt;
+  &lt;/div&gt;
+&lt;span class="modal--close"&gt;&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+          </pre
+              >
+            </div>
           </div>
         </section>
       </main>

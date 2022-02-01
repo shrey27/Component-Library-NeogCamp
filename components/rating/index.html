@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating</title>
+    <link rel="stylesheet" href="rating.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+      integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <header class="box__header flex-ct-sb">
+        <div class="box-sm flex-ct-ct">
+          <a href="../../index.html">
+            <img class="box__image" src="../../assets/rocket.jpg" />
+          </a>
+          <span class="box-span">
+            <span class="lg sb n-s heading">Apollo-UI</span>
+            <span class="sm sb subheading">beta-version</span>
+          </span>
+        </div>
+        <div class="box-sm-contact flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </div>
+        <div class="box-sm-contact flex-ct-ct slider">
+          <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
+        </div>
+      </header>
+
+      <aside class="box__aside">
+        <section class="box__aside__options">
+          <div class="list--container">
+            <span class="list__title"
+              ><a href="/installation">Installation</a></span
+            >
+          </div>
+          <div class="list--container">
+            <span class="list__title">Utilities</span>
+            <ul class="list">
+              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../typography">Typography</a></li>
+            </ul>
+          </div>
+          <div class="list--container">
+            <span class="list__title">Components</span>
+            <ul class="list">
+              <li><a href="../avatar">Avatar</a></li>
+              <li><a href="../alert">Alert</a></li>
+              <li><a href="../badge">Badge</a></li>
+              <li><a href="../button">Button</a></li>
+              <li><a href="../card">Card</a></li>
+              <li><a href="../image">Image</a></li>
+              <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer flex-ct-ct">
+          <a href="https://twitter.com/home">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+            />
+          </a>
+          <a href="https://github.com/shrey27">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/shrey27/">
+            <img
+              class="box__image__sm"
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+            />
+          </a>
+        </section>
+      </aside>
+
+      <main class="box__main">
+        <section class="component">
+          <h1 class="heading lg sb">Rating</h1>
+          <br /><br />
+          <p class="heading md reg">
+            Rating component is a set of radio inputs that can come in handy
+            when designing rating system for an e-commerce platform or any
+            reviewing platform. Copy the code for any of the two sizes(1rem |
+            2rem) of rating fields and insert them in your document directly.
+          </p>
+          <br /><br />
+          <hr />
+          <br /><br />
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <fieldset class="rate">
+                  <input
+                    type="radio"
+                    id="rating10"
+                    name="rating"
+                    value="10"
+                  /><label class="md" for="rating10" title="5 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating9"
+                    name="rating"
+                    value="9"
+                  /><label
+                    class="half md"
+                    for="rating9"
+                    title="4 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating8"
+                    name="rating"
+                    value="8"
+                  /><label class="md" for="rating8" title="4 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating7"
+                    name="rating"
+                    value="7"
+                  /><label
+                    class="half md"
+                    for="rating7"
+                    title="3 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating6"
+                    name="rating"
+                    value="6"
+                  /><label class="md" for="rating6" title="3 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating5"
+                    name="rating"
+                    value="5"
+                  /><label
+                    class="half md"
+                    for="rating5"
+                    title="2 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating4"
+                    name="rating"
+                    value="4"
+                  /><label class="md" for="rating4" title="2 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating3"
+                    name="rating"
+                    value="3"
+                  /><label
+                    class="half md"
+                    for="rating3"
+                    title="1 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating2"
+                    name="rating"
+                    value="2"
+                  /><label class="md" for="rating2" title="1 star"></label>
+                  <input
+                    type="radio"
+                    id="rating1"
+                    name="rating"
+                    value="1"
+                  /><label
+                    class="half md"
+                    for="rating1"
+                    title="1/2 star"
+                  ></label>
+                </fieldset>
+              </div>
+            </div>
+            <br /><br />
+            <div class="component--output shadow">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <fieldset class="rate">
+                  <input
+                    type="radio"
+                    id="rating10"
+                    name="rating"
+                    value="10"
+                  /><label for="rating10" title="5 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating9"
+                    name="rating"
+                    value="9"
+                  /><label
+                    class="half"
+                    for="rating9"
+                    title="4 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating8"
+                    name="rating"
+                    value="8"
+                  /><label for="rating8" title="4 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating7"
+                    name="rating"
+                    value="7"
+                  /><label
+                    class="half"
+                    for="rating7"
+                    title="3 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating6"
+                    name="rating"
+                    value="6"
+                  /><label for="rating6" title="3 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating5"
+                    name="rating"
+                    value="5"
+                  /><label
+                    class="half"
+                    for="rating5"
+                    title="2 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating4"
+                    name="rating"
+                    value="4"
+                  /><label for="rating4" title="2 stars"></label>
+                  <input
+                    type="radio"
+                    id="rating3"
+                    name="rating"
+                    value="3"
+                  /><label
+                    class="half"
+                    for="rating3"
+                    title="1 1/2 stars"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="rating2"
+                    name="rating"
+                    value="2"
+                  /><label for="rating2" title="1 star"></label>
+                  <input
+                    type="radio"
+                    id="rating1"
+                    name="rating"
+                    value="1"
+                  /><label class="half" for="rating1" title="1/2 star"></label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../../utility/script.js"></script>
+  </body>
+</html>
