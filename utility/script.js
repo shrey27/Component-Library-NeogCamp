@@ -23,6 +23,11 @@ let modalBtn = document.querySelector('.modal--close');
 let showModalBtn = document.querySelector('.show--modal');
 let codeContainerAll = document.querySelectorAll('.code--container');
 
+let drawer = document.querySelector('.drawer');
+let drawerBack = document.querySelector('.drawer--background');
+let drawerBtn = document.querySelector('.drawer--close');
+let showDrawerBtn = document.querySelector('.show--drawer');
+
 let openToastBtn = document.querySelector('.show_toast_btn');
 let toast = document.querySelector('.toast');
 
@@ -98,6 +103,28 @@ showModalBtn &&
 
 modalBack && modalBack.addEventListener('click', (e) => closeModalFunc(e));
 modalBtn && modalBtn.addEventListener('click', (e) => closeModalFunc(e));
+
+//Drawer
+const closeModalFuncDrawer = (e) => {
+  if (e.target != modal) {
+    console.log('hello');
+    drawer.classList.remove('drawer--open');
+    codeContainerAll.forEach((elem) => {
+      elem.style.visibility = 'visible';
+    });
+  }
+};
+
+showDrawerBtn &&
+showDrawerBtn.addEventListener('click', () => {
+    drawer.classList.add('drawer--open');
+    codeContainerAll.forEach((elem) => {
+      elem.style.visibility = 'hidden';
+    });
+  });
+
+drawerBack && drawerBack.addEventListener('click', (e) => closeModalFuncDrawer(e));
+drawerBtn && drawerBtn.addEventListener('click', (e) => closeModalFuncDrawer(e));
 
 //Toast Message
 openToastBtn &&

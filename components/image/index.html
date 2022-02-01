@@ -81,6 +81,12 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+              <li><a href="../drawer/">Drawer</a></li>
             </ul>
           </div>
         </section>
@@ -108,7 +114,8 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Image</h1>
+          <h1 class="heading lg sb">Image</h1>
+          <br /><br />
           <p class="heading md reg">
             A custom class to showcase images in differnt sizes, shapes and
             responsiveness.
@@ -117,88 +124,96 @@
           <hr />
           <br /><br />
 
-          <h1 class="heading xl sb">Sizes of Image</h1>
+          <h1 class="heading md sb">Sizes of Image</h1>
+          <br /><br />
           <p class="heading md lt">
             To size a regular shaped image use 'img--size__name' to set the
             dimensions.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--sm"
-              />
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--md"
-              />
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--lg"
-              />
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--sm"
+                />
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--md"
+                />
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--lg"
+                />
+              </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--sm"/&gt;
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--md" /&gt;
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--lg" /&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;img src="image.jpg"
+  alt="Image" class="img--sm"/&gt;
+&lt;img src="image.jpg"
+  alt="Image" class="img--md" /&gt;
+&lt;img src="image.jpg"
+  alt="Image" class="img--lg" /&gt;</code></pre>
+            </div>
           </div>
 
-          <h1 class="heading xl sb">Round Image</h1>
-          <p class="heading md lt">
-            Add 'round' class to make images circular. Fix the dimensions to
-            keep the shape of circular image perfect.
-          </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--sm round"
-              />
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--md round"
-              />
-              <img
-                src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                alt="Image"
-                class="img--lg round"
-              />
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--sm round"
+                />
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--md round"
+                />
+                <img
+                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                  alt="Image"
+                  class="img--lg round"
+                />
+              </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--sm round"/&gt;
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--md round" /&gt;
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--lg round" /&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class="html">&lt;img src="image.jpg"
+  alt="Image" class="img--sm round"/&gt;
+&lt;img src="image.jpg"
+  alt="Image" class="img--md round" /&gt;
+&lt;img src="image.jpg"
+  alt="Image" class="img--lg round" /&gt;</code></pre>
+            </div>
           </div>
+          <br /><br />
 
-          <h1 class="heading xl sb">Responsive Image</h1>
+          <h1 class="heading md sb">Responsive Image</h1>
+          <br /><br />
           <p class="heading md lt">
-            Add 'img--resp' class to make images responsive with cover fit. Size of image depends on
-            outer parent container.
+            Add 'img--resp' class to make images responsive with cover fit. Size
+            of image depends on outer parent container.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <div class="image-container">
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
                 <img
                   src="https://www.w3schools.com/w3css/img_snowtops.jpg"
                   alt="Image"
@@ -206,14 +221,11 @@
                 />
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-    alt="Image" class="img--resp" /&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;img src="image.jpg"
+alt="Image" class="img--resp" /&gt;</code></pre>
+            </div>
           </div>
         </section>
       </main>

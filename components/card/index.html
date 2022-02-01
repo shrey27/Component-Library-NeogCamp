@@ -81,6 +81,12 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+              <li><a href="../drawer/">Drawer</a></li>
             </ul>
           </div>
         </section>
@@ -108,7 +114,8 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Card</h1>
+          <h1 class="heading lg sb">Card</h1>
+          <br /><br />
           <p class="heading md reg">
             A card is a very handy component to showcase a small piece of
             information in concise manner. It is very useful on an e-commerce
@@ -117,56 +124,21 @@
           <br /><br />
           <hr />
           <br /><br />
-          <h1 class="heading lg sb">Text Only Card</h1>
+          <h1 class="heading md sb">Text Only Card</h1>
+          <br /><br />
           <p class="heading md lt">
             A basic card with no banner or shadow. Put 'card' class over a
             container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card">
-                <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                <p class="card--content">
-                  Visit ten places on our planet that are undergoing the biggest
-                  changes today. Lets share our experience and collaborate to
-                  take this research forward.
-                </p>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
               </div>
-            </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card"&gt;
-    &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-    &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-    &lt;p class="card--content"&gt;Visit ten places on our planet that are 
-    undergoing the biggest changes today. Lets share our experience and 
-    collaborate to take this research forward.
-    &lt;/p&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
-          </div>
-          <br /><br />
-          <h1 class="heading lg sb">Card with Badge</h1>
-          <p class="heading md lt">
-            A basic card with banner and a badge. Put 'card' class over a
-            container and add subsequent elements in it for complete
-            implementation.
-          </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card shdw">
-                <span class="card--badge">BADGE</span>
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Banner"
-                  class="card--banner"
-                />
-                <section class="content">
+              <div class="code--text">
+                <div class="card">
                   <h1 class="card--title flex-ct-st">Our Changing planet</h1>
                   <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
                   <p class="card--content">
@@ -174,218 +146,264 @@
                     biggest changes today. Lets share our experience and
                     collaborate to take this research forward.
                   </p>
-                </section>
+                </div>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card shdw"&gt;
-    &lt;span class="card--badge"&gt;BADGE&lt;/span&gt;
-    &lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="Banner" 
-    class="card--banner"/&gt;
-    &lt;section class="content"&gt;
-        &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-        &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-        &lt;p class="card--content"&gt; Visit ten places on our planet that are 
-        undergoing the biggest changes today. Lets share our experience and 
-        collaborate to take this research forward.
-        &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card"&gt;
+&lt;h1 class="card--title flex-ct-st"&gt;...&lt;
+/h1&gt;
+&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;
+/h1&gt;
+&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <br /><br />
+          <h1 class="heading md sb">Card with Badge</h1>
+          <br /><br />
+          <p class="heading md lt">
+            A basic card with banner and a badge. Put 'card' class over a
+            container and add subsequent elements in it for complete
+            implementation.
+          </p>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="card shdw">
+                  <span class="card--badge">BADGE</span>
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner"
+                    class="card--banner"
+                  />
+                  <section class="content">
+                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card--content">
+                      Visit ten places on our planet that are undergoing the
+                      biggest changes today. Lets share our experience and
+                      collaborate to take this research forward.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card shdw"&gt;
+&lt;span class="card--badge"&gt;BADGE&lt;/span&gt;
+  &lt;img src="image.jpg" alt="Banner" class="card--banner"/&gt;
+  &lt;section class="content"&gt;
+  &lt;h1 class="card--title flex-ct-st"&gt;...&lt;
+  /h1&gt;
+  &lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;
+  /h1&gt;
+  &lt;p class="card--content"&gt;...&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Card with Text Overlay</h1>
+          <h1 class="heading md sb">Card with Text Overlay</h1>
+          <br /><br />
           <p class="heading md lt">
             A basic card with banner and text over the banner. Put 'card' class
             over a container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card">
-                <div class="overlay">
-                  <img
-                    src="https://www.w3schools.com/w3css/img_lights.jpg"
-                    alt="Banner"
-                    class="overlay--banner overlay--back"
-                  />
-                  <h1 class="overlay--title overlay--front flex-ct-st">
-                    Our Changing planet
-                  </h1>
-                  <h1 class="overlay--subtitle overlay--front flex-ct-st">
-                    by Kurt Wagner
-                  </h1>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="card">
+                  <div class="overlay">
+                    <img
+                      src="https://www.w3schools.com/w3css/img_lights.jpg"
+                      alt="Banner"
+                      class="overlay--banner overlay--back"
+                    />
+                    <h1 class="overlay--title overlay--front flex-ct-st">
+                      Our Changing planet
+                    </h1>
+                    <h1 class="overlay--subtitle overlay--front flex-ct-st">
+                      by Kurt Wagner
+                    </h1>
+                  </div>
+                  <p class="card--content">
+                    Visit ten places on our planet that are undergoing the
+                    biggest changes today. Lets share our experience and
+                    collaborate to take this research forward.
+                  </p>
                 </div>
-                <p class="card--content">
-                  Visit ten places on our planet that are undergoing the biggest
-                  changes today. Lets share our experience and collaborate to
-                  take this research forward.
-                </p>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card"&gt;
-  &lt;div class="overlay"&gt;
-    &lt;img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Banner"
-        class="overlay--banner overlay--back"/&gt;
-    &lt;h1 class="overlay--title overlay--front flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-    &lt;h1 class="overlay--subtitle overlay--front flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-  &lt;/div&gt;
-  &lt;p class="card--content"&gt;Visit ten places on our planet that are 
-  undergoing the biggest changes today. Lets share our experience and 
-  collaborate to take this research forward.
-  &lt;/p&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card"&gt;
+&lt;div class="overlay"&gt;
+&lt;img src="img.jpg" alt="Banner" class="overlay--banner 
+overlay--back"/&gt;
+&lt;h1 class="overlay--title overlay--front flex-ct-st"&gt;
+    ...&lt;/h1&gt;
+&lt;h1 class="overlay--subtitle overlay--front flex-ct-st"&gt;
+...&lt;/h1&gt;&lt;/div&gt;
+&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Card with Dismiss</h1>
+          <h1 class="heading md sb">Card with Dismiss</h1>
+          <br /><br />
           <p class="heading md lt">
             A dynamic card with banner and dismiss functionality. Put 'card',
             'dismiss' and 'open' class over a container and add subsequent
             elements in it for complete implementation. Add script.js in your
             document to make this functional.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card dismiss open">
-                <span class="card--dismiss">
-                  <i class="fas fa-times-circle"></i>
-                </span>
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Banner"
-                  class="card--banner"
-                />
-                <section class="content">
-                  <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                  <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                  <p class="card--content">
-                    Visit ten places on our planet that are undergoing the
-                    biggest changes today. Lets share our experience and
-                    collaborate to take this research forward.
-                  </p>
-                </section>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="card dismiss open">
+                  <span class="card--dismiss">
+                    <i class="fas fa-times-circle"></i>
+                  </span>
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner"
+                    class="card--banner"
+                  />
+                  <section class="content">
+                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card--content">
+                      Visit ten places on our planet that are undergoing the
+                      biggest changes today. Lets share our experience and
+                      collaborate to take this research forward.
+                    </p>
+                  </section>
+                </div>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card dismiss open"&gt;
-    &lt;span class="card--dismiss"&gt;&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
-    &lt;/span&gt;
-    &lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt="Banner"
-      class="card--banner"/&gt;
-    &lt;section class="content"&gt;
-        &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-        &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-        &lt;p class="card--content"&gt;Visit ten places on our planet that are 
-        undergoing the biggest changes today. Lets share our experience and 
-        collaborate to take this research forward.
-        &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card dismiss open"&gt;
+&lt;span class="card--dismiss"&gt;&lt;i class="fas fa-times-circle"
+&gt;&lt;/i&gt; &lt;/span&gt;
+&lt;img src="img.jpg" alt="Banner" class="card--banner"/&gt;
+&lt;section class="content"&gt;
+&lt;h1 class="card--title flex-ct-st"&gt;...&lt;/h1&gt;
+&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;/h1&gt; 
+&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Card with Shadow</h1>
+          <h1 class="heading md sb">Card with Shadow</h1>
+          <br /><br />
           <p class="heading md lt">
             A basic card with banner and shadow. Put 'card' and 'shdw' class
             over a container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card shdw">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Banner"
-                  class="card--banner"
-                />
-                <section class="content">
-                  <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                  <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                  <p class="card--content">
-                    Visit ten places on our planet that are undergoing the
-                    biggest changes today. Lets share our experience and
-                    collaborate to take this research forward.
-                  </p>
-                </section>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="card shdw">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner"
+                    class="card--banner"
+                  />
+                  <section class="content">
+                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card--content">
+                      Visit ten places on our planet that are undergoing the
+                      biggest changes today. Lets share our experience and
+                      collaborate to take this research forward.
+                    </p>
+                  </section>
+                </div>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card shdw"&gt;
-    &lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-        alt="Banner" class="card--banner"/&gt;
-    &lt;section class="content"&gt;
-     &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-     &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-     &lt;p class="card--content"&gt;Visit ten places on our planet that are undergoing the
-        biggest changes today. Lets share our experience and collaborate to take this 
-        research forward.
-     &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card shdw"&gt;
+&lt;img src="img.jpg"alt="Banner" class="card--banner"/&gt;
+&lt;section class="content"&gt;
+&lt;h1 class="card--title flex-ct-st"&gt;...;/h1&gt;
+&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;/h1&gt;
+&lt;p class="card--content"&gt;...&lt;/p&gt;&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Horizontal Card</h1>
+          <h1 class="heading md sb">Horizontal Card</h1>
+          <br /><br />
           <p class="heading md lt">
             A basic card with banner but in landscape orientation. Put 'card'
             and 'landscape' class over a container and add subsequent elements
             in it for complete implementation.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output--ns flex-ct-ct">
-              <div class="card landscape">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Banner"
-                  class="card--banner"
-                />
-                <section class="content">
-                  <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                  <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                  <p class="card--content">
-                    Visit ten places on our planet that are undergoing the
-                    biggest changes today. Lets share our experience and
-                    collaborate to take this research forward.
-                  </p>
-                </section>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="card landscape">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner"
+                    class="card--banner"
+                  />
+                  <section class="content">
+                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card--content">
+                      Visit ten places on our planet that are undergoing the
+                      biggest changes today. Lets share our experience and
+                      collaborate to take this research forward.
+                    </p>
+                  </section>
+                </div>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="card landscape"&gt;
-    &lt;img src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-        alt="Banner" class="card--banner"/&gt;
-    &lt;section class="content"&gt;
-      &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-      &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-       &lt;p class="card--content"&gt;Visit ten places on our planet that are 
-        undergoing the biggest changes today. Lets share our experience and
-        collaborate to take this research forward.
-      &lt;/p&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="card landscape"&gt;
+&lt;img src="img.jpg"
+      alt="Banner" class="card--banner"/&gt;
+  &lt;section class="content"&gt;
+  &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
+  &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
+  &lt;p class="card--content"&gt;Visit ten places on our planet that are 
+      undergoing the biggest changes today. Lets share our experience and
+      collaborate to take this research forward.
+  &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+            </div>
           </div>
         </section>
       </main>

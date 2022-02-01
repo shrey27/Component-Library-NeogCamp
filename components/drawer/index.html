@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
-    <link rel="stylesheet" href="alert.css" />
+    <title>Drawer</title>
+    <link rel="stylesheet" href="drawer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -114,47 +114,60 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Alert</h1>
+          <h1 class="heading lg sb">Drawer</h1>
           <br /><br />
           <p class="heading md reg">
-            An alert displays a short, important message in a way that attracts
-            the user's attention without interrupting the user's task.
+            A classic drawer overlay, in which you can include any content you
+            want. It works best in mobile view as a complimentary component to
+            modal and can be used for making pop-up windows.
           </p>
           <br /><br />
           <hr />
           <br /><br />
           <p class="heading md lt">
-            Add 'alert' and its supporting class like 'alert--error' or
-            'alert--primary' to any container element to create an alert.
+            To use the drawer component, you need to make use of four classes,
+            <strong>drawer</strong>, <strong>drawer--background</strong>,
+            <strong>drawer--content</strong> and <strong>drawer--close</strong>.
+            Add any content you want inside <strong>drawer--content</strong>,
+            also use padding classes as per your needs. Enter a value from
+            <strong>top | bottom | left | right</strong> to set the direction of the drawer
+            to pop from.
           </p>
+          <br /><br />
+
+          <div class="drawer flex-ct-ct">
+            <div class="drawer--background"></div>
+            <div class="drawer--content md-s" direction='bottom'>
+              <h1 class="sm">Drawer</h1>
+              <p class="sm">
+                This is a sample text to show you how drawer can be used to
+                showcase a small message as a pop-up in mobile view.
+              </p>
+            </div>
+            <span class="drawer--close">
+              <i class="fas fa-times-circle"></i>
+            </span>
+          </div>
 
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-              </div>
-              <div class="code--text">
-                <div class="alert alert--primary">
-                  <span>Primary! This is an alert!</span>
-                </div>
-                <div class="alert alert--error">
-                  <span>Error! This is an alert!</span>
-                </div>
-                <div class="alert alert--success">
-                  <span>Success! This is an alert!</span>
-                </div>
-                <div class="alert alert--warning">
-                  <span>Warning! This is an alert!</span>
-                </div>
+              <div class="flex-ct-ct"></div>
+              <div>
+                <button class="btn btn--primary btn--md show--drawer">
+                  Show Drawer
+                </button>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;div class="alert alert--primary"&gt;Primary! This is an alert!&lt;/div&gt;
-&lt;div class="alert alert--error"&gt;Error! This is an alert&lt;/div&gt;
-&lt;div class="alert alert--success"&gt;Success! This is an alert&lt;/div&gt;
-&lt;div class="alert alert--warning"&gt;Warning! This is an alert&lt;/div&gt;</code></pre>
+              <pre><code class='html'>&lt;div class="drawer flex-ct-ct"&gt;
+&lt;div class="drawer--background"&gt;&lt;/div&gt;
+&lt;div class="drawer--content md-s" wide="20"&gt;
+    &lt;h1 class="sm"&gt;drawer&lt;/h1&gt;
+    &lt;p class="sm"&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;span class="drawer--close"&gt;&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>

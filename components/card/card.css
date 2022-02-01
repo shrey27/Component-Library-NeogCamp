@@ -5,7 +5,6 @@
 .card {
   position: relative;
   width: 20em;
-  height: auto;
   background-color: var(--white);
   border: 2px solid var(--border);
   border-radius: 10px;
@@ -110,7 +109,8 @@
 /* Horizontal Card */
 .landscape {
   display: flex;
-  width: 30em;
+  height: auto;
+  width: 100%;
 }
 .landscape .card--banner {
   height: auto;
@@ -119,4 +119,9 @@
 }
 .landscape .content {
   border-radius: 10px 0 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .landscape {
+    width: 30rem;
+  }
 }
