@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="box">
-      <header class="box__header flex-ct-sb">
+      <header class="box__header flex-ct-sb sm-s">
         <div class="box-sm flex-ct-ct">
           <a href="../index.html">
             <img class="box__image" src="../assets/rocket.jpg" />
@@ -81,6 +81,12 @@
               <li><a href="../components/card">Card</a></li>
               <li><a href="../components/image">Image</a></li>
               <li><a href="../components/input">Input</a></li>
+              <li><a href="../components/navbar/">Navbar</a></li>
+              <li><a href="../components/modal/">Modal</a></li>
+              <li><a href="../components/toast/">Toast</a></li>
+              <li><a href="../components/hamburger/">Hamburger</a></li>
+              <li><a href="../components/rating/">Rating</a></li>
+              <li><a href="../components/drawer/">Drawer</a></li>
             </ul>
           </div>
         </section>
@@ -108,8 +114,7 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Typography</h1>
-          <br />
+          <h1 class="heading lg sb">Typography</h1><br /><br />
           <p class="heading md reg">
             Typography is a fundamental need of web development. I have defined
             the <strong>font-size</strong>, <strong>font-family</strong>,
@@ -177,25 +182,25 @@
             </tr>
           </table>
           <br /><br />
-          <div class="component--output--wrapper">
-            <div class="component--output flex-st-ct flex-vertical">
-              <span class="xl heading">XL-text Font-Size: 48px</span>
-              <span class="lg heading">LG-text Font-Size: 32px</span>
-              <span class="md heading">MD-text Font-Size: 24px</span>
-              <span class="sm heading">SM-text Font-Size: 16px</span>
-              <span class="xs heading">XS-text Font-Size: 8px</span>
-            </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;span class="xl heading"&gt;XL-text Font-Size: 48px&lt;/span&gt;
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text flex-ct-ct flex-vertical">
+                <span class="xl heading">XL-text Font-Size: 48px</span>
+                <span class="lg heading">LG-text Font-Size: 32px</span>
+                <span class="md heading">MD-text Font-Size: 24px</span>
+                <span class="sm heading">SM-text Font-Size: 16px</span>
+                <span class="xs heading">XS-text Font-Size: 8px</span>
+              </div>
+            </div><br /><br />
+            <pre class="code--container"><code class="html">&lt;span class="xl heading"&gt;XL-text Font-Size: 48px&lt;/span&gt;
 &lt;span class="lg heading"&gt;LG-text Font-Size: 32px&lt;/span&gt;
 &lt;span class="md heading"&gt;MD-text Font-Size: 24px&lt;/span&gt;
 &lt;span class="sm heading"&gt;SM-text Font-Size: 16px&lt;/span&gt;
-&lt;span class="xs heading"&gt;XS-text Font-Size: 8px&lt;/span&gt;
-              </code>
-            </pre>
+&lt;span class="xs heading"&gt;XS-text Font-Size: 8px&lt;/span&gt;</code></pre>
           </div>
           <br /><br />
 
@@ -231,25 +236,25 @@
             </tr>
           </table>
           <br /><br />
-          <div class="component--output--wrapper">
-            <div class="component--output flex-st-ct flex-vertical">
-              <span class="md lt heading">LT-text Font-Weight: 300</span>
-              <span class="md reg heading">REG-text Font-Weight: 400</span>
-              <span class="md sb heading">SB-text Font-Weight: 600</span>
-              <span class="lg bd heading">BD-text Font-Weight: 800</span>
-              <span class="xl bl heading">BL-text Font-Weight: 900</span>
-            </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;span class="md lt heading"&gt;LT-text Font-Weight: 300&lt;/span&gt;
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text flex-ct-ct flex-vertical">
+                <span class="md lt heading">LT-text Font-Weight: 300</span>
+                <span class="md reg heading">REG-text Font-Weight: 400</span>
+                <span class="md sb heading">SB-text Font-Weight: 600</span>
+                <span class="lg bd heading">BD-text Font-Weight: 800</span>
+                <span class="xl bl heading">BL-text Font-Weight: 900</span>  
+              </div>
+            </div><br /><br />
+            <pre class="code--container"><code class="html">&lt;span class="md lt heading"&gt;LT-text Font-Weight: 300&lt;/span&gt;
 &lt;span class="md reg heading"&gt;REG-text Font-Weight: 400&lt;/span&gt;
 &lt;span class="md sb heading"&gt;SB-text Font-Weight: 600&lt;/span&gt;
 &lt;span class="md bd heading"&gt;BD-text Font-Weight: 800&lt;/span&gt;
-&lt;span class="md bl heading"&gt;BL-text Font-Weight: 900&lt;/span&gt;
-              </code>
-            </pre>
+&lt;span class="md bl heading"&gt;BL-text Font-Weight: 900&lt;/span&gt;</code></pre>
           </div>
           <br /><br />
 
@@ -293,29 +298,27 @@
             </tr>
           </table>
           <br /><br />
-          <div class="component--output--wrapper">
-            <div class="component--output flex-st-ct flex-vertical">
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
               <div class="pd-eg-container">
                 <span class="xs-s pd-eg"></span>
                 <span class="sm-s pd-eg"></span>
                 <span class="md-s pd-eg"></span>
                 <span class="lg-s pd-eg"></span>
                 <span class="xl-s pd-eg"></span>
-                <span class="xxl-s pd-eg"></span>
+                <span class="xxl-s pd-eg"></span>  
               </div>
-            </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;span class="xs-s pd-eg"&gt;&lt;/span&gt;
+            </div><br /><br />
+            <pre class="code--container"><code class="html">&lt;span class="xs-s pd-eg"&gt;&lt;/span&gt;
 &lt;span class="sm-s pd-eg"&gt;&lt;/span&gt;
 &lt;span class="md-s pd-eg"&gt;&lt;/span&gt;
 &lt;span class="lg-s pd-eg"&gt;&lt;/span&gt;
 &lt;span class="xl-s pd-eg"&gt;&lt;/span&gt;
-&lt;span class="xxl-s pd-eg"&gt;&lt;/span&gt;
-              </code>
-            </pre>
+&lt;span class="xxl-s pd-eg"&gt;&lt;/span&gt;</code></pre>
           </div>
           <br /><br />
 
