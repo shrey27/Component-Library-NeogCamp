@@ -33,7 +33,7 @@
       <div class="box">
         <header class="box__header flex-ct-sb">
           <div class="box-sm flex-ct-ct">
-            <a href="/introduction">
+            <a href="../../index.html">
               <img class="box__image" src="../../assets/rocket.jpg" />
             </a>
             <span class="box-span">
@@ -74,14 +74,14 @@
               >
             </div>
             <div class="list--container">
-              <span class="list__title"><a href="">Utilities</a></span>
+              <span class="list__title">Utilities</span>
               <ul class="list">
-                <li><a href="">Color Palette</a></li>
-                <li><a href="">Typography</a></li>
+                <li><a href="../../color">Color Palette</a></li>
+                <li><a href="../../typography">Typography</a></li>
               </ul>
             </div>
             <div class="list--container">
-              <span class="list__title"><a href="">Components</a></span>
+              <span class="list__title">Components</span>
               <ul class="list">
                 <li><a href="../avatar">Avatar</a></li>
                 <li><a href="../alert">Alert</a></li>
@@ -90,6 +90,11 @@
                 <li><a href="../card">Card</a></li>
                 <li><a href="../image">Image</a></li>
                 <li><a href="../input">Input</a></li>
+                <li><a href="../navbar/">Navbar</a></li>
+                <li><a href="../modal/">Modal</a></li>
+                <li><a href="../toast/">Toast</a></li>
+                <li><a href="../hamburger/">Hamburger</a></li>
+                <li><a href="../rating/">Rating</a></li>
               </ul>
             </div>
           </section>
@@ -117,7 +122,8 @@
 
         <main class="box__main">
           <section class="component">
-            <h1 class="heading xl sb">Avatar</h1>
+            <h1 class="heading md sb">Avatar</h1>
+            <br /><br />
             <p class="heading md reg">
               An avatar is perfect to represent small images, such as profile
               picture or thumbnails.
@@ -128,64 +134,79 @@
             <p class="heading md lt">
               Add 'avatar' on image tag to create an avatar. To handle size add
               supporting classes like 'avatar--sm' or 'avatar--md' or
-              'avatar--lg'. Adding 'sq' class makes avatar square with curved vertices.
+              'avatar--lg'. Adding 'sq' class makes avatar square with curved
+              vertices.
             </p>
             <div class="component--output--wrapper">
-              <div class="component--output flex-ct-ct">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--sm"
-                />
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--md"
-                />
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--lg"
-                />
+              <div class="component--output shadow flex-ct-ct flex-vertical">
+                <div class="flex-ct-sb">
+                  <i class="far fa-copy btn btn--icons btn--round"></i>
+                  <span class="code--msg">Copied!</span>
+                </div>
+                <div class="code--text">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--sm"
+                  />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--md"
+                  />
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--lg"
+                  />
+                </div>
               </div>
-              <pre class="code--container flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-                <code class="code--text html">
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--md"/&gt;
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--lg"/&gt;
-                </code>
-              </pre>
+              <br /><br />
+              <div class="code--container xs-s">
+                <pre>
+
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--md"/&gt;
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--lg"/&gt;
+              </pre
+                >
+              </div>
             </div>
 
             <div class="component--output--wrapper">
-              <div class="component--output flex-ct-ct">
-                <img
-                  src="https://www.w3schools.com/w3images/avatar2.png"
-                  alt="Avatar"
-                  class="avatar avatar--sm sq"
-                />
-                <img
-                  src="https://www.w3schools.com/w3images/avatar2.png"
-                  alt="Avatar"
-                  class="avatar avatar--md sq"
-                />
-                <img
-                  src="https://www.w3schools.com/w3images/avatar2.png"
-                  alt="Avatar"
-                  class="avatar avatar--lg sq"
-                />
+              <div class="component--output shadow flex-ct-ct flex-vertical">
+                <div class="flex-ct-sb">
+                  <i class="far fa-copy btn btn--icons btn--round"></i>
+                  <span class="code--msg">Copied!</span>
+                </div>
+                <div class="code--text">
+                  <img
+                    src="https://www.w3schools.com/w3images/avatar2.png"
+                    alt="Avatar"
+                    class="avatar avatar--sm sq"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3images/avatar2.png"
+                    alt="Avatar"
+                    class="avatar avatar--md sq"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3images/avatar2.png"
+                    alt="Avatar"
+                    class="avatar avatar--lg sq"
+                  />
+                </div>
               </div>
-              <pre class="code--container flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-                <code class="code--text html">
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--sm sq"/&gt;
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--md sq"/&gt;
-&lt;img src="image.png" alt="Avatar" class="avatar avatar--lg sq"/&gt;
-                </code>
-              </pre>
+              <br /><br />
+              <div class="code--container xs-s">
+                <pre>
+                
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm sq"/&gt;
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--md sq"/&gt;
+            &lt;img src="image.png" alt="Avatar" class="avatar avatar--lg sq"/&gt;
+              </pre
+                >
+              </div>
             </div>
           </section>
         </main>

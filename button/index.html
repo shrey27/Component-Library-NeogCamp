@@ -24,7 +24,7 @@
     <div class="box">
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
-          <a href="/introduction">
+          <a href="../../index.html">
             <img class="box__image" src="../../assets/rocket.jpg" />
           </a>
           <span class="box-span">
@@ -65,14 +65,14 @@
             >
           </div>
           <div class="list--container">
-            <span class="list__title"><a href="">Utilities</a></span>
+            <span class="list__title">Utilities</span>
             <ul class="list">
-              <li><a href="">Color Palette</a></li>
-              <li><a href="">Typography</a></li>
+              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
           <div class="list--container">
-            <span class="list__title"><a href="">Components</a></span>
+            <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
               <li><a href="../alert">Alert</a></li>
@@ -81,6 +81,11 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
             </ul>
           </div>
         </section>
@@ -108,7 +113,8 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Button</h1>
+          <h1 class="heading md sb">Button</h1>
+          <br /><br />
           <p class="heading md reg">
             A button is amulti-purspose component, which can be used to submit
             form, redirect to a web-page, or trigger an event.
@@ -117,6 +123,7 @@
           <hr />
           <br /><br />
           <h1 class="heading lg sb">Types of Buttons</h1>
+          <br /><br />
           <p class="heading md lt">
             Add 'btn' around an icon, anchor tag or button tag to create a
             button. Supporting classes highlight different color shades and
@@ -124,108 +131,142 @@
             <strong>primary button</strong>, an <strong>anchor button</strong>,
             an <strong>input</strong> or an <strong>icon</strong> button.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <button class="btn btn--primary">Primary</button>
-              <a class="btn btn--link">Anchor</a>
-              <input class="btn btn--curve" type="submit" value="Submit" />
-              <i class="fas fa-shopping-cart medium"></i>
-              <i class="fas fa-plus btn btn--float btn--round"></i>
-            </div>
 
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;button class="btn btn--primary"&gt;Primary&lt;/button&gt;
-&lt;a class="btn btn--link"&gt;Anchor&lt;/a&gt;
-&lt;input class="btn btn--curve" type="submit" value="Submit" /&gt;
-&lt;i class="fas fa-shopping-cart medium"&gt;&lt;/i&gt;
-&lt;i class="fas fa-plus btn btn--float btn--round"&gt;&lt;/i&gt;
-              </code>
-            </pre>
+          <div class="component--output--wrapper">
+            <div class="component--output shadow flex-ct-ct flex-vertical">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <button class="btn btn--primary">Primary</button>
+                <a class="btn btn--link">Anchor</a>
+                <input class="btn btn--curve" type="submit" value="Submit" />
+                <i class="fas fa-shopping-cart medium"></i>
+                <i class="fas fa-plus btn btn--float btn--round"></i>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container xs-s">
+              <pre>
+
+          &lt;button class="btn btn--primary"&gt;Primary&lt;/button&gt;
+          &lt;a class="btn btn--link"&gt;Anchor&lt;/a&gt;
+          &lt;input class="btn btn--curve" type="submit" value="Submit" /&gt;
+          &lt;i class="fas fa-shopping-cart medium"&gt;&lt;/i&gt;
+          &lt;i class="fas fa-plus btn btn--float btn--round"&gt;&lt;/i&gt;
+            </pre
+              >
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Standard Buttons</h1>
+          <h1 class="heading md sb">Standard Buttons</h1>
+          <br /><br />
           <p class="heading md lt">
-            Add <strong>'btn--color_name'</strong> to create different shade of button.
+            Add <strong>'btn--color_name'</strong> to create different shade of
+            button.
           </p>
           <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <button class="btn btn--white">White</button>
-              <button class="btn btn--light">Light</button>
-              <button class="btn btn--dark">Dark</button>
-              <button class="btn btn--black">Black</button>
+            <div class="component--output shadow flex-ct-ct flex-vertical">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <button class="btn btn--white">White</button>
+                <button class="btn btn--light">Light</button>
+                <button class="btn btn--dark">Dark</button>
+                <button class="btn btn--black">Black</button>
+              </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-                  <i class="far fa-copy btn btn--icons btn--round"></i>
-                  <span class="code--msg">Copied!</span>
-                  <code class='code--text html'>
-&lt;button class="btn btn--white"&gt;White&lt;/button&gt;
-&lt;button class="btn btn--light"&gt;Light&lt;/button&gt;
-&lt;button class="btn btn--dark"&gt;Dark&lt;/button&gt;
-&lt;button class="btn btn--black"&gt;Black&lt;/button&gt;
-                  </code>
-            </pre>
+            <br /><br />
+            <div class="code--container xs-s">
+              <pre>
+
+          &lt;button class="btn btn--white"&gt;White&lt;/button&gt;
+          &lt;button class="btn btn--light"&gt;Light&lt;/button&gt;
+          &lt;button class="btn btn--dark"&gt;Dark&lt;/button&gt;
+          &lt;button class="btn btn--black"&gt;Black&lt;/button&gt;
+            </pre
+              >
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Colors</h1>
+          <h1 class="heading md sb">Colors</h1>
+          <br /><br />
           <p class="heading md lt">
             Buttons in these category are more relevant to some pre-defined
             use-cases, like error handling, show notification, floating button
             or an anchor tag button.
           </p>
           <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <button class="btn btn--primary">Primary</button>
-              <button class="btn btn--link">Link</button>
-              <button class="btn btn--success">Success</button>
-              <button class="btn btn--error">Error</button>
-              <button class="btn btn--icons">Icon</button>
-              <button class="btn btn--float">Floating</button>
+            <div class="component--output shadow flex-ct-ct flex-vertical">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--link">Link</button>
+                <button class="btn btn--success">Success</button>
+                <button class="btn btn--error">Error</button>
+                <button class="btn btn--icons">Icon</button>
+                <button class="btn btn--float">Floating</button>
+              </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-                  <i class="far fa-copy btn btn--icons btn--round"></i>
-                  <span class="code--msg">Copied!</span>
-                  <code class='code--text html'>
-&lt;button class="btn btn--primary"&gt;Primary&lt;/button&gt;
-&lt;button class="btn btn--link"&gt;Link&lt;/button&gt;
-&lt;button class="btn btn--success"&gt;Success&lt;/button&gt;
-&lt;button class="btn btn--error"&gt;Error&lt;/button&gt;
-&lt;button class="btn btn--icons"&gt;Icon&lt;/button&gt;
-&lt;button class="btn btn--float"&gt;Floating&lt;/button&gt;
-                  </code>
-            </pre>
+            <br /><br />
+            <div class="code--container xs-s">
+              <pre>
+
+          &lt;button class="btn btn--primary"&gt;Primary&lt;/button&gt;
+          &lt;button class="btn btn--link"&gt;Link&lt;/button&gt;
+          &lt;button class="btn btn--success"&gt;Success&lt;/button&gt;
+          &lt;button class="btn btn--error"&gt;Error&lt;/button&gt;
+          &lt;button class="btn btn--icons"&gt;Icon&lt;/button&gt;
+          &lt;button class="btn btn--float"&gt;Floating&lt;/button&gt;
+            </pre
+              >
+            </div>
           </div>
           <br /><br />
-          <h1 class="heading lg sb">Sizes</h1>
+          <h1 class="heading md sb">Sizes</h1>
+          <br /><br />
           <p class="heading md lt">
-            To control shapes and sizes of buttons add <strong>'btn--size'</strong> or
-            <strong>'btn--round'</strong> along with other button classes.
+            To control shapes and sizes of buttons add
+            <strong>'btn--size'</strong> or <strong>'btn--round'</strong> along
+            with other button classes.
           </p>
+
           <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <button class="btn btn--sm">Small</button>
-              <button class="btn">Normal</button>
-              <button class="btn btn--md">Medium</button>
-              <button class="btn btn--lg">Large</button>
-              <button class="btn btn--curve">Curve</button>
-              <i class="fas fa-bars btn btn--round lg sb"></i>
-              <button class="btn btn--wide">Wide</button>
+            <div class="component--output shadow flex-ct-ct flex-vertical">
+              <div class="flex-ct-sb">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <button class="btn btn--sm">Small</button>
+                <button class="btn">Normal</button>
+                <button class="btn btn--md">Medium</button>
+                <button class="btn btn--lg">Large</button>
+                <button class="btn btn--curve">Curve</button>
+                <i class="fas fa-bars btn btn--round lg sb"></i>
+                <button class="btn btn--wide">Wide</button>
+              </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-                  <i class="far fa-copy btn btn--icons btn--round"></i>
-                  <span class="code--msg">Copied!</span>
-                  <code class='code--text html'>
-&lt;button class="btn btn--sm"&gt;Small&lt;/button&gt;
-&lt;button class="btn"&gt;Normal&lt;/button&gt;
-&lt;button class="btn btn--md"&gt;Medium&lt;/button&gt;
-&lt;button class="btn btn--lg"&gt;Large&lt;/button&gt;
-&lt;button class="btn btn--curve"&gt;Curve&lt;/button&gt;
-&lt;i class="fas fa-bars btn btn--round lg sb"&gt;&lt;/i&gt;
-&lt;button class="btn btn--wide"&gt;Wide&lt;/button&gt;
-                  </code>
-            </pre>
+            <br /><br />
+            <div class="code--container xs-s">
+              <pre>
+
+          &lt;button class="btn btn--sm"&gt;Small&lt;/button&gt;
+          &lt;button class="btn"&gt;Normal&lt;/button&gt;
+          &lt;button class="btn btn--md"&gt;Medium&lt;/button&gt;
+          &lt;button class="btn btn--lg"&gt;Large&lt;/button&gt;
+          &lt;button class="btn btn--curve"&gt;Curve&lt;/button&gt;
+          &lt;i class="fas fa-bars btn btn--round lg sb"&gt;&lt;/i&gt;
+          &lt;button class="btn btn--wide"&gt;Wide&lt;/button&gt;
+            </pre
+              >
+            </div>
           </div>
         </section>
       </main>
