@@ -69,11 +69,11 @@
   list-style: none;
 }
 .list li {
-  margin: 1em 2em;
+  margin: 1em 1.25em;
 }
 .list li a {
   color: var(--heading);
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 .list__title {
   font-size: 1.5em;
