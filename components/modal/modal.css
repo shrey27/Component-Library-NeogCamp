@@ -43,7 +43,7 @@
 }
 .modal--close {
   position: absolute;
-  z-index: 115;
+  z-index: 100;
   top: 1rem;
   right: 1rem;
   font-size: 3em;

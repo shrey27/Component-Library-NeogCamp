@@ -81,6 +81,12 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+              <li><a href="../drawer/">Drawer</a></li>
             </ul>
           </div>
         </section>
@@ -108,7 +114,8 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Alert</h1>
+          <h1 class="heading lg sb">Alert</h1>
+          <br /><br />
           <p class="heading md reg">
             An alert displays a short, important message in a way that attracts
             the user's attention without interrupting the user's task.
@@ -120,31 +127,35 @@
             Add 'alert' and its supporting class like 'alert--error' or
             'alert--primary' to any container element to create an alert.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <div class="alert alert--primary">
-                <span>Primary! This is an alert!</span>
+
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
               </div>
-              <div class="alert alert--error">
-                <span>Error! This is an alert!</span>
-              </div>
-              <div class="alert alert--success">
-                <span>Success! This is an alert!</span>
-              </div>
-              <div class="alert alert--warning">
-                <span>Warning! This is an alert!</span>
+              <div class="code--text">
+                <div class="alert alert--primary">
+                  <span>Primary! This is an alert!</span>
+                </div>
+                <div class="alert alert--error">
+                  <span>Error! This is an alert!</span>
+                </div>
+                <div class="alert alert--success">
+                  <span>Success! This is an alert!</span>
+                </div>
+                <div class="alert alert--warning">
+                  <span>Warning! This is an alert!</span>
+                </div>
               </div>
             </div>
-            <pre class="code--container flex-ct-ct">
-              <i class="far fa-copy btn btn--icons btn--round"></i>
-              <span class="code--msg">Copied!</span>
-              <code class="code--text html">
-&lt;div class="alert alert--primary">&lt;span&gt;Primary! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--error"&gt;&lt;span&gt;Error! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--success"&gt;&lt;span&gt;Success! This is an alert!&lt;/span&gt;&lt;/div&gt;
-&lt;div class="alert alert--warning"&gt;&lt;span&gt;Warning! This is an alert!&lt;/span&gt;&lt;/div&gt;
-              </code>
-            </pre>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="alert alert--primary"&gt;Primary! This is an alert!&lt;/div&gt;
+&lt;div class="alert alert--error"&gt;Error! This is an alert&lt;/div&gt;
+&lt;div class="alert alert--success"&gt;Success! This is an alert&lt;/div&gt;
+&lt;div class="alert alert--warning"&gt;Warning! This is an alert&lt;/div&gt;</code></pre>
+            </div>
           </div>
         </section>
       </main>

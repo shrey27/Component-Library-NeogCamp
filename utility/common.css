@@ -15,6 +15,7 @@
 @import '../components/hamburger/hamburger.css';
 @import '../components/toast/toast.css';
 @import '../components/rating/rating.css';
+@import '../components/drawer/drawer.css';
 
 /* Style for CSS elements */
 * {
@@ -36,10 +37,14 @@ a {
   text-decoration-line: none;
   color: var(--black);
 }
-::-webkit-scrollbar {
+code {
+  display: inline-block;
+  white-space: pre-wrap   
+}
+/* ::-webkit-scrollbar {
   width: 0;
   background: transparent;
-}
+} */
 
 /* Miscellaneous classes */
 .border {
@@ -148,10 +153,9 @@ td {
   background-color: var(--code);
   color: var(--button-success);
   border-radius: 10px;
-  overflow: scroll hidden;
-  width: 50%;
-  margin: auto;
-  display: none;
+  overflow: hidden hidden;
+  max-width: 100%;
+  padding: 1em 1em 0;
 }
 
 /* Media Queries */

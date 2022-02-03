@@ -81,6 +81,12 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+              <li><a href="../drawer/">Drawer</a></li>
             </ul>
           </div>
         </section>
@@ -108,7 +114,8 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading xl sb">Badge on Avatar</h1>
+          <h1 class="heading lg sb">Badge on Avatar</h1>
+          <br /><br />
           <p class="heading md reg">
             A badge is used to send information as notification. It could be a
             text message or number or a status update.
@@ -116,82 +123,85 @@
           <br /><br />
           <hr />
           <br /><br />
-          <!-- Badges on Icons -->
-          <h1 class="heading lg sb">Badge on Icons</h1>
-          <p class="heading md lt">
-            Pick any icon from CDN and add 'icon-badge' data attribute to it.
-            Value prvided to the attribute is passed to the notification badge.
-          </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <i icon-badge="7" class="fas fa-shopping-cart xl"></i>
-              <i icon-badge="89" class="far fa-envelope lg"></i>
-            </div>
-            <pre class="code--container flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-                <code class='code--text html'>
-&lt;i icon-badge="7" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
-&lt;i icon-badge="89" class="far fa-envelope lg"&gt;&lt;/i&gt;
-                </code>
-            </pre>
-          </div>
-          <br /><br />
           <!-- Profile Badges -->
-          <h1 class="heading lg sb">Badge on Profile</h1>
+          <h1 class="heading md sb">Badge on Profile</h1>
           <p class="heading md lt">
             Wrap an image in a container with class as 'bdg'. Along with image
             tag pass an inline tag like span with class name as 'bdg--profile'.
             To control size pass 'sml', 'med' or 'lrg' for small, medium and
             large respectively.
           </p>
-          <div class="component--output--wrapper">
-            <div class="component--output flex-ct-ct">
-              <div class="bdg">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--sm"
-                />
-                <span class="bdg--profile sml"></span>
-              </div>
-              <div class="bdg">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--md"
-                />
-                <span class="bdg--profile bdg--offline med"></span>
-              </div>
-              <div class="bdg">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
-                  alt="Avatar"
-                  class="avatar avatar--lg"
-                />
-                <span class="bdg--profile bdg--away lrg"></span>
-              </div>
-            </div>
-            <pre class="code--container flex-ct-ct">
+
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
-                <code class='code--text html'>
-&lt;div class="bdg"&gt;
-  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
-  &lt;span class="bdg--profile sml"&gt;&lt;/span&gt;
+              </div>
+              <div class="code--text">
+                <div class="bdg">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--sm"
+                  />
+                  <span class="bdg--profile sml"></span>
+                </div>
+                <div class="bdg">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--md"
+                  />
+                  <span class="bdg--profile bdg--offline med"></span>
+                </div>
+                <div class="bdg">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgnF2JCCr-gNB5M063JObpOx1dLfCOsy7__yYi4IsQx1BTRRA2-Wgls-NbinB8SnHRTg&usqp=CAU"
+                    alt="Avatar"
+                    class="avatar avatar--lg"
+                  />
+                  <span class="bdg--profile bdg--away lrg"></span>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="bdg"&gt;
+&lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+&lt;span class="bdg--profile sml"&gt;&lt;/span&gt;
 &lt;/div&gt;
-
+           
 &lt;div class="bdg"&gt;
-  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
-  &lt;span class="bdg--profile med"&gt;&lt;/span&gt;
+&lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+&lt;span class="bdg--profile med"&gt;&lt;/span&gt;
 &lt;/div&gt;
-
+              
 &lt;div class="bdg"&gt;
-  &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
-  &lt;span class="bdg--profile lrg"&gt;&lt;/span&gt;
-&lt;/div&gt;
-                </code>
-            </pre>
+&lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
+&lt;span class="bdg--profile lrg"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+          <br /><br />
+          <!-- Badges on Icons -->
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <br />
+              <div class="code--text sm-s">
+                <i icon-badge="7" class="fas fa-shopping-cart xl"></i>
+                <i icon-badge="89" class="far fa-envelope lg"></i>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;i icon-badge="7" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
+&lt;i icon-badge="89" class="far fa-envelope lg"&gt;&lt;/i&gt;</code></pre>
+            </div>
           </div>
         </section>
       </main>
