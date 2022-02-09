@@ -1,0 +1,44 @@
+@import '../../utility/common.css';
+@import '../../installation/styles.css';
+
+.grid {
+  display: grid;
+  align-items: flex-start;
+}
+.grid_2_col {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'aside__left'
+    'aside__right';
+}
+.grid_3_col {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'aside__left'
+    'main'
+    'aside__right';
+}
+.aside__left {
+  grid-area: aside__left;
+}
+.aside__right {
+  grid-area: aside__right;
+}
+.main {
+  grid-area: main;
+}
+.image--spl {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .grid_2_col {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'aside__left aside__right';
+  }
+  .grid_3_col {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'aside__left main aside__right';
+  }
+}

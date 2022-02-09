@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alert</title>
-    <link rel="stylesheet" href="alert.css" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -116,20 +116,22 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Alert</h1>
+          <h1 class="heading lg sb">Grid</h1>
           <br /><br />
           <p class="heading md reg">
-            An alert displays a short, important message in a way that attracts
-            the user's attention without interrupting the user's task.
+            A grid layout helps in placing components easily and providing
+            responsiveness to overall strucutre of the webpage.
           </p>
           <br /><br />
           <hr />
           <br /><br />
+          <h1 class="heading md sb">Grid-2-column</h1>
           <p class="heading md lt">
-            Add 'alert' and its supporting class like 'alert--error' or
-            'alert--primary' to any container element to create an alert.
+            To make a two columns grid, wrap a container in
+            <strong>grid</strong> and <strong>grid_2_col</strong> classes. Add
+            two containers, with <strong>aside__left</strong> and
+            <strong>aside__right</strong> classes.
           </p>
-
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
               <div class="flex-ct-ct">
@@ -137,26 +139,79 @@
                 <span class="code--msg">Copied!</span>
               </div>
               <div class="code--text">
-                <div class="alert alert--primary">
-                  <span>Primary! This is an alert!</span>
-                </div>
-                <div class="alert alert--error">
-                  <span>Error! This is an alert!</span>
-                </div>
-                <div class="alert alert--success">
-                  <span>Success! This is an alert!</span>
-                </div>
-                <div class="alert alert--warning">
-                  <span>Warning! This is an alert!</span>
+                <div class="grid grid_2_col">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner_1"
+                    class="image--spl aside__left"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3css/img_lights.jpg"
+                    alt="Banner_2"
+                    class="image--spl aside__right"
+                  />
                 </div>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;div class="alert alert--primary"&gt;Primary! This is an alert!&lt;/div&gt;
-&lt;div class="alert alert--error"&gt;Error! This is an alert&lt;/div&gt;
-&lt;div class="alert alert--success"&gt;Success! This is an alert&lt;/div&gt;
-&lt;div class="alert alert--warning"&gt;Warning! This is an alert&lt;/div&gt;</code></pre>
+              <pre><code class='html'>&lt;div class="grid grid_2_col"&gt;
+ &lt;img src="..."
+    alt="" class="aside__left" /&gt;
+ &lt;img src="..."
+    alt="" class="aside__right" /&gt;
+&lt;/div&gt;
+                  
+</code></pre>
+            </div>
+          </div>
+
+          <br /><br />
+          <h1 class="heading md sb">Grid-3-column</h1>
+          <p class="heading md lt">
+            To make a three columns grid, wrap a container in
+            <strong>grid</strong> and <strong>grid_3_col</strong> classes. Add
+            two containers, with <strong>aside__left,</strong>&nbsp;
+            <strong>main</strong> and <strong>aside__right</strong> classes.
+          </p>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <div class="grid grid_3_col">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner_1"
+                    class="image--spl aside__left"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3css/img_lights.jpg"
+                    alt="Banner_2"
+                    class="image--spl main"
+                  />
+                  <img
+                    src="https://www.w3schools.com/css/img_chania.jpg"
+                    alt="Banner_3"
+                    class="image--spl aside__right"
+                  />
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="grid grid_2_col"&gt;
+ &lt;img src="..."
+    alt="" class="aside__left" /&gt;
+ &lt;img src="..."
+    alt="" class="main" /&gt;
+ &lt;img src="..."
+    alt="" class="aside__right" /&gt;
+&lt;/div&gt;
+                  
+</code></pre>
             </div>
           </div>
         </section>
