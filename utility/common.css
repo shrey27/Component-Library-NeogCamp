@@ -16,6 +16,9 @@
 @import '../components/toast/toast.css';
 @import '../components/rating/rating.css';
 @import '../components/drawer/drawer.css';
+@import '../components/list/list.css';
+@import '../components/grid/grid.css';
+
 
 /* Style for CSS elements */
 * {

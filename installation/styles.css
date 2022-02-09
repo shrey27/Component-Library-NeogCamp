@@ -87,7 +87,7 @@
 }
 
 /* Media queries */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .box {
     grid-template-columns: 20% 80%;
     grid-template-areas:
