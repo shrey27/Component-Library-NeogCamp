@@ -69,11 +69,11 @@ toCopyBtn.forEach((elem, idx) => {
 });
 
 // Script for Close btn
-closeBtnAll.forEach((elem, idx) => {
-  elem.addEventListener('click', () => {
-    cardAll[idx].classList.remove('open');
-  });
-});
+// closeBtnAll.forEach((elem, idx) => {
+//   elem.addEventListener('click', () => {
+//     cardAll[idx].classList.remove('open');
+//   });
+// });
 
 // Drawer
 slider &&
@@ -83,6 +83,7 @@ slider &&
   });
 
 //Modal
+let scrollY = document.body.style.top;
 const closeModalFunc = (e) => {
   if (e.target != modal) {
     console.log('hello');
@@ -90,15 +91,21 @@ const closeModalFunc = (e) => {
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'visible';
     });
+    document.body.style.position = 'static';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
 };
 
 showModalBtn &&
-  showModalBtn.addEventListener('click', () => {
+  showModalBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     modal.classList.add('modal--open');
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'hidden';
     });
+    scrollY = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.top = scrollY;
   });
 
 modalBack && modalBack.addEventListener('click', (e) => closeModalFunc(e));
@@ -112,19 +119,27 @@ const closeModalFuncDrawer = (e) => {
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'visible';
     });
+    document.body.style.position = 'static';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
   }
 };
 
 showDrawerBtn &&
-showDrawerBtn.addEventListener('click', () => {
+  showDrawerBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     drawer.classList.add('drawer--open');
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'hidden';
     });
+    scrollY = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.top = scrollY;
   });
 
-drawerBack && drawerBack.addEventListener('click', (e) => closeModalFuncDrawer(e));
-drawerBtn && drawerBtn.addEventListener('click', (e) => closeModalFuncDrawer(e));
+drawerBack &&
+  drawerBack.addEventListener('click', (e) => closeModalFuncDrawer(e));
+drawerBtn &&
+  drawerBtn.addEventListener('click', (e) => closeModalFuncDrawer(e));
 
 //Toast Message
 openToastBtn &&
@@ -142,3 +157,34 @@ openSideBarBtn &&
     sideBarHb.classList.toggle('hb--open');
     mainHb.classList.toggle('hb--open');
   });
+
+// Carousal
+let slideIndex = 1;
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  let slides = document.querySelectorAll('.mySlides');
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slides[slideIndex - 1].style.display = 'block';
+}
+
+const setSlideShow = () => {
+  setInterval(() => {
+    showSlides(slideIndex);
+    slideIndex++;
+  }, 5000);
+};
+
+setSlideShow();

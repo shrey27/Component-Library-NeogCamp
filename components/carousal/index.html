@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Components</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Carousal</title>
+    <link rel="stylesheet" href="carousal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -24,8 +24,8 @@
     <div class="box">
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
-          <a href="../index.html">
-            <img class="box__image" src="../assets/rocket.jpg" />
+          <a href="../../index.html">
+            <img class="box__image" src="../../assets/rocket.jpg" />
           </a>
           <span class="box-span">
             <span class="lg sb n-s heading">Apollo-UI</span>
@@ -67,29 +67,29 @@
           <div class="list--container">
             <span class="list__title">Utilities</span>
             <ul class="list">
-              <li><a href="../color">Color Palette</a></li>
-              <li><a href="../typography">Typography</a></li>
+              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
           <div class="list--container">
             <span class="list__title">Components</span>
             <ul class="list">
-              <li><a href="../components/avatar">Avatar</a></li>
-              <li><a href="../components/alert">Alert</a></li>
-              <li><a href="../components/badge">Badge</a></li>
-              <li><a href="../components/button">Button</a></li>
-              <li><a href="../components/card">Card</a></li>
-              <li><a href="../components/image">Image</a></li>
-              <li><a href="../components/input">Input</a></li>
-              <li><a href="../components/navbar/">Navbar</a></li>
-              <li><a href="../components/modal/">Modal</a></li>
-              <li><a href="../components/toast/">Toast</a></li>
-              <li><a href="../components/hamburger/">Hamburger</a></li>
-              <li><a href="../components/rating/">Rating</a></li>
-              <li><a href="../components/drawer/">Drawer</a></li>
-              <li><a href="../components/carousal/">Carousal</a></li>
-              <li><a href="../components/grid/">Grid</a></li>
-              <li><a href="../components/list/">List</a></li>
+              <li><a href="../avatar">Avatar</a></li>
+              <li><a href="../alert">Alert</a></li>
+              <li><a href="../badge">Badge</a></li>
+              <li><a href="../button">Button</a></li>
+              <li><a href="../card">Card</a></li>
+              <li><a href="../image">Image</a></li>
+              <li><a href="../input">Input</a></li>
+              <li><a href="../navbar/">Navbar</a></li>
+              <li><a href="../modal/">Modal</a></li>
+              <li><a href="../toast/">Toast</a></li>
+              <li><a href="../hamburger/">Hamburger</a></li>
+              <li><a href="../rating/">Rating</a></li>
+              <li><a href="../drawer/">Drawer</a></li>
+              <li><a href="../carousal/">Carousal</a></li>
+              <li><a href="../grid/">Grid</a></li>
+              <li><a href="../list/">List</a></li>
             </ul>
           </div>
         </section>
@@ -117,40 +117,80 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Getting Started</h1>
+          <h1 class="heading lg sb">Carousal</h1>
           <br /><br />
           <p class="heading md reg">
-            Apollo-UI is an easy to understand, modular and OOCSS structured
-            vanilla-CSS library. This is a one-stop solution to designing
-            problems. Go through the documentation to learn how to use each and
-            every component. Before launhing your project, let's get started
-            with the installation.
+            A carousal is a slide show of images that highlight some information
+            for purpose of advertising or to showcase some exclusive product.
           </p>
           <br /><br />
           <hr />
           <br /><br />
-          <h1 class="heading lg sb">Installation Guide</h1>
-          <br /><br />
           <p class="heading md lt">
-            In order to introduce apollo-ui to your project, Copy the links given
-            below and paste them in the 'head' tag of your html, above all other
-            style sheets. To use the icons download any open-source library or
-            you can check out the git repo for font-awesome library used in this
-            library.
+            <!-- how to use -->
           </p>
-          <br /><br />
-          <pre class="code--container">
-            <code class='html'>&lt;link rel="stylesheet" href="https://apolloui-neog.netlify.app/utility/common.css"&gt;
-            </code>
-          </pre>
-          <br /><br />
-          <p class="heading md lt">
-            For dynamic behaviour add the below given script tag in body of your
-            document.
-          </p>
-          <br /><br />
-          <pre class="code--container"><code>&lt;script src="https://apolloui-neog.netlify.app/utility/script.js"&gt;&lt;/script&gt;
-          </code></pre>
+
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text">
+                <!-- code -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <img
+                      src="https://www.w3schools.com/howto/img_nature_wide.jpg"
+                      style="width: 100%"
+                    />
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img
+                      src="https://www.w3schools.com/howto/img_snow_wide.jpg"
+                      style="width: 100%"
+                    />
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img
+                      src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+                      style="width: 100%"
+                    />
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br />
+
+                <!-- End -->
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;div class="slideshow-container"&gt;
+&lt;div class="mySlides fade"&gt;
+    &lt;img src="https://www.w3schools.com/howto/img_nature_wide.jpg"
+    style="width: 100%" /&gt;
+&lt;/div&gt;
+&lt;div class="mySlides fade"&gt;
+    &lt;img src="https://www.w3schools.com/howto/img_snow_wide.jpg"
+    style="width: 100%"/&gt;
+&lt;/div&gt;
+&lt;div class="mySlides fade"&gt;
+    &lt;img src="https://www.w3schools.com/howto/img_lights_wide.jpg"
+    style="width: 100%"/&gt;
+&lt;/div&gt;
+&lt;a class="prev" onclick="plusSlides(-1)"&gt;&lt;/a&gt;
+&lt;a class="next" onclick="plusSlides(1)"&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+          </div>
         </section>
       </main>
     </div>
@@ -158,6 +198,6 @@
     <script>
       hljs.highlightAll();
     </script>
-    <script src="../utility/script.js"></script>
+    <script src="../../utility/script.js"></script>
   </body>
 </html>

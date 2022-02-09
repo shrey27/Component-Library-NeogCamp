@@ -18,13 +18,12 @@
   width: 100%;
   height: 100%;
   background-color: var(--black);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .drawer--content {
   position: absolute;
-  border: 2px solid var(--border);
-  border-radius: 10px;
   background-color: var(--white);
+  border: 2px solid var(--border);
 }
 .drawer--content[direction='top'] {
   top: 0;
@@ -39,12 +38,17 @@
 .drawer--content[direction='left'] {
   left: 0;
   width: auto;
-  height: 100%;
+  height: auto;
+  align-self: start;
 }
 .drawer--content[direction='right'] {
   right: 0;
   width: auto;
-  height: 100%;
+  height: auto;
+  align-self: start;
+}
+.drawer--content[direction='right'] ~ .drawer--close {
+  display: none;
 }
 .drawer--close {
   position: absolute;

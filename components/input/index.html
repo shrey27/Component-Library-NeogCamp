@@ -87,8 +87,9 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              <li><a href="../list/">List</a></li>
+              <li><a href="../carousal/">Carousal</a></li>
               <li><a href="../grid/">Grid</a></li>
+              <li><a href="../list/">List</a></li>
             </ul>
           </div>
         </section>
@@ -140,6 +141,19 @@
               </div>
               <div class="code--text">
                 <div class="input--container">
+                  <label for="search-bar">
+                    <span class="lbl">Search Bar</span>
+                    <div class="search--ctr">
+                      <i class="fas fa-search search--btn"></i>
+                      <input
+                        type="text"
+                        placeholder="Search"
+                        class="ipt no--bdr"
+                        id="user-name"
+                        name="user-name"
+                      />
+                    </div> </label
+                  ><br /><br />
                   <label for="user-name">
                     <span class="lbl">Username</span>
                     <input
@@ -148,8 +162,8 @@
                       class="ipt"
                       id="user-name"
                       name="user-name"
-                    />
-                  </label>
+                    /> </label
+                  ><br /><br />
                   <label for="pswd"
                     ><span class="lbl">Password*</span>
                     <input
@@ -167,7 +181,15 @@
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code>&lt;label for="user-name"&gt;
+              <pre><code>&lt;label for="search-bar"&gt;
+&lt;span class="lbl"&gt;Search Bar&lt;/span&gt;
+&lt;div class="search--ctr"&gt;
+    &lt;i class="fas fa-search search--btn"&gt;&lt;/i&gt;
+    &lt;input type="text" placeholder="Search"
+        class="ipt no--bdr" id="user-name" 
+        name="user-name"/&gt;
+    &lt;/div&gt;
+&lt;/label&gt;&lt;label for="user-name"&gt;
 &lt;span class="lbl"&gt;Username&lt;/span&gt;
 &lt;input type="text" placeholder="Enter Username" class="ipt"
     id="user-name" name="user-name" /&gt; &lt;/label&gt;
@@ -176,7 +198,9 @@
 &lt;span class="lbl"&gt;Password*&lt;/span&gt;
 &lt;input type="password" placeholder="Enter Password" class="ipt ipt--man"
           id="pswd" name="password" required /&gt;
-&lt;span class="ipt--error"&gt;This field is mandatory&lt;/span&gt; &lt;/label&gt;</code></pre>
+&lt;span class="ipt--error"&gt;This field is mandatory&lt;/span&gt; &lt;/label&gt;
+
+</code></pre>
             </div>
           </div>
         </section>

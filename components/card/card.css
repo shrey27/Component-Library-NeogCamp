@@ -4,7 +4,7 @@
 /* Basic card */
 .card {
   position: relative;
-  width: 20em;
+  max-width: 20em;
   background-color: var(--white);
   border: 2px solid var(--border);
   border-radius: 10px;
@@ -29,6 +29,7 @@
   color: var(--subheading);
 }
 .card--content {
+  display: inline-block;
   font-size: 1em;
   color: var(--code);
   margin: 1em;
@@ -50,7 +51,7 @@
 
 /* Card with banner */
 .card--banner {
-  height: 40%;
+  height: 60%;
   width: 100%;
   border-radius: 10px 10px 0 0;
   margin: 0;
@@ -110,7 +111,7 @@
 .landscape {
   display: flex;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 .landscape .card--banner {
   height: auto;
@@ -120,6 +121,33 @@
 .landscape .content {
   border-radius: 10px 0 0 10px;
 }
+
+/* E-commerce card */
+.ecom {
+  height: 30em;
+} 
+.price--sec {
+  text-decoration: line-through;
+}
+.price--ter {
+  color: var(--button-success);
+}
+.content--tag {
+  font-size: 0.75em;
+  color: var(--heading);
+  background-color: var(--button-light);
+  border-radius: 25px;
+  padding: 0.5em 0.75em;
+}
+.content--rating {
+  padding: 0.5em 0 0.5em 0.5em;
+  font-size: 1em;
+  border-radius: 20px;
+  color: var(--white);
+  background-color: var(--badge-online);
+}
+
+/* Media queries */
 @media screen and (min-width: 768px) {
   .landscape {
     width: 30rem;

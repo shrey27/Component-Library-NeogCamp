@@ -87,8 +87,9 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              <li><a href="../list/">List</a></li>
+              <li><a href="../carousal/">Carousal</a></li>
               <li><a href="../grid/">Grid</a></li>
+              <li><a href="../list/">List</a></li>
             </ul>
           </div>
         </section>
@@ -116,7 +117,7 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Badge on Avatar</h1>
+          <h1 class="heading lg sb">Badge</h1>
           <br /><br />
           <p class="heading md reg">
             A badge is used to send information as notification. It could be a
@@ -182,11 +183,19 @@
 &lt;div class="bdg"&gt;
 &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
 &lt;span class="bdg--profile lrg"&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+
+</code></pre>
             </div>
           </div>
           <br /><br />
-          <!-- Badges on Icons -->
+
+          <!-- Profile Badges -->
+          <h1 class="heading md sb">Badge on Icons</h1>
+          <p class="heading md lt">
+            Pick any icon and put <strong>icon-badge</strong> attribute in it.
+            Attribute holds the contianed value for that badge.
+          </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
               <div class="flex-ct-ct">
@@ -195,14 +204,31 @@
               </div>
               <br />
               <div class="code--text sm-s">
-                <i icon-badge="7" class="fas fa-shopping-cart xl"></i>
-                <i icon-badge="89" class="far fa-envelope lg"></i>
+                <i
+                  icon-badge="7"
+                  bdg-size="extra"
+                  class="fas fa-shopping-cart xl"
+                ></i>
+                <i
+                  icon-badge="7"
+                  bdg-size="large"
+                  class="fas fa-shopping-cart lg"
+                ></i>
+                <i
+                  icon-badge="7"
+                  bdg-size="medium"
+                  class="fas fa-shopping-cart md"
+                ></i>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;i icon-badge="7" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
-&lt;i icon-badge="89" class="far fa-envelope lg"&gt;&lt;/i&gt;</code></pre>
+              <pre><code class='html'>&lt;i icon-badge="7" bdg-size="extra" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
+&lt;i icon-badge="7" bdg-size="large" class="fas fa-shopping-cart lg"&gt;&lt;/i&gt;
+&lt;i icon-badge="7" bdg-size="medium" class="fas fa-shopping-cart md"&gt;&lt;/i&gt;
+&lt;i icon-badge="7" bdg-size="small" class="fas fa-shopping-cart sm"&gt;&lt;/i&gt;
+
+</code></pre>
             </div>
           </div>
         </section>
