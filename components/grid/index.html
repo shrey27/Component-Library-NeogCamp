@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image</title>
-    <link rel="stylesheet" href="image.css" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="grid.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -87,7 +87,6 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              <li><a href="../carousal/">Carousal</a></li>
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -117,21 +116,21 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Image</h1>
+          <h1 class="heading lg sb">Grid</h1>
           <br /><br />
           <p class="heading md reg">
-            A custom class to showcase images in differnt sizes, shapes and
-            responsiveness.
+            A grid layout helps in placing components easily and providing
+            responsiveness to overall structure of the webpage.
           </p>
           <br /><br />
           <hr />
           <br /><br />
-
-          <h1 class="heading md sb">Sizes of Image</h1>
-          <br /><br />
+          <h1 class="heading md sb">Grid-2-column</h1>
           <p class="heading md lt">
-            To size a regular shaped image use 'img--size__name' to set the
-            dimensions.
+            To make a two columns grid, wrap a container in
+            <strong>grid</strong> and <strong>grid_2_col</strong> classes. Add
+            two containers, with <strong>aside__left</strong> and
+            <strong>aside__right</strong> classes.
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
@@ -140,79 +139,40 @@
                 <span class="code--msg">Copied!</span>
               </div>
               <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--sm"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--md"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--lg"
-                />
+                <div class="grid grid_2_col">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner_1"
+                    class="image--spl aside__left"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3css/img_lights.jpg"
+                    alt="Banner_2"
+                    class="image--spl aside__right"
+                  />
+                </div>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;img src="image.jpg"
-  alt="Image" class="img--sm"/&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--md" /&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--lg" /&gt;
-
+              <pre><code class='html'>&lt;div class="grid grid_2_col"&gt;
+ &lt;img src="..."
+    alt="" class="aside__left" /&gt;
+ &lt;img src="..."
+    alt="" class="aside__right" /&gt;
+&lt;/div&gt;
+                  
 </code></pre>
             </div>
           </div>
 
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
-              <div class="flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-              </div>
-              <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--sm round"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--md round"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--lg round"
-                />
-              </div>
-            </div>
-            <br /><br />
-            <div class="code--container">
-              <pre><code class="html">&lt;img src="image.jpg"
-  alt="Image" class="img--sm round"/&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--md round" /&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--lg round" /&gt;
-
-</code></pre>
-            </div>
-          </div>
           <br /><br />
-
-          <h1 class="heading md sb">Responsive Image</h1>
-          <br /><br />
+          <h1 class="heading md sb">Grid-3-column</h1>
           <p class="heading md lt">
-            Add 'img--resp' class to make images responsive with cover fit. Size
-            of image depends on outer parent container.
+            To make a three columns grid, wrap a container in
+            <strong>grid</strong> and <strong>grid_3_col</strong> classes. Add
+            two containers, with <strong>aside__left,</strong>&nbsp;
+            <strong>main</strong> and <strong>aside__right</strong> classes.
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
@@ -221,18 +181,36 @@
                 <span class="code--msg">Copied!</span>
               </div>
               <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--resp"
-                />
+                <div class="grid grid_3_col">
+                  <img
+                    src="https://www.w3schools.com/w3css/img_snowtops.jpg"
+                    alt="Banner_1"
+                    class="image--spl aside__left"
+                  />
+                  <img
+                    src="https://www.w3schools.com/w3css/img_lights.jpg"
+                    alt="Banner_2"
+                    class="image--spl main"
+                  />
+                  <img
+                    src="https://www.w3schools.com/css/img_chania.jpg"
+                    alt="Banner_3"
+                    class="image--spl aside__right"
+                  />
+                </div>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;img src="image.jpg"
-alt="Image" class="img--resp" /&gt;
-
+              <pre><code class='html'>&lt;div class="grid grid_2_col"&gt;
+ &lt;img src="..."
+    alt="" class="aside__left" /&gt;
+ &lt;img src="..."
+    alt="" class="main" /&gt;
+ &lt;img src="..."
+    alt="" class="aside__right" /&gt;
+&lt;/div&gt;
+                  
 </code></pre>
             </div>
           </div>

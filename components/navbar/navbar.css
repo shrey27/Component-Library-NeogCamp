@@ -3,35 +3,38 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    'start end'
-    'middle middle';
+    'navicons start end'
+    'middle middle middle';
   position: relative;
   align-items: center;
+}
+.nav--icons {
+  grid-area: navicons;
 }
 .start {
   grid-area: start;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .middle {
   grid-area: middle;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 .end {
   grid-area: end;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) {
   .navbar {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'start middle end';
+  }
+  .start {
+    justify-content: flex-start;
+  }
+  .nav--icons {
+    display: none;
   }
 }

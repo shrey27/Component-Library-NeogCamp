@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image</title>
-    <link rel="stylesheet" href="image.css" />
+    <title>List</title>
+    <link rel="stylesheet" href="list.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -87,7 +87,6 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              <li><a href="../carousal/">Carousal</a></li>
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -117,21 +116,23 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Image</h1>
+          <h1 class="heading lg sb">List</h1>
           <br /><br />
           <p class="heading md reg">
-            A custom class to showcase images in differnt sizes, shapes and
-            responsiveness.
+            There are two types of lists in HTML, ordered and unordered. I have
+            put a third category of stacked list as well for making small
+            notification or info boxes.
           </p>
           <br /><br />
           <hr />
           <br /><br />
 
-          <h1 class="heading md sb">Sizes of Image</h1>
-          <br /><br />
+          <h1 class="heading md sb">Unordered List</h1>
           <p class="heading md lt">
-            To size a regular shaped image use 'img--size__name' to set the
-            dimensions.
+            List by default is unordered. To add custom marker or set different
+            font size or padding add the pre-defined classes.
+            <strong>list--circle</strong> sets round markers and
+            <strong>list--square</strong> sets square markers.
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
@@ -139,80 +140,45 @@
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
-              <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--sm"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--md"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--lg"
-                />
+              <div class="code--text flex-ct-sb xs-s">
+                <ul class="sm sb sm-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ul>
+                <br />
+                <ul class="sm sb list--circle sm-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ul>
+                <br />
+                <ul class="sm sb list--square sm-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ul>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;img src="image.jpg"
-  alt="Image" class="img--sm"/&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--md" /&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--lg" /&gt;
-
-</code></pre>
-            </div>
-          </div>
-
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
-              <div class="flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-              </div>
-              <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--sm round"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--md round"
-                />
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--lg round"
-                />
-              </div>
-            </div>
-            <br /><br />
-            <div class="code--container">
-              <pre><code class="html">&lt;img src="image.jpg"
-  alt="Image" class="img--sm round"/&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--md round" /&gt;
-&lt;img src="image.jpg"
-  alt="Image" class="img--lg round" /&gt;
-
+              <pre><code class='html'>&lt;ul class="list--circle sm sb sm-s"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Cola &lt;/li&gt;
+&lt;/ul&gt;
+                  
 </code></pre>
             </div>
           </div>
           <br /><br />
-
-          <h1 class="heading md sb">Responsive Image</h1>
-          <br /><br />
+          <h1 class="heading md sb">Ordered List</h1>
           <p class="heading md lt">
-            Add 'img--resp' class to make images responsive with cover fit. Size
-            of image depends on outer parent container.
+            Ordered List by default is numbered. To override default properties
+            wrap it in <strong>list--od</strong> class. To add custom marker or
+            set different font size or padding add the pre-defined classes.
+            <strong>list--roman</strong> sets roman numerals markers and
+            <strong>list--alpha</strong> sets alpahbets markers.
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
@@ -220,18 +186,104 @@
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
-              <div class="code--text">
-                <img
-                  src="https://www.w3schools.com/w3css/img_snowtops.jpg"
-                  alt="Image"
-                  class="img--resp"
-                />
+              <div class="code--text flex-ct-sb xs-s">
+                <ol class="sm sb list--od sm-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ol>
+                <br />
+                <ol class="sm sb list--od list--roman md-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ol>
+                <br />
+                <ol class="sm sb list--od list--alpha md-s">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Cola</li>
+                </ol>
               </div>
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;img src="image.jpg"
-alt="Image" class="img--resp" /&gt;
+              <pre><code class='html'>&lt;ol class="list--od list--roman sm sb sm-s"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Cola &lt;/li&gt;
+&lt;/ol&gt;
+                  
+</code></pre>
+            </div>
+          </div>
+
+          <br /><br />
+          <h1 class="heading md sb">Stacked List</h1>
+          <p class="heading md lt">
+            Stacked List are basically like a text only card. To begin default
+            wrap a list in <strong>stack</strong> class. User can set any
+            content inside the card and adjust the width and height using custom
+            styling classes.
+          </p>
+          <div class="component--output--wrapper flex-ct-ct flex-vertical">
+            <div class="component--output shadow">
+              <div class="flex-ct-ct">
+                <i class="far fa-copy btn btn--icons btn--round"></i>
+                <span class="code--msg">Copied!</span>
+              </div>
+              <div class="code--text xs-s">
+                <ul class="stack">
+                  <li class="stack__card flex-ct-st">
+                    <img
+                      src="https://www.w3schools.com/w3images/avatar2.png"
+                      alt="Avatar"
+                      class="avatar avatar--sm"
+                    />
+                    <div>
+                      <h1 class="heading sm sb">Calvin Hawkins</h1>
+                      <h2 class="subheading sm">calvin.hawkins@example.com</h2>
+                    </div>
+                  </li>
+                  <br />
+                  <li class="stack__card flex-ct-st">
+                    <img
+                      src="https://www.quanzhanketang.com/w3css/img_avatar5.png"
+                      alt="Avatar"
+                      class="avatar avatar--sm"
+                    />
+                    <div>
+                      <h1 class="heading sm sb">Kristen Ramons</h1>
+                      <h2 class="subheading sm">kristen.ramons@example.com</h2>
+                    </div>
+                  </li>
+                  <br />
+                  <li class="stack__card flex-ct-st">
+                    <img
+                      src="https://www.quanzhanketang.com/w3css/img_avatar3.png"
+                      alt="Avatar"
+                      class="avatar avatar--sm"
+                    />
+                    <div>
+                      <h1 class="heading sm sb">Ted Fox</h1>
+                      <h2 class="subheading sm">ted.fox@example.com</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br /><br />
+            <div class="code--container">
+              <pre><code class='html'>&lt;ul class="stack"&gt;
+  &lt;li class="stack__card flex-ct-st"&gt;
+   &lt;img src="..."
+      alt="Avatar" class="avatar avatar--sm"/&gt;
+   &lt;div&gt;
+     &lt;h1 class="heading sm sb"&gt;...&lt;/h1&gt;
+     &lt;h2 class="subheading sm"&gt;...&lt;/h2&gt;
+   &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 </code></pre>
             </div>

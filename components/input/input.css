@@ -7,24 +7,35 @@
 .lbl {
   font-size: 1em;
   color: var(--heading);
-  margin: 0 0.5em;
+  margin: 0.5em;
 }
 .ipt {
   outline: none;
+  display: inline;
   font-size: 1em;
   padding: 0.5em;
   border: 2px solid var(--border);
-  border-radius: 5px;
   width: 100%;
-  margin: 0.5em 0;
 }
-.ipt:focus {
+.no--bdr{
+  border: none;
+}
+/* .ipt:focus {
   border: 2px solid var(--button-float-highlighted);
-}
+} */
 .ipt--man:focus {
   border: 2px solid var(--button-error);
 }
 .ipt--error {
-  margin: 0 0.5em;
+  margin: 2em 0.5em;
   color: var(--button-error);
+}
+.search--ctr {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid var(--border);
+  width: 100%;
+}
+.search--ctr:hover{
+  border: 2px solid var(--button-float-highlighted);
 }

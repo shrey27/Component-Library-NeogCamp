@@ -16,6 +16,10 @@
 @import '../components/toast/toast.css';
 @import '../components/rating/rating.css';
 @import '../components/drawer/drawer.css';
+@import '../components/carousal/carousal.css';
+@import '../components/grid/grid.css';
+@import '../components/list/list.css';
+
 
 /* Style for CSS elements */
 * {
@@ -25,6 +29,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 99%;
 }
 i {
   cursor: pointer;
@@ -39,7 +44,7 @@ a {
 }
 code {
   display: inline-block;
-  white-space: pre-wrap   
+  white-space: pre-wrap;
 }
 /* ::-webkit-scrollbar {
   width: 0;
@@ -51,9 +56,32 @@ code {
   border: 2px solid var(--black);
   border-radius: 10px;
 }
+.border--lt{
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
 .shadow {
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgba(129, 113, 113, 0.02);
+}
+
+/* Table */
+table {
+  width: 25%;
+  color: var(--code);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 0.5em auto;
+}
+th,
+td {
+  border-bottom: 2px solid var(--border);
+  text-align: center;
+  padding: 0.5em;
+  font-size: 16px;
+}
+td {
+  border: none;
 }
 
 /* Flex center */
@@ -100,70 +128,4 @@ code {
 }
 .flex-vertical {
   flex-direction: column;
-}
-
-/* Table */
-table {
-  width: 25%;
-  color: var(--code);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  margin: 0.5em auto;
-}
-th,
-td {
-  border-bottom: 2px solid var(--border);
-  text-align: center;
-  padding: 0.5em;
-  font-size: 16px;
-}
-td {
-  border: none;
-}
-
-/* Component */
-.component--title {
-  text-align: center;
-}
-.component--output--wrapper {
-  margin: 1em 0;
-  display: flex;
-  justify-content: center;
-}
-.component--output {
-  position: relative;
-  padding: 0.5em;
-  width: fit-content;
-  margin: auto;
-  border-radius: 10px;
-}
-.code--msg {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  color: var(--white);
-  background-color: var(--button-float);
-  padding: 0.5em;
-  border-radius: 5px;
-  font-size: 0.9em;
-  margin: 0 0 0 0.5em;
-  display: none;
-}
-.code--container {
-  background-color: var(--code);
-  color: var(--button-success);
-  border-radius: 10px;
-  overflow: hidden hidden;
-  max-width: 100%;
-  padding: 1em 1em 0;
-}
-
-/* Media Queries */
-@media only screen and (min-width: 768px) {
-  .component--title {
-    text-align: start;
-  }
-  .code--container {
-    display: inline-flex;
-  }
 }
