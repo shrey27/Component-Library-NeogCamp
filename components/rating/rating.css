@@ -10,15 +10,15 @@
   border: 0;
 }
 /* Hide radio */
-.rate > input {
+.rate > .rating__input {
   display: none;
 }
 /* Order correctly by floating highest to the right */
-.rate > label {
+.rate > .rating__label {
   float: right;
 }
 /* The star of the show */
-.rate > label:before {
+.rate > .rating__label:before {
   display: inline-block;
   padding: 0.3rem 0.2rem;
   margin: 0;
@@ -34,14 +34,14 @@
   padding-right: 0;
 }
 /* Click + hover color */
-input:checked ~ label, /* color current and previous stars on checked */
-label:hover, label:hover ~ label {
+.rating__input:checked ~ .rating__label, /* color current and previous stars on checked */
+.rating__label:hover, .rating__label:hover ~ .rating__label {
   color: var(--rating);
 } /* color previous stars on hover */
 
 /* Hover highlights */
-input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
-input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
-label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
+.rating__input:checked + .rating__label:hover, .rating__input:checked ~ .rating__label:hover, /* highlight current and previous stars */
+.rating__input:checked ~ .rating__label:hover ~ .rating__label, /* highlight previous selected stars for new rating */
+.rating__label:hover ~ .rating__input:checked ~ .rating__label /* highlight previous selected stars */ {
   color: var(--rating);
 }
