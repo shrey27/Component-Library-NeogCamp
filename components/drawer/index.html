@@ -87,7 +87,7 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              <li><a href="../carousal/">Carousal</a></li>
+
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -131,21 +131,29 @@
             To use the drawer component, you need to make use of four classes,
             <strong>drawer</strong>, <strong>drawer--background</strong>,
             <strong>drawer--content</strong> and <strong>drawer--close</strong>.
-            Add any content you want inside <strong>drawer--content</strong>,
-            also use padding classes as per your needs. Enter a value from
+            Use <strong>drawer--background</strong> outside the drawer classes
+            for overlay effect. Add any content you want inside
+            <strong>drawer--content</strong>, also use padding classes as per
+            your needs. Enter a value from
             <strong>top | bottom | left | right</strong> to set the direction of
             the drawer to pop from.
           </p>
           <br /><br />
 
+          <div class="drawer--background"></div>
           <div class="drawer flex-ct-ct">
-            <div class="drawer--background"></div>
-            <div class="drawer--content md-s" direction="bottom">
+            <div class="drawer--content md-s" direction="left">
               <h1 class="sm">Drawer</h1>
-              <p class="sm">this is a sample text</p>
+              <p class="sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
             </div>
             <span class="drawer--close">
               <i class="fas fa-times-circle"></i>
+              <!-- <i class="fa-regular fa-circle-xmark"></i> -->
             </span>
           </div>
 
@@ -160,13 +168,15 @@
             </div>
             <br /><br />
             <div class="code--container">
-              <pre><code class='html'>&lt;div class="drawer flex-ct-ct"&gt;
-&lt;div class="drawer--background"&gt;&lt;/div&gt;
-&lt;div class="drawer--content md-s" wide="20"&gt;
-    &lt;h1 class="sm"&gt;drawer&lt;/h1&gt;
+              <pre><code class='html'>&lt;div class="drawer--background"&gt;&lt;/div&gt;
+&lt;div class="drawer flex-ct-ct"&gt;
+  &lt;div class="drawer--content md-s" direction="left"&gt;
+    &lt;h1 class="sm"&gt;Drawer&lt;/h1&gt;
     &lt;p class="sm"&gt;...&lt;/p&gt;
   &lt;/div&gt;
-&lt;span class="drawer--close"&gt;&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class="drawer--close"&gt;
+  &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
+&lt;/span&gt;
 &lt;/div&gt;
 
 </code></pre>

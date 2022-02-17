@@ -7,23 +7,30 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 300ms;
 }
 .drawer--open {
-  display: inline-flex;
+  transform: translateX(0);
 }
 .drawer--background {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black);
-  opacity: 0.8;
+}
+.drawer--background.drawer--open {
+  background-color: var(--heading);
+  opacity: 0.9;
+  z-index: 100;
 }
 .drawer--content {
   position: absolute;
   background-color: var(--white);
   border: 2px solid var(--border);
+  opacity: 1;
 }
 .drawer--content[direction='top'] {
   top: 0;
@@ -37,8 +44,8 @@
 }
 .drawer--content[direction='left'] {
   left: 0;
-  width: auto;
-  height: auto;
+  max-width: 50%;
+  height: 100%;
   align-self: start;
 }
 .drawer--content[direction='right'] {
