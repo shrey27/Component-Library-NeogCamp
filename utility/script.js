@@ -114,13 +114,12 @@ modalBtn && modalBtn.addEventListener('click', (e) => closeModalFunc(e));
 //Drawer
 const closeModalFuncDrawer = (e) => {
   if (e.target != modal) {
-    console.log('hello');
+    // console.log('hello');
     drawer.classList.remove('drawer--open');
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'visible';
     });
-    document.body.style.position = 'static';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    drawerBack.classList.remove('drawer--open');
   }
 };
 
@@ -131,9 +130,7 @@ showDrawerBtn &&
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'hidden';
     });
-    scrollY = `-${window.scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.top = scrollY;
+    drawerBack.classList.add('drawer--open');
   });
 
 drawerBack &&
@@ -158,33 +155,3 @@ openSideBarBtn &&
     mainHb.classList.toggle('hb--open');
   });
 
-// Carousal
-let slideIndex = 1;
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function showSlides(n) {
-  let slides = document.querySelectorAll('.mySlides');
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slides[slideIndex - 1].style.display = 'block';
-}
-
-const setSlideShow = () => {
-  setInterval(() => {
-    showSlides(slideIndex);
-    slideIndex++;
-  }, 5000);
-};
-
-setSlideShow();
