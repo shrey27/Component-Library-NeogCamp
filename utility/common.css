@@ -54,7 +54,7 @@ code {
   border: 2px solid var(--black);
   border-radius: 10px;
 }
-.border--lt{
+.border--lt {
   border: 2px solid var(--border);
   border-radius: 10px;
 }
@@ -62,7 +62,12 @@ code {
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgba(129, 113, 113, 0.02);
 }
-
+.mg-half {
+  margin: 0.5rem 0;
+}
+.mg-full {
+  margin: 1rem 0;
+}
 /* Table */
 table {
   width: 25%;

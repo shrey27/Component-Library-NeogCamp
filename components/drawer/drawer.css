@@ -1,6 +1,11 @@
 @import '../../utility/common.css';
 @import '../../installation/styles.css';
 
+/* Aside */
+.box__aside,
+.box__header {
+  z-index: 100;
+}
 .drawer {
   width: 100%;
   height: 100%;

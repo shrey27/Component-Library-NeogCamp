@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drawer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
     <link rel="stylesheet" href="drawer.css" />
     <link
       rel="stylesheet"
@@ -87,7 +88,6 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -117,17 +117,14 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Drawer</h1>
-          <br /><br />
-          <p class="heading md reg">
+          <h1 class="heading lg sb mg-full">Drawer</h1>
+          <p class="heading md reg mg-full">
             A classic drawer overlay, in which you can include any content you
             want. It works best in mobile view as a complimentary component to
             modal and can be used for making pop-up windows.
           </p>
-          <br /><br />
           <hr />
-          <br /><br />
-          <p class="heading md lt">
+          <p class="heading md lt mg-full">
             To use the drawer component, you need to make use of four classes,
             <strong>drawer</strong>, <strong>drawer--background</strong>,
             <strong>drawer--content</strong> and <strong>drawer--close</strong>.
@@ -138,7 +135,6 @@
             <strong>top | bottom | left | right</strong> to set the direction of
             the drawer to pop from.
           </p>
-          <br /><br />
 
           <div class="drawer--background"></div>
           <div class="drawer flex-ct-ct">
@@ -159,19 +155,18 @@
 
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct"></div>
+              <div class="flex-ct-st"></div>
               <div>
                 <button class="btn btn--primary btn--md show--drawer">
                   Show Drawer
                 </button>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
-              <pre><code class='html'>&lt;div class="drawer--background"&gt;&lt;/div&gt;
-&lt;div class="drawer flex-ct-ct"&gt;
-  &lt;div class="drawer--content md-s" direction="left"&gt;
-    &lt;h1 class="sm"&gt;Drawer&lt;/h1&gt;
+<div class="code--container mg-full">
+              <pre><code class='html'>&lt;div class="drawer flex-ct-ct"&gt;
+&lt;div class="drawer--background"&gt;&lt;/div&gt;
+&lt;div class="drawer--content md-s" wide="20"&gt;
+    &lt;h1 class="sm"&gt;drawer&lt;/h1&gt;
     &lt;p class="sm"&gt;...&lt;/p&gt;
   &lt;/div&gt;
 &lt;span class="drawer--close"&gt;

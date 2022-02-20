@@ -10,6 +10,8 @@ Apollo-UI is a one stop solutions to all your styling needs. It is modular, clea
 * Badge
 * Button
 * Card
+* Drawer
+* Grid
 * Hamburger menu(Sidebar)
 * Image
 * Input
@@ -17,7 +19,6 @@ Apollo-UI is a one stop solutions to all your styling needs. It is modular, clea
 * Navbar
 * Toast
 * Rating Field
-* Drawer
 
 ### How to use this library?
 In order to apply apollo-ui components to your project, copy the below link tags and place them inside the head tag of your html, above all other imported style sheets. First tag imports the styling from apollo-ui and second tag imports font-awesome icons into your code. 

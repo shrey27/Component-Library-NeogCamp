@@ -114,7 +114,6 @@ modalBtn && modalBtn.addEventListener('click', (e) => closeModalFunc(e));
 //Drawer
 const closeModalFuncDrawer = (e) => {
   if (e.target != modal) {
-    // console.log('hello');
     drawer.classList.remove('drawer--open');
     codeContainerAll.forEach((elem) => {
       elem.style.visibility = 'visible';

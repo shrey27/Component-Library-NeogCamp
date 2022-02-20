@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badge</title>
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
@@ -87,7 +88,6 @@
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
-              
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -117,17 +117,17 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Badge</h1>
-          <br /><br />
-          <p class="heading md reg">
+          <h1 class="heading lg sb mg-full">Badge</h1>
+
+          <p class="heading md reg mg-full">
             A badge is used to send information as notification. It could be a
             text message or number or a status update.
           </p>
-          <br /><br />
+
           <hr />
-          <br /><br />
+
           <!-- Profile Badges -->
-          <h1 class="heading md sb">Badge on Profile</h1>
+          <h1 class="heading md sb mg-full">Badge on Profile</h1>
           <p class="heading md lt">
             Wrap an image in a container with class as 'bdg'. Along with image
             tag pass an inline tag like span with class name as 'bdg--profile'.
@@ -137,7 +137,7 @@
 
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -168,8 +168,8 @@
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="bdg"&gt;
 &lt;img src="image.png" alt="Avatar" class="avatar avatar--sm"/&gt;
 &lt;span class="bdg--profile sml"&gt;&lt;/span&gt;
@@ -188,7 +188,6 @@
 </code></pre>
             </div>
           </div>
-          <br /><br />
 
           <!-- Profile Badges -->
           <h1 class="heading md sb">Badge on Icons</h1>
@@ -198,11 +197,10 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
-              <br />
               <div class="code--text sm-s">
                 <i
                   icon-badge="7"
@@ -221,8 +219,8 @@
                 ></i>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;i icon-badge="7" bdg-size="extra" class="fas fa-shopping-cart xl"&gt;&lt;/i&gt;
 &lt;i icon-badge="7" bdg-size="large" class="fas fa-shopping-cart lg"&gt;&lt;/i&gt;
 &lt;i icon-badge="7" bdg-size="medium" class="fas fa-shopping-cart md"&gt;&lt;/i&gt;

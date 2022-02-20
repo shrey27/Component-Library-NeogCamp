@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
     <link rel="stylesheet" href="card.css" />
     <link
       rel="stylesheet"
@@ -86,8 +87,7 @@
               <li><a href="../toast/">Toast</a></li>
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
-              <li><a href="../drawer/">Drawer</a></li>
-              
+              <li><a href="../drawer/">Drawer</a></li>              
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -117,18 +117,14 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Card</h1>
-          <br /><br />
-          <p class="heading md reg">
+          <h1 class="heading lg sb mg-full">Card</h1>
+          <p class="heading md reg mg-full">
             A card is a very handy component to showcase a small piece of
             information in concise manner. It is very useful on an e-commerce
             platform and as modal or pop-up.
           </p>
-          <br /><br />
           <hr />
-          <br /><br />
-          <h1 class="heading md sb">Text Only Card</h1>
-          <br /><br />
+          <h1 class="heading md sb mg-full">Text Only Card</h1>
           <p class="heading md lt">
             A basic card with no banner or shadow. Put 'card' class over a
             container and add subsequent elements in it for complete
@@ -136,7 +132,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -152,8 +148,8 @@
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card"&gt;
 &lt;h1 class="card--title flex-ct-st"&gt;...&lt;
 /h1&gt;
@@ -166,9 +162,7 @@
             </div>
           </div>
 
-          <br /><br />
           <h1 class="heading md sb">Card with Badge</h1>
-          <br /><br />
           <p class="heading md lt">
             A basic card with banner and a badge. Put 'card' class over a
             container and add subsequent elements in it for complete
@@ -176,7 +170,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -200,8 +194,8 @@
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card shdw"&gt;
 &lt;span class="card--badge"&gt;BADGE&lt;/span&gt;
   &lt;img src="image.jpg" alt="Banner" class="card--banner"/&gt;
@@ -217,9 +211,7 @@
 </code></pre>
             </div>
           </div>
-          <br /><br />
           <h1 class="heading md sb">Card with Text Overlay</h1>
-          <br /><br />
           <p class="heading md lt">
             A basic card with banner and text over the banner. Put 'card' class
             over a container and add subsequent elements in it for complete
@@ -227,7 +219,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -254,8 +246,8 @@
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card"&gt;
 &lt;div class="overlay"&gt;
 &lt;img src="img.jpg" alt="Banner" class="overlay--banner 
@@ -270,9 +262,7 @@ overlay--back"/&gt;
 </code></pre>
             </div>
           </div>
-          <br /><br />
           <h1 class="heading md sb">Card with Dismiss</h1>
-          <br /><br />
           <p class="heading md lt">
             A dynamic card with banner and dismiss functionality. Put 'card',
             'dismiss' and 'open' class over a container and add subsequent
@@ -281,7 +271,7 @@ overlay--back"/&gt;
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -307,8 +297,8 @@ overlay--back"/&gt;
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card dismiss open"&gt;
 &lt;span class="card--dismiss"&gt;&lt;i class="fas fa-times-circle"
 &gt;&lt;/i&gt; &lt;/span&gt;
@@ -323,9 +313,7 @@ overlay--back"/&gt;
 </code></pre>
             </div>
           </div>
-          <br /><br />
           <h1 class="heading md sb">Card with Shadow</h1>
-          <br /><br />
           <p class="heading md lt">
             A basic card with banner and shadow. Put 'card' and 'shdw' class
             over a container and add subsequent elements in it for complete
@@ -333,7 +321,7 @@ overlay--back"/&gt;
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -356,8 +344,8 @@ overlay--back"/&gt;
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card shdw"&gt;
 &lt;img src="img.jpg"alt="Banner" class="card--banner"/&gt;
 &lt;section class="content"&gt;
@@ -369,9 +357,7 @@ overlay--back"/&gt;
 </code></pre>
             </div>
           </div>
-          <br /><br />
           <h1 class="heading md sb">Horizontal Card</h1>
-          <br /><br />
           <p class="heading md lt">
             A basic card with banner but in landscape orientation. Put 'card'
             and 'landscape' class over a container and add subsequent elements
@@ -379,7 +365,7 @@ overlay--back"/&gt;
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -402,8 +388,8 @@ overlay--back"/&gt;
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;div class="card landscape"&gt;
 &lt;img src="img.jpg"
       alt="Banner" class="card--banner"/&gt;
@@ -415,72 +401,6 @@ overlay--back"/&gt;
       collaborate to take this research forward.
   &lt;/p&gt;
   &lt;/section&gt;
-&lt;/div&gt;
-
-</code></pre>
-            </div>
-          </div>
-          <br /><br />
-          <h1 class="heading md sb">E-commerce Card</h1>
-          <br /><br />
-          <p class="heading md lt">
-            An e-commerce card with image and product details. Put 'card' and
-            'ecom' class over a container and add subsequent elements in it for
-            complete implementation.
-          </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
-              <div class="flex-ct-ct">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
-              </div>
-              <div class="code--text">
-                <div class="card ecom">
-                  <img
-                    src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-                    alt="Banner"
-                    class="card--banner"
-                  />
-                  <section class="content xs-s">
-                    <h1 class="heading sm sb">RUNNING SHOES - MEN'S</h1>
-                    <p class="price flex-ct-st">
-                      <span class="heading md sb price--pmy">₹12,000</span>
-                      <span class="subheading sm sb price--sec">₹18,000</span>
-                      <span class="sm sb xs-s price--ter">33% off</span>
-                    </p>
-                    <br />
-                    <span class="content--tag sb">Free-Delivery</span
-                    ><br /><br />
-                    <span class="content--rating">
-                      4.5<i class="fas fa-star"></i>
-                    </span>
-                    <span class="subheading sm sb">&nbsp4300 reviews</span>
-                    <br /><br />
-                  </section>
-                </div>
-              </div>
-            </div>
-            <br /><br />
-            <div class="code--container">
-              <pre><code class='html'>&lt;div class="card ecom"&gt;
-&lt;img
-  src="image.png"
-  alt="Banner"
-  class="card--banner"
-/&gt;
-&lt;section class="content xs-s"&gt;
-    &lt;h1 class="heading sm sb"&gt;RUNNING SHOES - MEN&lt;/h1&gt;
-        &lt;p class="price"&gt;
-          &lt;span class="heading md sb price--pmy"&gt;₹12,000&lt;/span&gt;
-            &lt;span class="subheading sm sb price--sec"&gt;₹18,000&lt;/span&gt;
-            &lt;span class="sm sb xs-s price--ter"&gt;33% off&lt;/span&gt;
-            &lt;/p&gt;&lt;br/&gt;
-            &lt;span class="content--tag sb"&gt;Free-Delivery&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;
-            &lt;span class="content--rating"&gt;
-              4.5&lt;i class="fas fa-star"&gt;&lt;/i&gt;
-          &lt;/span&gt;
-    &lt;span class="subheading sm sb"&gt;&nbsp4300 reviews&lt;/span&gt;
-&lt;/section&gt;
 &lt;/div&gt;
 
 </code></pre>

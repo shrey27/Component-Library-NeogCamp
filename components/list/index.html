@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List</title>
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
     <link rel="stylesheet" href="list.css" />
     <link
       rel="stylesheet"
@@ -116,18 +117,15 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">List</h1>
-          <br /><br />
-          <p class="heading md reg">
+          <h1 class="heading lg sb mg-full">List</h1>
+          <p class="heading md reg mg-full">
             There are two types of lists in HTML, ordered and unordered. I have
             put a third category of stacked list as well for making small
             notification or info boxes.
           </p>
-          <br /><br />
           <hr />
-          <br /><br />
 
-          <h1 class="heading md sb">Unordered List</h1>
+          <h1 class="heading md sb mg-full">Unordered List</h1>
           <p class="heading md lt">
             List by default is unordered. To add custom marker or set different
             font size or padding add the pre-defined classes.
@@ -136,7 +134,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -146,13 +144,13 @@
                   <li>Tea</li>
                   <li>Cola</li>
                 </ul>
-                <br />
+    
                 <ul class="sm sb list--circle sm-s">
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Cola</li>
                 </ul>
-                <br />
+    
                 <ul class="sm sb list--square sm-s">
                   <li>Coffee</li>
                   <li>Tea</li>
@@ -160,8 +158,8 @@
                 </ul>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;ul class="list--circle sm sb sm-s"&gt;
 &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
@@ -171,7 +169,6 @@
 </code></pre>
             </div>
           </div>
-          <br /><br />
           <h1 class="heading md sb">Ordered List</h1>
           <p class="heading md lt">
             Ordered List by default is numbered. To override default properties
@@ -182,7 +179,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -192,13 +189,13 @@
                   <li>Tea</li>
                   <li>Cola</li>
                 </ol>
-                <br />
+    
                 <ol class="sm sb list--od list--roman md-s">
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Cola</li>
                 </ol>
-                <br />
+    
                 <ol class="sm sb list--od list--alpha md-s">
                   <li>Coffee</li>
                   <li>Tea</li>
@@ -206,8 +203,8 @@
                 </ol>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;ol class="list--od list--roman sm sb sm-s"&gt;
  &lt;li&gt;Coffee&lt;/li&gt;
  &lt;li&gt;Tea&lt;/li&gt;
@@ -218,7 +215,6 @@
             </div>
           </div>
 
-          <br /><br />
           <h1 class="heading md sb">Stacked List</h1>
           <p class="heading md lt">
             Stacked List are basically like a text only card. To begin default
@@ -228,7 +224,7 @@
           </p>
           <div class="component--output--wrapper flex-ct-ct flex-vertical">
             <div class="component--output shadow">
-              <div class="flex-ct-ct">
+              <div class="flex-ct-st">
                 <i class="far fa-copy btn btn--icons btn--round"></i>
                 <span class="code--msg">Copied!</span>
               </div>
@@ -245,7 +241,7 @@
                       <h2 class="subheading sm">calvin.hawkins@example.com</h2>
                     </div>
                   </li>
-                  <br />
+      
                   <li class="flex-ct-st shadow xs-s">
                     <img
                       src="https://www.quanzhanketang.com/w3css/img_avatar5.png"
@@ -257,7 +253,7 @@
                       <h2 class="subheading sm">kristen.ramons@example.com</h2>
                     </div>
                   </li>
-                  <br />
+      
                   <li class="flex-ct-st shadow xs-s">
                     <img
                       src="https://www.quanzhanketang.com/w3css/img_avatar3.png"
@@ -272,8 +268,8 @@
                 </ul>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code class='html'>&lt;ul class="stack"&gt;
   &lt;li class="stack__card flex-ct-st"&gt;
    &lt;img src="..."
