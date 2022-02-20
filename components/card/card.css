@@ -125,7 +125,7 @@
 /* E-commerce card */
 .ecom {
   height: 30em;
-} 
+}
 .price--sec {
   text-decoration: line-through;
 }
@@ -140,6 +140,7 @@
   padding: 0.5em 0.75em;
 }
 .content--rating {
+  display: inline-block;
   padding: 0.5em 0 0.5em 0.5em;
   font-size: 1em;
   border-radius: 20px;

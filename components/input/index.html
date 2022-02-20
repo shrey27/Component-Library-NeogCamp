@@ -117,16 +117,13 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Input</h1>
-          <br /><br />
-          <p class="heading md reg">
+          <h1 class="heading lg sb mg-full">Input</h1>
+          <p class="heading md reg mg-full">
             A class to style any type of input element and handle the error
             messages.
           </p>
-          <br /><br />
           <hr />
-          <br /><br />
-          <p class="heading md lt">
+          <p class="heading md lt mg-full">
             Add <strong>'ipt'</strong> class to style primary input fields. In
             case mandatory fields or fields with required attributes add
             <strong>'ipt--man'</strong> for error handling. Add dimensions to
@@ -141,46 +138,55 @@
               </div>
               <div class="code--text">
                 <div class="input--container">
-                  <label for="search-bar">
-                    <span class="lbl">Search Bar</span>
-                    <div class="search--ctr">
-                      <i class="fas fa-search search--btn"></i>
+                  <div class="mg-full">
+                    <label for="search-bar">
+                      <span class="lbl">Search Bar</span>
+                      <div class="search--ctr">
+                        <i class="fas fa-search search--btn"></i>
+                        <input
+                          type="text"
+                          placeholder="Search"
+                          class="ipt no--bdr"
+                          id="user-name"
+                          name="user-name"
+                        />
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="mg-full">
+                    <label for="user-name">
+                      <span class="lbl">Username</span>
                       <input
                         type="text"
-                        placeholder="Search"
-                        class="ipt no--bdr"
+                        placeholder="Enter Username"
+                        class="ipt"
                         id="user-name"
                         name="user-name"
                       />
-                    </div> </label
-                  ><br /><br />
-                  <label for="user-name">
-                    <span class="lbl">Username</span>
-                    <input
-                      type="text"
-                      placeholder="Enter Username"
-                      class="ipt"
-                      id="user-name"
-                      name="user-name"
-                    /> </label
-                  ><br /><br />
-                  <label for="pswd"
-                    ><span class="lbl">Password*</span>
-                    <input
-                      type="password"
-                      placeholder="Enter Password"
-                      class="ipt ipt--man"
-                      id="pswd"
-                      name="password"
-                      required
-                    />
-                    <span class="ipt--error">This field is mandatory</span>
-                  </label>
+                    </label>
+                  </div>
+
+                  <div class="mg-full">
+                    <label for="pswd">
+                      <span class="lbl">Password*</span>
+                      <input
+                        type="password"
+                        placeholder="Enter Password"
+                        class="ipt ipt--man"
+                        id="pswd"
+                        name="password"
+                        required
+                      />
+                      <span class="ipt--error">This field is mandatory</span>
+                    </label>
+                  </div>
+                  
                 </div>
               </div>
             </div>
-            <br /><br />
-            <div class="code--container">
+
+            <div class="code--container mg-full">
               <pre><code>&lt;label for="search-bar"&gt;
 &lt;span class="lbl"&gt;Search Bar&lt;/span&gt;
 &lt;div class="search--ctr"&gt;
