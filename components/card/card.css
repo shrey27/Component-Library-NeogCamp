@@ -4,53 +4,53 @@
 /* Basic card */
 .card {
   position: relative;
-  max-width: 20em;
+  max-width: 20rem;
   background-color: var(--white);
-  border: 2px solid var(--border);
+  border: 2px solid var(--primary--light);
   border-radius: 10px;
 }
 
 /* Card with shadow */
 .shdw {
   border: none;
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+  box-shadow: 0 0.5rem 1rem -0.125rem rgb(10 10 10 / 10%),
     0 0 0 1px rgba(129, 113, 113, 0.02);
 }
-.card--title {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-  margin: 0.5em 0.75em;
-  color: var(--heading);
+.card__title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  margin: 0.5rem 0.75rem;
+  color: var(--primary);
 }
-.card--subtitle {
-  font-size: 1em;
-  margin: 0.5em 0;
-  margin: 0.5em 1em;
-  color: var(--subheading);
+.card__subtitle {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  margin: 0.5rem 1rem;
+  color: var(--primary--light);
 }
-.card--content {
+.card__content {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--code);
-  margin: 1em;
-  padding-bottom: 0.5em;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Badge on title */
-.card--badge {
+.card__badge {
   position: absolute;
-  top: 1em;
-  right: -0.5em;
+  top: 1rem;
+  right: -0.5rem;
   z-index: 10;
-  padding: 0.5em;
-  font-size: 0.75em;
+  padding: 0.5rem;
+  font-size: 0.75rem;
   background-color: var(--button-link);
   color: var(--white);
   margin: 0;
 }
 
 /* Card with banner */
-.card--banner {
+.card__banner {
   height: 60%;
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -58,12 +58,12 @@
 }
 
 /* Card that can dismiss */
-.card--dismiss {
+.card__dismiss {
   position: absolute;
-  top: 0.5em;
-  right: 0.25em;
+  top: 0.5rem;
+  right: 0.25rem;
   z-index: 10;
-  font-size: 2em;
+  font-size: 2rem;
   color: var(--white);
   margin: 0;
 }
@@ -78,32 +78,30 @@
 .overlay {
   display: grid;
 }
-.overlay--banner {
+.overlay__banner {
   height: 100%;
   width: 100%;
   border-radius: 10px 10px 0 0;
   margin: 0;
 }
-.overlay--title {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-  margin: 0.5em 0.5em 1.25em;
+.overlay__title {
+  font-size: 1.5rem;
+  margin: 1.25rem 0.5rem;
   color: var(--white);
   align-self: flex-end;
 }
-.overlay--subtitle {
-  font-size: 1em;
-  margin: 0.5em 0;
-  margin: 0.5em 0.75em;
+.overlay__subtitle {
+  font-size: 1rem;
+  margin: 0.05rem 0.5rem;
   color: var(--white);
   align-self: flex-end;
 }
-.overlay--back,
-.overlay--front {
+.overlay__back,
+.overlay__front {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.overlay--front {
+.overlay__front {
   z-index: 5;
 }
 
@@ -113,7 +111,7 @@
   height: auto;
   max-width: 100%;
 }
-.landscape .card--banner {
+.landscape .card__banner {
   height: auto;
   width: 40%;
   border-radius: 10px 0 0 10px;
@@ -124,7 +122,7 @@
 
 /* E-commerce card */
 .ecom {
-  height: 30em;
+  height: 30rem;
 }
 .price--sec {
   text-decoration: line-through;
@@ -132,18 +130,18 @@
 .price--ter {
   color: var(--button-success);
 }
-.content--tag {
-  font-size: 0.75em;
-  color: var(--heading);
+.content__tag {
+  font-size: 0.75rem;
+  color: var(--primary);
   background-color: var(--button-light);
-  border-radius: 25px;
-  padding: 0.5em 0.75em;
+  border-radius: 1.6rem;
+  padding: 0.5rem 0.75rem;
 }
-.content--rating {
+.content__rating {
   display: inline-block;
-  padding: 0.5em 0 0.5em 0.5em;
-  font-size: 1em;
-  border-radius: 20px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 1.25rem;
   color: var(--white);
   background-color: var(--badge-online);
 }

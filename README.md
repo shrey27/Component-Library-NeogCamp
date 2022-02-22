@@ -37,12 +37,6 @@ In order to apply apollo-ui components to your project, copy the below link tags
 />
 ```
 
-To add dynamic behaviour to your code, include the below script tag in the body of your html document.
-
-```
-<script src="https://apolloui-neog.netlify.app/utility/script.js"></script>
-```
-
 Checkout these screenshots for more info.
 
 ### Homepage

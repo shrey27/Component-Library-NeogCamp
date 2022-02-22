@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="navbar.css" />
     <link
       rel="stylesheet"
@@ -26,53 +26,52 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
+              <li><a href="../../installation">Installation</a></li>
               <li><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
@@ -82,12 +81,12 @@
               <li><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
-              <li><a href="../navbar/">Navbar</a></li>
+              <li class="active"><a href="../navbar/">Navbar</a></li>
               <li><a href="../modal/">Modal</a></li>
               <li><a href="../toast/">Toast</a></li>
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
-              <li><a href="../drawer/">Drawer</a></li>  
+              <li><a href="../drawer/">Drawer</a></li>
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,9 +119,9 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb mg-full">Navbar</h1>
+          <h1 class="primary lg sb mg-full">Navbar</h1>
 
-          <p class="heading md reg mg-full">
+          <p class="primary md reg mg-full">
             The navbar component is a responsive and versatile horizontal
             navigation bar which contains elements such as brand logo, title,
             search bar, redirecting links or icons. In mobile view it supports
@@ -128,29 +130,29 @@
 
           <hr />
 
-          <p class="heading md lt mg-full">
+          <p class="primary sm bl mg-full">
             Navbar component works on grid layout model. So user can put content
             in three sections of the navbar, start, middle and end. Adjust
             window size to check responsiveness.
           </p>
 
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <nav class="navbar shadow sm-s">
-                  <span class="nav--icons">
+                  <span class="nav__icons">
                     <i class="fas fa-bars"></i>
                   </span>
                   <section class="start">
                     <a href="../../index.html">
-                      <img class="box__image" src="../../assets/rocket.jpg" />
+                      <img class="box__image" src="../../assets/rocket.webp" />
                     </a>
-                    <span class="box-span">
-                      <span class="md sb n-s heading">Apollo-UI</span>
+                    <span class="box__span">
+                      <span class="md sb n-s primary">Apollo-UI</span>
                     </span>
                   </section>
                   <section class="middle flex-ct-ct">
@@ -158,19 +160,13 @@
                       <input
                         type="text"
                         placeholder="Search"
-                        class="ipt"
+                        class="input"
                         id="search"
                         name="search"
                       />
                     </label>
                   </section>
                   <section class="end flex-ct-ed">
-                    <a href="https://twitter.com/home">
-                      <img
-                        class="box__image__sm"
-                        src="https://img.icons8.com/color/48/000000/twitter--v1.png"
-                      />
-                    </a>
                     <a href="https://github.com/shrey27">
                       <img
                         class="box__image__sm"
@@ -182,7 +178,7 @@
               </div>
             </div>
 
-            <div class="code--container">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;nav class="navbar"&gt;
   &lt;section class="start"&gt;...&lt;/section&gt;
   &lt;section class="middle flex-ct-ed"&gt;&lt;label for="search"&gt;...&lt;/section&gt;

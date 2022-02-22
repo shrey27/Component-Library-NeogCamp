@@ -20,13 +20,13 @@
   color: var(--black);
 }
 .b3 {
-  background-color: var(--heading);
+  background-color: var(--primary);
 }
 .b4 {
-  background-color: var(--subheading);
+  background-color: var(--primary--light);
 }
 .b5 {
-  background-color: var(--border);
+  background-color: var(--primary--light);
   color: var(--black);
 }
 .b6 {

@@ -2,40 +2,40 @@
 @import '../../installation/styles.css';
 
 .input--container {
-  width: 20em;
+  width: 20rem;
 }
-.lbl {
-  font-size: 1em;
-  color: var(--heading);
-  margin: 0.5em;
+.label {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0.5rem;
 }
-.ipt {
+.input {
   outline: none;
   display: inline;
-  font-size: 1em;
-  padding: 0.5em;
-  border: 2px solid var(--border);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px solid var(--primary--light);
   width: 100%;
 }
-.no--bdr{
+.no--bdr {
   border: none;
 }
-/* .ipt:focus {
+/* .input:focus {
   border: 2px solid var(--button-float-highlighted);
 } */
-.ipt--man:focus {
+.input--man:focus {
   border: 2px solid var(--button-error);
 }
-.ipt--error {
-  margin: 2em 0.5em;
+.input--error {
+  margin: 2rem 0.5rem;
   color: var(--button-error);
 }
 .search--ctr {
   display: inline-flex;
   align-items: center;
-  border: 2px solid var(--border);
+  border: 2px solid var(--primary--light);
   width: 100%;
 }
-.search--ctr:hover{
+.search--ctr:hover {
   border: 2px solid var(--button-float-highlighted);
 }

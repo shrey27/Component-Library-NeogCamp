@@ -2,10 +2,13 @@
   /* Common Colors */
   --white: white;
   --black: black;
-  --heading: #363636;
-  --subheading: #a8a8a8;
-  --text-dark:#645f5f;
-  --border: #dbdbdb;
+
+  --primary: #363636;
+  --primary--light: #dbdbdb;
+
+  --secondary: #3e8ed0;
+  --secondary--light: #5783a8;
+
   --code: #282c34;
   --code-span: #e6cd69;
 
@@ -19,13 +22,13 @@
   --button-link-highlighted: #344aad;
   --button-success: #48c78e;
   --button-success-highlighted: #2ca56e;
-  --button-error: #f14668;
-  --button-error-highlighted: #d13a58;
+  --button-error: #ea0e3a;
+  --button-error-highlighted: #bc1c3c;
   --button-icons-text: #363636;
   --button-icons: #ffe08a;
   --button-icons-highlighted: #ecce7a;
   --button-float: #3e8ed0;
-  --button-float-highlighted: #2b77b4;
+  --button-float-highlighted: #3e8ed0;
 
   /* Badge colors */
   --badge-online: #047857;
@@ -37,18 +40,16 @@
   --rating-hover: #ecbc43;
 }
 
-/* Headings */
-.heading {
-  color: var(--heading);
+/* Primary and secondary colors */
+.primary {
+  color: var(--primary);
 }
-.subheading {
-  color: var(--subheading);
+.primary--light {
+  color: var(--primary--light);
 }
-
-/* Text */
-.text--dark{
-  color: var(--text-dark);
+.secondary {
+  color: var(--secondary);
 }
-.text--light{
-  color: var(--border);
+.secondary--light {
+  color: var(--secondary--light);
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="image.css" />
     <link
       rel="stylesheet"
@@ -26,53 +26,52 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
+              <li><a href="../../installation">Installation</a></li>
               <li><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
@@ -80,7 +79,7 @@
               <li><a href="../badge">Badge</a></li>
               <li><a href="../button">Button</a></li>
               <li><a href="../card">Card</a></li>
-              <li><a href="../image">Image</a></li>
+              <li class="active"><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
               <li><a href="../navbar/">Navbar</a></li>
               <li><a href="../modal/">Modal</a></li>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,23 +119,23 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb mg-full">Image</h1>
-          <p class="heading md reg mg-full">
+          <h1 class="primary lg sb mg-full">Image</h1>
+          <p class="primary md reg mg-full">
             A custom class to showcase images in differnt sizes, shapes and
             responsiveness.
           </p>
           <hr />
 
-          <h1 class="heading md sb mg-full">Sizes of Image</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb mg-full">Sizes of Image</h1>
+          <p class="primary sm bl lt">
             To size a regular shaped image use 'img--size__name' to set the
             dimensions.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <img
@@ -154,7 +156,7 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;img src="image.jpg"
   alt="Image" class="img--sm"/&gt;
 &lt;img src="image.jpg"
@@ -166,11 +168,11 @@
             </div>
           </div>
 
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <img
@@ -191,7 +193,7 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class="html">&lt;img src="image.jpg"
   alt="Image" class="img--sm round"/&gt;
 &lt;img src="image.jpg"
@@ -203,16 +205,16 @@
             </div>
           </div>
 
-          <h1 class="heading md sb">Responsive Image</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Responsive Image</h1>
+          <p class="primary sm bl lt">
             Add 'img--resp' class to make images responsive with cover fit. Size
             of image depends on outer parent container.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <img
@@ -223,7 +225,7 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;img src="image.jpg"
 alt="Image" class="img--resp" /&gt;
 
