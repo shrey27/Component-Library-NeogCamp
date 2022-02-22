@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drawer</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="drawer.css" />
     <link
       rel="stylesheet"
@@ -26,53 +26,52 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
+              <li><a href="../../installation">Installation</a></li>
               <li><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
@@ -87,7 +86,7 @@
               <li><a href="../toast/">Toast</a></li>
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
-              <li><a href="../drawer/">Drawer</a></li>
+              <li class="active"><a href="../drawer/">Drawer</a></li>
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,28 +119,34 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb mg-full">Drawer</h1>
-          <p class="heading md reg mg-full">
+          <h1 class="primary lg sb mg-full">Drawer</h1>
+          <p class="primary md reg mg-full">
             A classic drawer overlay, in which you can include any content you
             want. It works best in mobile view as a complimentary component to
             modal and can be used for making pop-up windows.
           </p>
           <hr />
-          <p class="heading md lt mg-full">
+          <p class="primary sm bl mg-full">
             To use the drawer component, you need to make use of four classes,
-            <strong>drawer</strong>, <strong>drawer--background</strong>,
-            <strong>drawer--content</strong> and <strong>drawer--close</strong>.
-            Use <strong>drawer--background</strong> outside the drawer classes
+            <strong>drawer</strong>, <strong>drawer__background</strong>,
+            <strong>drawer__content</strong> and <strong>drawer__close</strong>.
+          </p>
+          <p class="primary sm bl mg-full">
+            Use <strong>drawer__background</strong> outside the drawer classes
             for overlay effect. Add any content you want inside
-            <strong>drawer--content</strong>, also use padding classes as per
+            <strong>drawer__content</strong>, also use padding classes as per
             your needs. Enter a value from
             <strong>top | bottom | left | right</strong> to set the direction of
             the drawer to pop from.
           </p>
+          <p class="primary sm bl mg-full">
+            Use <strong>drawer__open</strong> to control the dynamic behaviour
+            of the drawer.
+          </p>
 
-          <div class="drawer--background"></div>
+          <div class="drawer__background"></div>
           <div class="drawer flex-ct-ct">
-            <div class="drawer--content md-s" direction="left">
+            <div class="drawer__content md-s" direction="left">
               <h1 class="sm">Drawer</h1>
               <p class="sm">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -147,29 +155,29 @@
                 of type and scrambled it to make a type specimen book.
               </p>
             </div>
-            <span class="drawer--close">
+            <span class="drawer__close">
               <i class="fas fa-times-circle"></i>
               <!-- <i class="fa-regular fa-circle-xmark"></i> -->
             </span>
           </div>
 
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st"></div>
               <div>
-                <button class="btn btn--primary btn--md show--drawer">
+                <button class="btn btn--float btn--md show--drawer">
                   Show Drawer
                 </button>
               </div>
             </div>
-<div class="code--container mg-full">
-              <pre><code class='html'>&lt;div class="drawer flex-ct-ct"&gt;
-&lt;div class="drawer--background"&gt;&lt;/div&gt;
-&lt;div class="drawer--content md-s" wide="20"&gt;
+            <div class="code__container mg-full">
+              <pre><code class='html'>&lt;div class="drawer__background"&gt;&lt;/div&gt;
+&lt;div class="drawer flex-ct-ct"&gt;
+&lt;div class="drawer__content md-s" wide="20"&gt;
     &lt;h1 class="sm"&gt;drawer&lt;/h1&gt;
     &lt;p class="sm"&gt;...&lt;/p&gt;
   &lt;/div&gt;
-&lt;span class="drawer--close"&gt;
+&lt;span class="drawer__close"&gt;
   &lt;i class="fas fa-times-circle"&gt;&lt;/i&gt;
 &lt;/span&gt;
 &lt;/div&gt;

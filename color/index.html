@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -26,53 +26,52 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
-              <li><a href="../../color">Color Palette</a></li>
+              <li><a href="../../installation">Installation</a></li>
+              <li class="active"><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../components/avatar">Avatar</a></li>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,13 +119,13 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb">Color Palette</h1>
-          <p class="heading md reg">
+          <h1 class="primary lg sb">Color Palette</h1>
+          <p class="primary md reg mg-full">
             Here I have mentioned all the major colors used while creating the
             components along with their hex codes.
           </p>
           <hr />
-          <h1 class="heading md sb mg-full">Default Colors</h1>
+          <h1 class="primary md sb mg-full">Default Colors</h1>
           <div class="flex-st-st">
             <div class="clr-box b1">
               <span class="clr-name">Black</span>
@@ -154,7 +156,7 @@
               <span class="clr-val">#e6cd69</span>
             </div>
           </div>
-          <h1 class="heading md sb mg-full">Colors used in Components</h1>
+          <h1 class="primary md sb mg-full">Colors used in Components</h1>
           <div class="flex-st-st">
             <div class="clr-box b8">
               <span class="clr-name">Primary</span>

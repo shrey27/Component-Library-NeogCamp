@@ -1,23 +1,23 @@
 /* Font-size */
 .xs {
-  font-size: 8px;
-  line-height: 16px;
+  font-size: 0.5rem;
+  line-height: 1rem;
 }
 .sm {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .md {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .lg {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
 }
 .xl {
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 /* Bold Type */
@@ -42,22 +42,22 @@
   padding: 0;
 }
 .xs-s {
-  padding: 8px;
+  padding: 0.5rem;
 }
 .sm-s {
-  padding: 16px;
+  padding: 1rem;
 }
 .md-s {
-  padding: 24px;
+  padding: 1.5rem;
 }
 .lg-s {
-  padding: 32px;
+  padding: 2rem;
 }
 .xl-s {
-  padding: 48px;
+  padding: 3rem;
 }
 .xxl-s {
-  padding: 64px;
+  padding: 4rem;
 }
 
 /* Align */
@@ -73,30 +73,30 @@
 
 @media screen and (max-width: 768px) {
   .md {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .lg {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .xl {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .sm-s {
-    padding: 8px;
+    padding: 0.5rem;
   }
   .md-s {
-    padding: 16px;
+    padding: 1rem;
   }
   .lg-s {
-    padding: 24px;
+    padding: 1.5rem;
   }
   .xl-s {
-    padding: 32px;
+    padding: 2rem;
   }
   .xxl-s {
-    padding: 48px;
+    padding: 3rem;
   }
 }

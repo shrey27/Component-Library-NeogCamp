@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="list.css" />
     <link
       rel="stylesheet"
@@ -26,53 +26,52 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
+              <li><a href="../../installation">Installation</a></li>
               <li><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
@@ -89,7 +88,7 @@
               <li><a href="../rating/">Rating</a></li>
               <li><a href="../drawer/">Drawer</a></li>
               <li><a href="../grid/">Grid</a></li>
-              <li><a href="../list/">List</a></li>
+              <li class="active"><a href="../list/">List</a></li>
             </ul>
           </div>
         </section>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,26 +119,26 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb mg-full">List</h1>
-          <p class="heading md reg mg-full">
+          <h1 class="primary lg sb mg-full">List</h1>
+          <p class="primary md reg mg-full">
             There are two types of lists in HTML, ordered and unordered. I have
             put a third category of stacked list as well for making small
             notification or info boxes.
           </p>
           <hr />
 
-          <h1 class="heading md sb mg-full">Unordered List</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb mg-full">Unordered List</h1>
+          <p class="primary sm bl lt">
             List by default is unordered. To add custom marker or set different
             font size or padding add the pre-defined classes.
             <strong>list--circle</strong> sets round markers and
             <strong>list--square</strong> sets square markers.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text flex-ct-sb xs-s">
                 <ul class="sm sb sm-s">
@@ -144,13 +146,13 @@
                   <li>Tea</li>
                   <li>Cola</li>
                 </ul>
-    
+
                 <ul class="sm sb list--circle sm-s">
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Cola</li>
                 </ul>
-    
+
                 <ul class="sm sb list--square sm-s">
                   <li>Coffee</li>
                   <li>Tea</li>
@@ -159,7 +161,7 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;ul class="list--circle sm sb sm-s"&gt;
 &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
@@ -169,19 +171,19 @@
 </code></pre>
             </div>
           </div>
-          <h1 class="heading md sb">Ordered List</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Ordered List</h1>
+          <p class="primary sm bl lt">
             Ordered List by default is numbered. To override default properties
             wrap it in <strong>list--od</strong> class. To add custom marker or
             set different font size or padding add the pre-defined classes.
             <strong>list--roman</strong> sets roman numerals markers and
             <strong>list--alpha</strong> sets alpahbets markers.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text flex-ct-sb xs-s">
                 <ol class="sm sb list--od sm-s">
@@ -189,13 +191,13 @@
                   <li>Tea</li>
                   <li>Cola</li>
                 </ol>
-    
+
                 <ol class="sm sb list--od list--roman md-s">
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Cola</li>
                 </ol>
-    
+
                 <ol class="sm sb list--od list--alpha md-s">
                   <li>Coffee</li>
                   <li>Tea</li>
@@ -204,7 +206,7 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;ol class="list--od list--roman sm sb sm-s"&gt;
  &lt;li&gt;Coffee&lt;/li&gt;
  &lt;li&gt;Tea&lt;/li&gt;
@@ -215,18 +217,18 @@
             </div>
           </div>
 
-          <h1 class="heading md sb">Stacked List</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Stacked List</h1>
+          <p class="primary sm bl lt">
             Stacked List are basically like a text only card. To begin default
             wrap a list in <strong>stack</strong> class. User can set any
             content inside the card and adjust the width and height using custom
             styling classes.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text xs-s">
                 <ul class="stack">
@@ -237,11 +239,13 @@
                       class="avatar avatar--sm"
                     />
                     <div>
-                      <h1 class="heading sm sb">Calvin Hawkins</h1>
-                      <h2 class="subheading sm">calvin.hawkins@example.com</h2>
+                      <h1 class="primary sm sb">Calvin Hawkins</h1>
+                      <h2 class="primary--light sm">
+                        calvin.hawkins@example.com
+                      </h2>
                     </div>
                   </li>
-      
+
                   <li class="flex-ct-st shadow xs-s">
                     <img
                       src="https://www.quanzhanketang.com/w3css/img_avatar5.png"
@@ -249,11 +253,13 @@
                       class="avatar avatar--sm"
                     />
                     <div>
-                      <h1 class="heading sm sb">Kristen Ramons</h1>
-                      <h2 class="subheading sm">kristen.ramons@example.com</h2>
+                      <h1 class="primary sm sb">Kristen Ramons</h1>
+                      <h2 class="primary--light sm">
+                        kristen.ramons@example.com
+                      </h2>
                     </div>
                   </li>
-      
+
                   <li class="flex-ct-st shadow xs-s">
                     <img
                       src="https://www.quanzhanketang.com/w3css/img_avatar3.png"
@@ -261,22 +267,22 @@
                       class="avatar avatar--sm"
                     />
                     <div>
-                      <h1 class="heading sm sb">Ted Fox</h1>
-                      <h2 class="subheading sm">ted.fox@example.com</h2>
+                      <h1 class="primary sm sb">Ted Fox</h1>
+                      <h2 class="primary--light sm">ted.fox@example.com</h2>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;ul class="stack"&gt;
   &lt;li class="stack__card flex-ct-st"&gt;
    &lt;img src="..."
       alt="Avatar" class="avatar avatar--sm"/&gt;
    &lt;div&gt;
-     &lt;h1 class="heading sm sb"&gt;...&lt;/h1&gt;
-     &lt;h2 class="subheading sm"&gt;...&lt;/h2&gt;
+     &lt;h1 class="primary sm sb"&gt;...&lt;/h1&gt;
+     &lt;h2 class="primary--light sm"&gt;...&lt;/h2&gt;
    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;

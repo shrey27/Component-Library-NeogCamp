@@ -10,7 +10,7 @@
   position: relative;
   align-items: center;
 }
-.nav--icons {
+.nav__icons {
   grid-area: navicons;
 }
 .start {
@@ -34,7 +34,7 @@
   .start {
     justify-content: flex-start;
   }
-  .nav--icons {
+  .nav__icons {
     display: none;
   }
 }

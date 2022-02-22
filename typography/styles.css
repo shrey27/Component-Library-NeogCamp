@@ -9,7 +9,7 @@
 }
 .pd-eg {
   border: 2px solid var(--black);
-  margin: 0.5em;
+  margin: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {

@@ -10,26 +10,26 @@
   position: relative;
 }
 .box__image {
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 .box__image__sm {
-  width: 1.25em;
-  height: 1.25em;
+  width: 1rem;
+  height: 1rem;
   background-color: white;
 }
 .box__header {
   grid-area: header;
-  padding: 0 1em;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--secondary--light);
 }
 .box__aside {
   grid-area: aside;
-  padding: 1em;
+  padding: 1rem;
   background-color: var(--white);
   display: none;
 }
@@ -39,92 +39,127 @@
 .box__aside__options {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
-.box-sm-contact {
+.box__sm__contact {
   display: none;
 }
-.box-span {
+.box__span {
   display: inline-flex;
   flex-direction: column;
 }
+.box__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: none;
+}
 .box__main {
   grid-area: main;
-  padding: 1em;
+  padding: 1rem;
 }
 .box__main.show {
   display: none;
 }
 
-/* List Styling */
+/* Sidebar List Styling */
 .slider {
   display: inline-block;
 }
-.list--container {
-  margin: 1em 2rem;
+.list__container {
+  margin: 1rem 2rem;
   width: fit-content;
 }
 .list {
   list-style: none;
 }
 .list li {
-  margin: 1em 1.25em;
+  margin: 1rem 1.25rem;
+  padding: 0.5rem;
 }
 .list li a {
-  color: var(--heading);
-  font-size: 1.2em;
+  color: var(--primary);
+  font-size: 1.2rem;
 }
 .list__title {
-  font-size: 1.5em;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--heading);
+  color: var(--primary);
 }
 .list li a:hover,
 .list li a:focus,
 .list__title a:hover {
   color: var(--button-float);
 }
+.list__title.active {
+  padding: 0.5rem 1rem;
+  font-weight: normal;
+}
+.list__title.active,
+.list li.active {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--button-float-highlighted);
+}
+.list li.active > a {
+  color: var(--white);
+}
 
 /* Component */
-.component--title {
+.component {
+  margin: 1rem;
+}
+.component__title {
   text-align: center;
 }
-.component--output--wrapper {
-  margin: 1em 0;
-  display: flex;
-  justify-content: center;
+.component__output__wrapper {
+  margin: 1rem 0;
 }
-.component--output {
+.component__output {
   position: relative;
-  padding: 0.5em;
+  padding: 0.5rem;
   width: fit-content;
   margin: auto;
   border-radius: 10px;
 }
-.code--msg {
+.btn--copy {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn--copy:hover {
+  border: 2px solid var(--secondary);
+  outline: none;
+}
+.code__msg {
   position: absolute;
-  top: 1em;
-  right: 1em;
-  color: var(--white);
-  background-color: var(--button-float);
-  padding: 0.5em;
+  top: 0.5rem;
+  right: 1rem;
+  color: var(--primary);
+  background-color: var(--button-primary);
+  padding: 0.5rem;
   border-radius: 5px;
-  font-size: 0.9em;
-  margin: 0 0 0 0.5em;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0 0 0 0.5rem;
   display: none;
 }
-.code--container {
+.code__container {
   background-color: var(--code);
   color: var(--button-success);
   border-radius: 10px;
   overflow: hidden hidden;
   max-width: 100%;
-  padding: 1em 1em 0;
+  padding: 1rem 1rem 0;
+  font-size: 1rem;
 }
 
 /* Media queries */
 @media only screen and (min-width: 1024px) {
+  .box__title {
+    font-size: 2rem;
+  }
   .box {
     grid-template-columns: 20% 80%;
     grid-template-areas:
@@ -133,26 +168,27 @@
     align-items: start;
   }
   .box__image {
-    width: 5em;
-    height: 5em;
+    width: 5rem;
+    height: 5rem;
   }
   .box__image__sm {
-    width: 2em;
-    height: 2em;
+    width: 1.5rem;
+    height: 1.5rem;
   }
-  .box__header {
-    padding: 1em;
-  }
-  .box-sm-contact {
+  .box__sm__contact {
     display: inline-block;
   }
   .box__aside {
     display: block;
     position: sticky;
     top: 0;
-    max-height: calc(100vh - 1em);
+    max-height: calc(100vh - 1rem);
     overflow: hidden auto;
     height: 100%;
+  }
+  .box__aside__options {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .box__main {
     display: block;
@@ -163,11 +199,10 @@
   .footer {
     display: none;
   }
-
-  .component--title {
+  .component__title {
     text-align: start;
   }
-  .code--container {
+  .code__container {
     display: inline-flex;
   }
 }

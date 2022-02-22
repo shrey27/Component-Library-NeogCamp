@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
-    <link rel="icon" type="image/x-icon" href="/assets/rocket.jpg">
+    <link rel="icon" type="image/x-icon" href="/assets/rocket.webp" />
     <link rel="stylesheet" href="card.css" />
     <link
       rel="stylesheet"
@@ -26,60 +26,59 @@
       <header class="box__header flex-ct-sb">
         <div class="box-sm flex-ct-ct">
           <a href="../../index.html">
-            <img class="box__image" src="../../assets/rocket.jpg" />
+            <img class="box__image" src="../../assets/rocket.webp" alt="logo" />
           </a>
-          <span class="box-span">
-            <span class="lg sb n-s heading">Apollo-UI</span>
-            <span class="sm sb subheading">beta-version</span>
+          <span class="box__span">
+            <span class="lg sb n-s primary">Apollo-UI</span>
+            <span class="sm sb primary--light"></span>
           </span>
         </div>
-        <div class="box-sm-contact flex-ct-ct">
+        <div class="box__sm__contact flex-ct-ct">
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </div>
-        <div class="box-sm-contact flex-ct-ct slider">
+        <div class="box__sm__contact flex-ct-ct slider">
           <i class="fas fa-bars btn btn--float btn--round lg sb"></i>
         </div>
       </header>
 
       <aside class="box__aside">
         <section class="box__aside__options">
-          <div class="list--container">
-            <span class="list__title"
-              ><a href="/installation">Installation</a></span
-            >
-          </div>
-          <div class="list--container">
-            <span class="list__title">Utilities</span>
+          <div class="list__container">
+            <span class="list__title">Getting Started</span>
             <ul class="list">
+              <li><a href="../../installation">Installation</a></li>
               <li><a href="../../color">Color Palette</a></li>
               <li><a href="../../typography">Typography</a></li>
             </ul>
           </div>
-          <div class="list--container">
+          <div class="list__container">
             <span class="list__title">Components</span>
             <ul class="list">
               <li><a href="../avatar">Avatar</a></li>
               <li><a href="../alert">Alert</a></li>
               <li><a href="../badge">Badge</a></li>
               <li><a href="../button">Button</a></li>
-              <li><a href="../card">Card</a></li>
+              <li class="active"><a href="../card">Card</a></li>
               <li><a href="../image">Image</a></li>
               <li><a href="../input">Input</a></li>
               <li><a href="../navbar/">Navbar</a></li>
@@ -87,7 +86,7 @@
               <li><a href="../toast/">Toast</a></li>
               <li><a href="../hamburger/">Hamburger</a></li>
               <li><a href="../rating/">Rating</a></li>
-              <li><a href="../drawer/">Drawer</a></li>              
+              <li><a href="../drawer/">Drawer</a></li>
               <li><a href="../grid/">Grid</a></li>
               <li><a href="../list/">List</a></li>
             </ul>
@@ -97,19 +96,22 @@
           <a href="https://twitter.com/home">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+              src="../../assets/twitter.webp"
+              alt="icons"
             />
           </a>
           <a href="https://github.com/shrey27">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/glyph-neue/48/000000/github.png"
+              src="../../assets/github.webp"
+              alt="icons"
             />
           </a>
           <a href="https://www.linkedin.com/in/shrey27/">
             <img
               class="box__image__sm"
-              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              src="../../assets/linkedin.webp"
+              alt="icons"
             />
           </a>
         </section>
@@ -117,30 +119,30 @@
 
       <main class="box__main">
         <section class="component">
-          <h1 class="heading lg sb mg-full">Card</h1>
-          <p class="heading md reg mg-full">
+          <h1 class="primary lg sb mg-full">Card</h1>
+          <p class="primary md reg mg-full">
             A card is a very handy component to showcase a small piece of
             information in concise manner. It is very useful on an e-commerce
             platform and as modal or pop-up.
           </p>
           <hr />
-          <h1 class="heading md sb mg-full">Text Only Card</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb mg-full">Text Only Card</h1>
+          <p class="primary sm bl lt">
             A basic card with no banner or shadow. Put 'card' class over a
             container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card">
-                  <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                  <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                  <p class="card--content">
+                  <h1 class="card__title flex-ct-st">Our Changing planet</h1>
+                  <h1 class="card__subtitle flex-ct-st">by Kurt Wagner</h1>
+                  <p class="card__content">
                     Visit ten places on our planet that are undergoing the
                     biggest changes today. Lets share our experience and
                     collaborate to take this research forward.
@@ -149,43 +151,43 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card"&gt;
-&lt;h1 class="card--title flex-ct-st"&gt;...&lt;
+&lt;h1 class="card__title flex-ct-st"&gt;...&lt;
 /h1&gt;
-&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;
+&lt;h1 class="card__subtitle flex-ct-st"&gt;...&lt;
 /h1&gt;
-&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;p class="card__content"&gt;...&lt;/p&gt;
 &lt;/div&gt;
 
 </code></pre>
             </div>
           </div>
 
-          <h1 class="heading md sb">Card with Badge</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Card with Badge</h1>
+          <p class="primary sm bl lt">
             A basic card with banner and a badge. Put 'card' class over a
             container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card shdw">
-                  <span class="card--badge">BADGE</span>
+                  <span class="card__badge">BADGE</span>
                   <img
                     src="https://www.w3schools.com/w3css/img_snowtops.jpg"
                     alt="Banner"
-                    class="card--banner"
+                    class="card__banner"
                   />
                   <section class="content">
-                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                    <p class="card--content">
+                    <h1 class="card__title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card__subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card__content">
                       Visit ten places on our planet that are undergoing the
                       biggest changes today. Lets share our experience and
                       collaborate to take this research forward.
@@ -195,33 +197,33 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card shdw"&gt;
-&lt;span class="card--badge"&gt;BADGE&lt;/span&gt;
-  &lt;img src="image.jpg" alt="Banner" class="card--banner"/&gt;
+&lt;span class="card__badge"&gt;BADGE&lt;/span&gt;
+  &lt;img src="image.jpg" alt="Banner" class="card__banner"/&gt;
   &lt;section class="content"&gt;
-  &lt;h1 class="card--title flex-ct-st"&gt;...&lt;
+  &lt;h1 class="card__title flex-ct-st"&gt;...&lt;
   /h1&gt;
-  &lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;
+  &lt;h1 class="card__subtitle flex-ct-st"&gt;...&lt;
   /h1&gt;
-  &lt;p class="card--content"&gt;...&lt;/p&gt;
+  &lt;p class="card__content"&gt;...&lt;/p&gt;
   &lt;/section&gt;
 &lt;/div&gt;
 
 </code></pre>
             </div>
           </div>
-          <h1 class="heading md sb">Card with Text Overlay</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Card with Text Overlay</h1>
+          <p class="primary sm bl lt">
             A basic card with banner and text over the banner. Put 'card' class
             over a container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card">
@@ -229,16 +231,16 @@
                     <img
                       src="https://www.w3schools.com/w3css/img_lights.jpg"
                       alt="Banner"
-                      class="overlay--banner overlay--back"
+                      class="overlay__banner overlay__back"
                     />
-                    <h1 class="overlay--title overlay--front flex-ct-st">
+                    <h1 class="overlay__title overlay__front flex-ct-st">
                       Our Changing planet
                     </h1>
-                    <h1 class="overlay--subtitle overlay--front flex-ct-st">
+                    <h1 class="overlay__subtitle overlay__front flex-ct-st">
                       by Kurt Wagner
                     </h1>
                   </div>
-                  <p class="card--content">
+                  <p class="card__content">
                     Visit ten places on our planet that are undergoing the
                     biggest changes today. Lets share our experience and
                     collaborate to take this research forward.
@@ -247,48 +249,48 @@
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card"&gt;
 &lt;div class="overlay"&gt;
-&lt;img src="img.jpg" alt="Banner" class="overlay--banner 
-overlay--back"/&gt;
-&lt;h1 class="overlay--title overlay--front flex-ct-st"&gt;
+&lt;img src="img.jpg" alt="Banner" class="overlay__banner 
+overlay__back"/&gt;
+&lt;h1 class="overlay__title overlay__front flex-ct-st"&gt;
     ...&lt;/h1&gt;
-&lt;h1 class="overlay--subtitle overlay--front flex-ct-st"&gt;
+&lt;h1 class="overlay__subtitle overlay__front flex-ct-st"&gt;
 ...&lt;/h1&gt;&lt;/div&gt;
-&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;p class="card__content"&gt;...&lt;/p&gt;
 &lt;/div&gt;
 
 </code></pre>
             </div>
           </div>
-          <h1 class="heading md sb">Card with Dismiss</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Card with Dismiss</h1>
+          <p class="primary sm bl lt">
             A dynamic card with banner and dismiss functionality. Put 'card',
             'dismiss' and 'open' class over a container and add subsequent
             elements in it for complete implementation. Add script.js in your
             document to make this functional.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card dismiss open">
-                  <span class="card--dismiss">
+                  <span class="card__dismiss">
                     <i class="fas fa-times-circle"></i>
                   </span>
                   <img
                     src="https://www.w3schools.com/w3css/img_snowtops.jpg"
                     alt="Banner"
-                    class="card--banner"
+                    class="card__banner"
                   />
                   <section class="content">
-                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                    <p class="card--content">
+                    <h1 class="card__title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card__subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card__content">
                       Visit ten places on our planet that are undergoing the
                       biggest changes today. Lets share our experience and
                       collaborate to take this research forward.
@@ -298,44 +300,44 @@ overlay--back"/&gt;
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card dismiss open"&gt;
-&lt;span class="card--dismiss"&gt;&lt;i class="fas fa-times-circle"
+&lt;span class="card__dismiss"&gt;&lt;i class="fas fa-times-circle"
 &gt;&lt;/i&gt; &lt;/span&gt;
-&lt;img src="img.jpg" alt="Banner" class="card--banner"/&gt;
+&lt;img src="img.jpg" alt="Banner" class="card__banner"/&gt;
 &lt;section class="content"&gt;
-&lt;h1 class="card--title flex-ct-st"&gt;...&lt;/h1&gt;
-&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;/h1&gt; 
-&lt;p class="card--content"&gt;...&lt;/p&gt;
+&lt;h1 class="card__title flex-ct-st"&gt;...&lt;/h1&gt;
+&lt;h1 class="card__subtitle flex-ct-st"&gt;...&lt;/h1&gt; 
+&lt;p class="card__content"&gt;...&lt;/p&gt;
 &lt;/section&gt;
 &lt;/div&gt;
 
 </code></pre>
             </div>
           </div>
-          <h1 class="heading md sb">Card with Shadow</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Card with Shadow</h1>
+          <p class="primary sm bl lt">
             A basic card with banner and shadow. Put 'card' and 'shdw' class
             over a container and add subsequent elements in it for complete
             implementation.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card shdw">
                   <img
                     src="https://www.w3schools.com/w3css/img_snowtops.jpg"
                     alt="Banner"
-                    class="card--banner"
+                    class="card__banner"
                   />
                   <section class="content">
-                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                    <p class="card--content">
+                    <h1 class="card__title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card__subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card__content">
                       Visit ten places on our planet that are undergoing the
                       biggest changes today. Lets share our experience and
                       collaborate to take this research forward.
@@ -345,41 +347,41 @@ overlay--back"/&gt;
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card shdw"&gt;
-&lt;img src="img.jpg"alt="Banner" class="card--banner"/&gt;
+&lt;img src="img.jpg"alt="Banner" class="card__banner"/&gt;
 &lt;section class="content"&gt;
-&lt;h1 class="card--title flex-ct-st"&gt;...;/h1&gt;
-&lt;h1 class="card--subtitle flex-ct-st"&gt;...&lt;/h1&gt;
-&lt;p class="card--content"&gt;...&lt;/p&gt;&lt;/section&gt;
+&lt;h1 class="card__title flex-ct-st"&gt;...;/h1&gt;
+&lt;h1 class="card__subtitle flex-ct-st"&gt;...&lt;/h1&gt;
+&lt;p class="card__content"&gt;...&lt;/p&gt;&lt;/section&gt;
 &lt;/div&gt;
 
 </code></pre>
             </div>
           </div>
-          <h1 class="heading md sb">Horizontal Card</h1>
-          <p class="heading md lt">
+          <h1 class="primary md sb">Horizontal Card</h1>
+          <p class="primary sm bl lt">
             A basic card with banner but in landscape orientation. Put 'card'
             and 'landscape' class over a container and add subsequent elements
             in it for complete implementation.
           </p>
-          <div class="component--output--wrapper flex-ct-ct flex-vertical">
-            <div class="component--output shadow">
+          <div class="component__output__wrapper flex-ct-ct flex-vertical">
+            <div class="component__output shadow">
               <div class="flex-ct-st">
-                <i class="far fa-copy btn btn--icons btn--round"></i>
-                <span class="code--msg">Copied!</span>
+                <i class="far fa-copy btn btn--copy"></i>
+                <span class="code__msg">Copied!</span>
               </div>
               <div class="code--text">
                 <div class="card landscape">
                   <img
                     src="https://www.w3schools.com/w3css/img_snowtops.jpg"
                     alt="Banner"
-                    class="card--banner"
+                    class="card__banner"
                   />
                   <section class="content">
-                    <h1 class="card--title flex-ct-st">Our Changing planet</h1>
-                    <h1 class="card--subtitle flex-ct-st">by Kurt Wagner</h1>
-                    <p class="card--content">
+                    <h1 class="card__title flex-ct-st">Our Changing planet</h1>
+                    <h1 class="card__subtitle flex-ct-st">by Kurt Wagner</h1>
+                    <p class="card__content">
                       Visit ten places on our planet that are undergoing the
                       biggest changes today. Lets share our experience and
                       collaborate to take this research forward.
@@ -389,14 +391,14 @@ overlay--back"/&gt;
               </div>
             </div>
 
-            <div class="code--container mg-full">
+            <div class="code__container mg-full">
               <pre><code class='html'>&lt;div class="card landscape"&gt;
 &lt;img src="img.jpg"
-      alt="Banner" class="card--banner"/&gt;
+      alt="Banner" class="card__banner"/&gt;
   &lt;section class="content"&gt;
-  &lt;h1 class="card--title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
-  &lt;h1 class="card--subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
-  &lt;p class="card--content"&gt;Visit ten places on our planet that are 
+  &lt;h1 class="card__title flex-ct-st"&gt;Our Changing planet&lt;/h1&gt;
+  &lt;h1 class="card__subtitle flex-ct-st"&gt;by Kurt Wagner&lt;/h1&gt;
+  &lt;p class="card__content"&gt;Visit ten places on our planet that are 
       undergoing the biggest changes today. Lets share our experience and
       collaborate to take this research forward.
   &lt;/p&gt;
