@@ -10,7 +10,7 @@
   position: relative;
   align-items: center;
 }
-.nav__icons {
+.nav--icons {
   grid-area: navicons;
 }
 .start {
@@ -26,7 +26,7 @@
   grid-area: end;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .navbar {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'start middle end';
@@ -34,7 +34,7 @@
   .start {
     justify-content: flex-start;
   }
-  .nav__icons {
+  .nav--icons {
     display: none;
   }
 }
